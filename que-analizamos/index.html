@@ -1,0 +1,1092 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>Qué analizamos | WELLNESS APP</title>
+<meta name="description" content="Explora indicadores de laboratorio y conoce qué representan. WELLNESS APP — Qué analizamos, primera etapa del catálogo educativo.">
+<style>
+:root{--petrol:#123F47;--petrol-blue:#163D50;--teal:#168C8B;--orange:#FF713D;--mineral:#F7F8F5;--mint:#DCEDEA;--text:#202B2C;--muted:#5C696A;--border:#E5ECEA;--white:#fff;}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}body{margin:0;min-width:280px;background:var(--mineral);color:var(--text);font-family:Inter,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:inherit}button{font:inherit}
+button:focus-visible,a:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
+.page-shell{max-width:1920px;margin:auto;min-height:100vh;overflow:hidden}
+/* Mismos tokens de marca y símbolo CSS empleados en el landing aprobado V1.7.9 */
+.topbar-wrap{position:relative;z-index:10;padding:22px 24px 8px}
+.header{width:min(100%,1280px);margin:0 auto;min-height:74px;display:flex;align-items:center;justify-content:space-between;gap:32px;padding:11px 24px;border:1px solid #e4eae8;background:rgba(255,255,255,.96);border-radius:70px;box-shadow:0 13px 34px rgba(18,63,71,.08)}
+.logo{display:flex;align-items:center;gap:13px;text-decoration:none;color:var(--petrol);flex-shrink:0}
+.symbol{height:42px;width:42px;border-radius:13px 22px 12px 22px;background:conic-gradient(from 245deg,#168C8B 0 31%,#FF713D 31% 61%,#DCEDEA 61% 75%,#123F47 75%);transform:rotate(-12deg);position:relative}
+.symbol::after{content:"";width:14px;height:28px;position:absolute;top:6px;left:13px;border-radius:50%;background:#f7f8f5;transform:rotate(-31deg)}
+.logotext{line-height:1;letter-spacing:.12em;font-weight:700;font-size:18px;white-space:nowrap}
+.top-nav{display:flex;align-items:center;gap:clamp(17px,2.1vw,36px)}
+.top-nav a{color:var(--petrol);text-decoration:none;font-size:13px;font-weight:600;white-space:nowrap;position:relative;padding:8px 0}
+.top-nav a:hover{color:#0d6874}.top-nav a.active::after{content:"";position:absolute;bottom:0;left:0;right:0;height:2px;border-radius:3px;background:var(--orange)}
+.top-action{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;background:transparent;color:var(--petrol);border:1px solid var(--petrol);padding:13px 18px;border-radius:50px;min-height:44px;font-weight:650;font-size:13px;white-space:nowrap;transition:background .2s,color .2s}
+.top-action:hover{background:var(--petrol);color:#fff}
+.mobile-menu-toggle{display:none;border:1px solid var(--border);color:var(--petrol);background:#fff;border-radius:12px;width:42px;height:42px;align-items:center;justify-content:center;cursor:pointer}
+.mobile-nav{display:none}
+.intro{text-align:center;padding:clamp(36px,5.6vw,82px) 24px clamp(23px,3vw,42px);max-width:1000px;margin:auto}
+.intro .micro{font-size:11px;font-weight:800;letter-spacing:.19em;color:#A65B39;text-transform:uppercase;margin:0 0 17px}
+.intro h1{font-family:Newsreader,Georgia,'Times New Roman',serif;font-size:clamp(47px,6.8vw,83px);line-height:1.03;letter-spacing:-.04em;font-weight:500;color:var(--petrol);margin:0 0 17px}
+.intro p{font-size:clamp(14px,1.3vw,17px);line-height:1.7;margin:0 auto;color:var(--muted);max-width:710px}
+.hero-banner{position:relative;isolation:isolate;width:min(calc(100% - 56px),1280px);margin:0 auto;border-radius:28px;background:radial-gradient(ellipse at 96% 15%,rgba(52,115,151,.48),transparent 43%),linear-gradient(120deg,#14384a 0%,#163d50 47%,#0d3043 100%);color:#fff;overflow:hidden;box-shadow:0 22px 55px rgba(18,63,71,.12)}
+.hero-banner::before{content:"";position:absolute;z-index:-1;width:55%;height:165%;right:-5%;top:-60%;border:1px solid rgba(178,224,240,.17);border-radius:50%;transform:rotate(-24deg);box-shadow:0 0 0 25px rgba(121,199,231,.035),0 0 0 71px rgba(121,199,231,.023),0 0 0 126px rgba(121,199,231,.015)}
+.hero-banner::after{content:"";position:absolute;z-index:-1;width:43%;height:70%;right:8%;bottom:-46%;border-top:1px solid rgba(156,205,223,.2);border-radius:50%;transform:rotate(10deg)}
+.hero-header{padding:clamp(35px,5.2vw,70px) clamp(26px,6vw,83px) 31px;max-width:980px;position:relative}
+.hero-eyebrow{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:750;color:#eaf1f2;display:flex;align-items:center;gap:12px;margin:0 0 22px}
+.hero-eyebrow::before{content:"";display:block;width:36px;height:4px;border-radius:4px;background:var(--orange)}
+.hero-header h2{font-family:Newsreader,Georgia,'Times New Roman',serif;font-size:clamp(40px,5.2vw,70px);line-height:1.09;letter-spacing:-.025em;font-weight:500;margin:0 0 18px;max-width:920px}
+.hero-header h2 em{font-weight:400;color:#fff;font-style:italic}
+.hero-header p{font-size:clamp(15px,1.55vw,18px);max-width:700px;line-height:1.7;color:#e2edf1;margin:0}
+.carousel-section{position:relative;padding:13px 64px 29px}
+.carousel-label-row{display:flex;justify-content:space-between;gap:15px;align-items:center;margin:0 clamp(0px,1vw,14px) 15px}
+.carousel-label{color:#d0e5e9;font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;margin:0}
+.carousel-viewport{overflow:hidden;touch-action:pan-y;mask-image:linear-gradient(90deg,transparent 0%,black 2%,black 98%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,black 2%,black 98%,transparent 100%)}
+.carousel-track{display:flex;align-items:stretch;width:max-content;will-change:transform;transform:translate3d(0,0,0)}
+.carousel-set{display:flex;align-items:stretch;gap:13px;padding-right:13px}
+.indicator-card{width:268px;min-height:116px;background:rgba(255,255,255,.105);border:1px solid rgba(231,248,252,.24);border-radius:16px;display:flex;align-items:center;gap:14px;padding:17px 15px;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.indicator-icon-wrap{width:44px;height:44px;flex-shrink:0;display:flex;align-items:center;justify-content:center;border-radius:13px;background:rgba(255,255,255,.08);color:#ffab8c}
+.indicator-icon{width:27px;height:27px}
+.indicator-copy h3{font-size:14px;line-height:1.3;margin:0 0 7px;color:#fff;font-weight:750}
+.indicator-copy p{font-size:11.5px;line-height:1.44;margin:0;color:#e0ebee}
+.carousel-arrow{position:absolute;top:56%;transform:translateY(-20%);width:35px;height:35px;display:grid;place-items:center;border-radius:50%;border:0;background:#fff;color:var(--petrol);box-shadow:0 5px 15px #081d3044;cursor:pointer;z-index:3}
+.carousel-arrow:hover{background:#eaf5f8}
+.carousel-arrow.prev{left:17px}.carousel-arrow.next{right:17px}
+.carousel-arrow svg{width:18px;height:18px}
+.pause-button{display:inline-flex;align-items:center;gap:6px;padding:6px 12px;border:1px solid rgba(255,255,255,.35);border-radius:20px;background:rgba(255,255,255,.08);color:#fff;cursor:pointer;font-size:11px;font-weight:700;white-space:nowrap}
+.pause-button:hover{background:rgba(255,255,255,.16)}
+.bottom-note{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:0 clamp(26px,6vw,83px) 26px;color:#bacdd5;font-size:11px;line-height:1.6}
+.bottom-note strong{color:#e1edf0;font-weight:650}
+.stage-note{width:min(calc(100% - 56px),1280px);margin:25px auto 85px;color:#647275;font-size:12px;line-height:1.7;text-align:center;max-width:900px}
+.stage-note strong{color:var(--petrol)}
+.footer-mini{border-top:1px solid var(--border);padding:23px 24px 31px;max-width:1280px;margin:auto;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:11px;color:#687777}
+.footer-mini a{text-decoration:none;color:var(--petrol)}
+@media (max-width:1020px){.header{gap:17px}.top-nav{gap:15px}.top-nav a{font-size:12px}.logotext{font-size:16px}.hero-banner{width:calc(100% - 36px)}}
+@media(max-width:820px){
+.topbar-wrap{padding:13px 16px 6px}.header{border-radius:24px;padding:11px 14px;min-height:62px}.top-nav,.top-action{display:none}
+.mobile-menu-toggle{display:flex}.mobile-nav:not([hidden]){display:grid;position:absolute;left:16px;right:16px;top:83px;background:#fff;border:1px solid var(--border);box-shadow:0 17px 30px rgba(18,63,71,.15);border-radius:19px;padding:10px;z-index:100}
+.mobile-nav a{display:block;padding:12px;color:var(--petrol);font-size:14px;text-decoration:none;border-radius:10px}.mobile-nav a:hover{background:var(--mineral)}
+.intro{padding:42px 22px 27px}.intro h1{font-size:clamp(44px,10.5vw,66px)}
+.hero-banner{width:calc(100% - 28px);border-radius:24px}.hero-header{padding:38px 25px 23px}.hero-header h2{font-size:clamp(36px,8vw,54px)}
+.carousel-section{padding:11px 48px 23px}.indicator-card{width:252px;min-height:124px}.carousel-arrow.prev{left:9px}.carousel-arrow.next{right:9px}
+.bottom-note{padding:0 25px 24px;flex-direction:column;align-items:flex-start;gap:8px}
+.stage-note{width:calc(100% - 42px);margin:22px auto 58px}
+}
+@media(max-width:480px){
+.logotext{font-size:14px;letter-spacing:.09em}.symbol{width:33px;height:33px}.symbol::after{width:11px;height:22px;left:11px;top:5px}.logo{gap:9px}
+.intro{padding-top:34px}.intro h1{font-size:47px}.intro p{font-size:14px;line-height:1.6}
+.hero-banner{width:calc(100% - 22px);border-radius:23px}.hero-header{padding:32px 22px 19px}.hero-header h2{font-size:clamp(34px,9.2vw,45px);line-height:1.12}.hero-header p{font-size:14px;line-height:1.65}
+.hero-eyebrow{font-size:10px;letter-spacing:.15em;margin-bottom:17px}
+.carousel-section{padding:8px 40px 21px}.carousel-label{font-size:10px;letter-spacing:.1em}.carousel-label-row{margin:0 0 12px}
+.indicator-card{width:236px;min-height:119px;padding:13px 12px;gap:10px}.indicator-copy h3{font-size:13px}.indicator-copy p{font-size:11px}
+.indicator-icon-wrap{width:38px;height:38px}.indicator-icon{width:24px;height:24px}
+.carousel-arrow{width:29px;height:29px}.carousel-arrow svg{width:15px;height:15px}.carousel-arrow.prev{left:5px}.carousel-arrow.next{right:5px}
+.bottom-note{font-size:10px;padding:0 22px 22px}
+.footer-mini{flex-direction:column}
+}
+@media(max-width:360px){.intro h1{font-size:43px}.carousel-section{padding-left:38px;padding-right:38px}.indicator-card{width:calc(100vw - 106px);min-height:128px;gap:8px;padding:11px 9px}.indicator-icon-wrap{width:33px;height:33px}.indicator-icon{width:20px;height:20px}.indicator-copy h3{font-size:12px}.indicator-copy p{font-size:10.5px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.carousel-track{will-change:auto}.top-action{transition:none}}
+
+/* Etapa 2: catálogo funcional, encapsulado bajo #catalogo para no modificar el hero */
+#catalogo{max-width:1280px;margin:24px auto 110px;padding:0 28px;color:var(--petrol)}
+#catalogo *,#catalogo *::before,#catalogo *::after{box-sizing:border-box}
+#catalogo .section-heading{text-align:center;padding:20px 12px 34px}
+#catalogo .section-heading .eyebrow{font-size:11px;letter-spacing:.19em;font-weight:800;color:#b15d3f;margin-bottom:13px}
+#catalogo .section-heading h2{font-family:Newsreader,Georgia,serif;font-weight:500;letter-spacing:-.036em;font-size:clamp(37px,4.3vw,58px);line-height:1.08;margin:0 auto 12px;color:var(--petrol)}
+#catalogo .section-heading p{color:var(--muted);font-size:15px;line-height:1.65;margin:0 auto;max-width:670px}
+#catalogo .search-wrap{display:flex;align-items:center;border:1px solid #d9e3e4;border-radius:60px;box-shadow:0 8px 20px #1c46500b;padding:0 18px;background:#fff;min-height:61px;gap:13px}
+#catalogo .search-wrap:focus-within{outline:2px solid #82b6bc;outline-offset:2px}
+#catalogo .search-icon{width:22px;height:22px;color:var(--petrol);flex-shrink:0}
+#catalogo #catalogSearch{font:inherit;color:var(--petrol);font-size:15px;flex:1;min-width:0;border:0;outline:0;background:transparent;padding:17px 0}
+#catalogo #catalogSearch::placeholder{color:#748184}
+#catalogo #clearSearch{font-size:12px;color:var(--petrol);border:1px solid var(--border);border-radius:32px;background:var(--mineral);padding:7px 11px;cursor:pointer}
+#catalogo #clearSearch[hidden]{display:none}
+#catalogo .filter-row{display:flex;align-items:center;flex-wrap:wrap;gap:14px;margin:22px 0 16px}
+#catalogo .filter-label{letter-spacing:.12em;font-size:11px;font-weight:800;margin-right:5px}
+#catalogo .filter-buttons{display:flex;align-items:center;flex-wrap:wrap;gap:9px}
+#catalogo .filter-button{padding:10px 17px;min-height:43px;background:transparent;color:var(--petrol);border:1px solid #aebfc3;border-radius:50px;font-size:13px;font-weight:650;cursor:pointer}
+#catalogo .filter-button[aria-pressed=true]{color:white;background:#163D50;border-color:#163D50}
+#catalogo .filter-button:hover:not([aria-pressed=true]){background:#eaf0f7}
+#catalogo .catalog-info-line{font-size:12px;color:#6a797a;margin:0 0 21px;line-height:1.6}
+#catalogo .catalog-info-line a{color:var(--petrol);text-decoration:underline;text-underline-offset:2px}
+#catalogo .quick-title{font-size:11px;font-weight:800;letter-spacing:.14em;color:#526568;margin:0 0 11px}
+#catalogo .quick-links{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 28px}
+#catalogo .category-chip{display:inline-block;padding:9px 12px;text-decoration:none;font-size:12px;background:white;border:1px solid #e3e6e2;border-radius:30px;color:var(--petrol);transition:background .2s}
+#catalogo .category-chip:hover{background:#eaf0f7}
+#catalogo .category-chip.is-empty{opacity:.38;pointer-events:none}
+#catalogo .catalog-layout{display:grid;grid-template-columns:264px minmax(0,1fr);gap:38px;align-items:start}
+#catalogo .catalog-aside{position:sticky;top:100px;align-self:start;border-radius:20px;padding:18px 13px;background:#f6f6f2;border:1px solid #e4e7e5}
+#catalogo .aside-kicker{font-size:10px;letter-spacing:.18em;font-weight:800;color:#a35d43;padding:0 10px 14px}
+#catalogo .category-side-link{display:flex;align-items:center;gap:12px;min-height:42px;font-size:12px;font-weight:650;color:var(--petrol);text-decoration:none;padding:9px 10px;border-radius:11px}
+#catalogo .category-side-link:hover,#catalogo .category-side-link:focus-visible{background:#e8eff0}
+#catalogo .category-side-link .cat-icon{width:19px;height:19px;flex-shrink:0;color:#D77255}
+#catalogo .category-side-link span{flex:1}
+#catalogo .category-side-link small{font-size:11px;color:#7e8c8e}
+#catalogo .category-side-link.is-empty{opacity:.38;pointer-events:none}
+#catalogo .catalog-results-header{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:4px 0 16px}
+#catalogo .catalog-results-header h3{font-family:Newsreader,Georgia,serif;font-size:30px;font-weight:500;margin:0}
+#catalogo .catalog-results-header #resultSummary{font-size:12px;color:#657576;line-height:1.4;text-align:right}
+#catalogo .catalog-group{padding-top:22px;margin-bottom:52px;scroll-margin-top:112px}
+#catalogo .catalog-group[hidden]{display:none}
+#catalogo .catalog-group-head{display:flex;align-items:flex-start;gap:16px;margin-bottom:22px}
+#catalogo .catalog-group-icon{display:flex;align-items:center;justify-content:center;flex-shrink:0;background:#f6f3ed;color:#dc795a;width:48px;height:48px;border-radius:15px}
+#catalogo .catalog-group-icon .cat-icon{width:26px;height:26px}
+#catalogo .catalog-group-head h3{font-family:Newsreader,Georgia,serif;font-size:clamp(29px,3vw,37px);font-weight:500;margin:0 0 4px;line-height:1.12;letter-spacing:-.02em}
+#catalogo .category-count{font:400 14px Inter,'Segoe UI',sans-serif;color:#738287}
+#catalogo .catalog-group-head p{color:#697679;font-size:12px;line-height:1.5;margin:0}
+#catalogo .lab-table-head{display:grid;grid-template-columns:minmax(0,1fr) 91px 96px;align-items:center;margin-bottom:8px;padding:0 17px;font-size:9px;font-weight:800;letter-spacing:.1em;color:#697879;text-transform:uppercase}
+#catalogo .lab-table-head span:not(:first-child){text-align:center}
+#catalogo .lab-list{padding:0;margin:0;list-style:none;display:grid;gap:7px}
+#catalogo .lab-row{display:grid;grid-template-columns:minmax(0,1fr) 91px 96px;align-items:center;background:white;border:1px solid #e4e9e6;border-radius:13px;padding:12px 17px;min-height:49px}
+#catalogo .lab-row[hidden]{display:none}
+#catalogo .lab-name{font-size:12.5px;line-height:1.45;color:#263a3b;font-weight:600;overflow-wrap:anywhere}
+#catalogo .lab-indicators{grid-column:2/span 2;display:grid;grid-template-columns:91px 96px;align-items:center}
+#catalogo .lab-dot{width:9px;height:9px;border-radius:50%;justify-self:center;background:#d7dddf}
+#catalogo .lab-dot.yes{background:#1c5664}
+#catalogo .lab-dot.no{background:#d2d6d4;width:6px;height:6px}
+#catalogo .no-results{border:1px dashed #cdd7d7;padding:30px;border-radius:17px;background:white;color:var(--petrol);text-align:center}
+#catalogo .no-results[hidden]{display:none}
+#catalogo .no-results strong{display:block;margin-bottom:8px}
+#catalogo .disclaimer{border-top:1px solid #e1e7e5;padding-top:23px;margin-top:48px;color:#677679;font-size:12px;line-height:1.7}
+#catalogo .disclaimer strong{color:var(--petrol)}
+@media(max-width:850px){#catalogo .catalog-layout{grid-template-columns:1fr;gap:16px}#catalogo .catalog-aside{display:none}#catalogo .catalog-results-header h3{font-size:26px}#catalogo{padding:0 23px}}
+@media(max-width:540px){#catalogo{padding:0 16px;margin-top:22px;margin-bottom:70px}#catalogo .section-heading{padding:9px 3px 24px}#catalogo .section-heading h2{font-size:37px}#catalogo .section-heading p{font-size:13px}#catalogo .search-wrap{padding:0 14px;min-height:54px}#catalogo #catalogSearch{font-size:13px;padding:13px 0}#catalogo .filter-row{gap:10px;margin:17px 0 13px}#catalogo .filter-label{width:100%}#catalogo .filter-buttons{gap:6px}#catalogo .filter-button{font-size:11px;min-height:39px;padding:8px 12px}#catalogo .quick-links{flex-wrap:nowrap;overflow-x:auto;padding-bottom:12px;margin-bottom:15px;scrollbar-width:thin;scroll-snap-type:x proximity}#catalogo .category-chip{flex-shrink:0;scroll-snap-align:start}#catalogo .catalog-results-header{align-items:flex-start;flex-direction:column;gap:5px}#catalogo .catalog-results-header #resultSummary{text-align:left}#catalogo .catalog-group{scroll-margin-top:18px;padding-top:14px;margin-bottom:34px}#catalogo .catalog-group-head{gap:10px;margin-bottom:14px}#catalogo .catalog-group-icon{width:39px;height:39px}#catalogo .catalog-group-icon .cat-icon{width:23px;height:23px}#catalogo .catalog-group-head h3{font-size:28px}#catalogo .lab-table-head{grid-template-columns:minmax(0,1fr) 53px 62px;padding:0 10px;font-size:8px}#catalogo .lab-row{grid-template-columns:minmax(0,1fr) 53px 62px;padding:12px 10px;min-height:53px}#catalogo .lab-indicators{grid-template-columns:53px 62px}#catalogo .lab-name{font-size:11.5px}}
+
+
+/* Sprint 4.1 - Solo ficha Ferritina; componente aislado del catálogo y del landing. */
+#catalogo .lab-row.wa-detail-trigger{cursor:pointer;transition:border-color .17s ease, box-shadow .17s ease}
+#catalogo .lab-row.wa-detail-trigger:hover{border-color:#9fbac3;box-shadow:0 5px 18px rgba(22,61,80,.075)}
+#catalogo .lab-row.wa-detail-trigger:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wa-detail-overlay[hidden]{display:none!important}
+.wa-detail-overlay{position:fixed;inset:0;z-index:2400;display:flex;justify-content:flex-end;isolation:isolate}
+.wa-detail-scrim{position:absolute;inset:0;background:rgba(24,32,32,.46);cursor:pointer}
+.wa-detail-panel{position:relative;display:flex;flex-direction:column;width:min(470px,100%);max-height:100dvh;height:100dvh;overflow:hidden;background:#FCFAF7;color:#263436;box-shadow:-15px 0 50px rgba(12,37,45,.18)}
+.wa-detail-top{flex-shrink:0;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 25px;border-bottom:1px solid #e7e4e0;background:#FCFAF7}
+.wa-detail-top-label{font-size:12px;color:#66716e;font-weight:550}
+.wa-detail-close{display:grid;place-items:center;flex-shrink:0;width:42px;height:42px;border-radius:50%;border:1px solid #dce3e1;color:#173f47;background:transparent;cursor:pointer;font-size:26px;line-height:1}
+.wa-detail-close:hover{background:#EDF2F2}
+.wa-detail-close:focus-visible,.wa-detail-cta:focus-visible{outline:3px solid var(--orange);outline-offset:3px}
+.wa-detail-scroll{flex:1;min-height:0;overflow-y:auto;overscroll-behavior:contain;scrollbar-gutter:stable;padding:25px 27px 32px;-webkit-overflow-scrolling:touch}
+.wa-detail-categories{font-size:10px;line-height:1.7;color:#7d746d;font-weight:700;letter-spacing:.13em;text-transform:uppercase;margin:0 0 10px}
+.wa-detail-title{font:400 clamp(38px,3.5vw,46px)/1.07 Newsreader,Georgia,'Times New Roman',serif;letter-spacing:-.025em;color:#202b2c;margin:0 0 6px}
+.wa-detail-unit{color:#827d79;font-size:12px;margin:0 0 33px}
+.wa-detail-section{margin:0 0 30px}
+.wa-detail-section h3{font:400 25px/1.15 Newsreader,Georgia,'Times New Roman',serif;color:#293332;letter-spacing:-.015em;margin:0 0 13px}
+.wa-detail-section p{font-size:14px;line-height:1.75;color:#3b4543;margin:0 0 13px}
+.wa-detail-section p strong{font-weight:700;color:#233638}
+.wa-detail-footer{flex-shrink:0;background:#FCFAF7;padding:15px 26px max(20px,env(safe-area-inset-bottom));border-top:1px solid #e7e4e0;box-shadow:0 -9px 20px rgba(252,250,247,.95)}
+.wa-detail-cta{display:flex;min-height:48px;gap:10px;align-items:center;justify-content:center;background:#163D50;border-radius:99px;padding:13px 18px;text-decoration:none;color:#fff;font-size:14px;font-weight:650;transition:background .15s}
+.wa-detail-cta:hover{background:#26566d}
+body.wa-detail-is-open{overflow:hidden}
+@media(max-width:600px){
+  .wa-detail-panel{width:100%;max-width:none}
+  .wa-detail-top{padding:11px 17px}
+  .wa-detail-scroll{padding:20px 22px 26px;scrollbar-gutter:auto}
+  .wa-detail-footer{padding:12px 17px max(16px,env(safe-area-inset-bottom))}
+  .wa-detail-title{font-size:39px}
+}
+@media(prefers-reduced-motion:reduce){#catalogo .lab-row.wa-detail-trigger,.wa-detail-cta{transition:none}}
+
+</style>
+<link rel="stylesheet" href="../shared/footer.css">
+<link rel="stylesheet" href="../shared/wellness-shell.css">
+</head>
+<body>
+<div class="page-shell" id="inicio">
+ <div class="topbar-wrap">
+ <header class="header wa-unified-header" aria-label="Encabezado principal">
+  <a class="logo" href="../index.html#inicio" aria-label="WELLNESS APP, ir al inicio"><span class="symbol" aria-hidden="true"></span><span class="logotext">WELLNESS APP</span></a>
+  <nav class="nav wa-primary-nav" aria-label="Menú principal"><a href="../index.html#como-funciona">Cómo funciona</a><a href="#inicio" class="wa-active" aria-current="page">Qué analizamos</a><a href="../index.html#areas-bienestar">Qué incluye</a><a href="../index.html#beneficios">Beneficios</a><a href="../index.html#planes">Planes</a></nav>
+  <div class="wa-header-actions"><a class="wa-login" href="../index.html?acceso=1#inicio">Iniciar sesión</a><a class="wa-join" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  <button class="wa-menu-toggle" type="button" aria-label="Abrir menú" aria-controls="waUnifiedMenu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
+</header>
+<div class="wa-menu-backdrop" id="waMenuBackdrop" hidden></div>
+<aside id="waUnifiedMenu" class="wa-unified-menu" role="dialog" aria-label="Menú de WELLNESS APP" aria-modal="true" hidden>
+ <div class="wa-menu-head"><h2>Menú</h2><button type="button" class="wa-menu-close" aria-label="Cerrar menú">×</button></div>
+ <p class="wa-menu-kicker">EXPLORA</p>
+ <nav class="wa-menu-links" aria-label="Navegación completa"><a href="../index.html#inicio">Inicio</a><a href="../index.html#como-funciona">Cómo funciona</a><a href="#inicio" aria-current="page">Qué analizamos</a><a href="../index.html#areas-bienestar">Qué incluye</a><a href="../index.html#beneficios">Beneficios</a><a href="../index.html#experiencia">Experiencia de la app</a><a href="../index.html#planes">Planes de bienestar</a></nav>
+ <div class="wa-menu-end"><a class="wa-drawer-login" href="../index.html?acceso=1#inicio">Iniciar sesión</a><a class="wa-menu-join" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+ <div class="wa-menu-caption">Tu experiencia de bienestar comienza aquí.</div>
+</aside>
+ 
+ </div>
+ <main>
+  <section aria-labelledby="pageTitle" id="que-analizamos">
+   <div class="intro"><p class="micro">EXPLORA TUS INDICADORES</p><h1 id="pageTitle">Qué analizamos.</h1><p>Cada resultado cuenta una parte de tu historia. Explora qué representa y conoce cómo puede aportar contexto a tu bienestar.</p></div>
+   <div class="hero-banner" id="indicadores-destacados">
+    <div class="hero-header">
+     <p class="hero-eyebrow">Más allá de los análisis habituales</p>
+     <h2>Lo que otros suelen ignorar.<br><em>Nosotros lo analizamos.</em></h2>
+     <p>Más de 115 indicadores de referencia para explorar, comprender sus resultados y observar su evolución a lo largo del tiempo.</p>
+    </div>
+    <div class="carousel-section" aria-label="Carrusel de indicadores destacados">
+     <div class="carousel-label-row"><p class="carousel-label">Indicadores destacados</p><button class="pause-button" id="pauseMotion" type="button" aria-pressed="false">Pausar movimiento <span aria-hidden="true">Ⅱ</span></button></div>
+     <button class="carousel-arrow prev" id="prevCard" type="button" aria-label="Ver indicadores anteriores"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m15 5-7 7 7 7"/></svg></button>
+     <div class="carousel-viewport" id="carouselViewport" role="region" aria-label="Indicadores en movimiento; usa los controles para navegar">
+      <div class="carousel-track" id="carouselTrack"><div class="carousel-set" id="carouselSet"><article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.6 0L12 6.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l8.8 8.8 8.8-8.8a5.4 5.4 0 0 0 0-7.6Z"/><path d="M2.7 13h4.5l2.2-3.6 3.1 7 2.2-3.4H21"/></svg></span><div class="indicator-copy"><h3>Apolipoproteína B</h3><p>Información sobre partículas relacionadas con el riesgo cardiovascular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3c12 0 6 18 18 18M21 3C9 3 15 21 3 21M5 7h14M5 17h14M8 12h8"/></svg></span><div class="indicator-copy"><h3>Lipoproteína(a)</h3><p>Partícula influida por la genética, relacionada con el riesgo cardiovascular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s-7.5 9-7.5 14a7.5 7.5 0 0 0 15 0C19.5 11 12 2 12 2Z"/></svg></span><div class="indicator-copy"><h3>Insulina en ayunas</h3><p>Aporta contexto sobre la regulación de la glucosa.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1L12 2Z"/></svg></span><div class="indicator-copy"><h3>PCR ultrasensible</h3><p>Indicador de inflamación que no determina su causa por sí solo.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="6" r="2.3"/><circle cx="18" cy="8" r="2.3"/><circle cx="12" cy="19" r="2.3"/><path d="m9 7 6.6.8M16.5 10.1 13 16.7M10.2 17.4 7.6 8.4"/></svg></span><div class="indicator-copy"><h3>Homocisteína</h3><p>Se interpreta junto con otros resultados y factores personales.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-10 5 10 5 10-5-10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></svg></span><div class="indicator-copy"><h3>Fibrinógeno</h3><p>Proteína relacionada con la coagulación sanguínea.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16l4-5 4 3 5-8"/><path d="M16 6h3v3"/></svg></span><div class="indicator-copy"><h3>Relación triglicéridos/HDL</h3><p>Indicador calculado a partir de dos resultados del perfil lipídico.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><div class="indicator-copy"><h3>HOMA-IR</h3><p>Índice calculado utilizado en investigación metabólica.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7c1.5 2 2.8 1 3-1l2-3 3 2-1 5 4 2a3 3 0 0 1 1 4l-2 4H6a4 4 0 0 1-4-4v-5l4-4 2 0Z"/></svg></span><div class="indicator-copy"><h3>Creatina quinasa</h3><p>Enzima que puede variar con la actividad y el daño muscular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg></span><div class="indicator-copy"><h3>Cortisol total</h3><p>Hormona cuya interpretación depende del momento de la medición.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 3 10 0 5 9-5 9H7l-5-9 5-9Z"/><path d="m8 12 3 3 5-6"/></svg></span><div class="indicator-copy"><h3>Magnesio</h3><p>Mineral importante para diversas funciones del organismo.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(-60 12 12)"/></svg></span><div class="indicator-copy"><h3>Ácido úrico</h3><p>Resultado relacionado con el metabolismo de las purinas.</p></div></article></div><div class="carousel-set" aria-hidden="true" inert><article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.8 5.6a5.4 5.4 0 0 0-7.6 0L12 6.8l-1.2-1.2a5.4 5.4 0 0 0-7.6 7.6l8.8 8.8 8.8-8.8a5.4 5.4 0 0 0 0-7.6Z"/><path d="M2.7 13h4.5l2.2-3.6 3.1 7 2.2-3.4H21"/></svg></span><div class="indicator-copy"><h3>Apolipoproteína B</h3><p>Información sobre partículas relacionadas con el riesgo cardiovascular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 3c12 0 6 18 18 18M21 3C9 3 15 21 3 21M5 7h14M5 17h14M8 12h8"/></svg></span><div class="indicator-copy"><h3>Lipoproteína(a)</h3><p>Partícula influida por la genética, relacionada con el riesgo cardiovascular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s-7.5 9-7.5 14a7.5 7.5 0 0 0 15 0C19.5 11 12 2 12 2Z"/></svg></span><div class="indicator-copy"><h3>Insulina en ayunas</h3><p>Aporta contexto sobre la regulación de la glucosa.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 2 2.1 7.9L22 12l-7.9 2.1L12 22l-2.1-7.9L2 12l7.9-2.1L12 2Z"/></svg></span><div class="indicator-copy"><h3>PCR ultrasensible</h3><p>Indicador de inflamación que no determina su causa por sí solo.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="7" cy="6" r="2.3"/><circle cx="18" cy="8" r="2.3"/><circle cx="12" cy="19" r="2.3"/><path d="m9 7 6.6.8M16.5 10.1 13 16.7M10.2 17.4 7.6 8.4"/></svg></span><div class="indicator-copy"><h3>Homocisteína</h3><p>Se interpreta junto con otros resultados y factores personales.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 3-10 5 10 5 10-5-10-5Zm-10 9 10 5 10-5M2 16l10 5 10-5"/></svg></span><div class="indicator-copy"><h3>Fibrinógeno</h3><p>Proteína relacionada con la coagulación sanguínea.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 20h18M6 16l4-5 4 3 5-8"/><path d="M16 6h3v3"/></svg></span><div class="indicator-copy"><h3>Relación triglicéridos/HDL</h3><p>Indicador calculado a partir de dos resultados del perfil lipídico.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><div class="indicator-copy"><h3>HOMA-IR</h3><p>Índice calculado utilizado en investigación metabólica.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 7c1.5 2 2.8 1 3-1l2-3 3 2-1 5 4 2a3 3 0 0 1 1 4l-2 4H6a4 4 0 0 1-4-4v-5l4-4 2 0Z"/></svg></span><div class="indicator-copy"><h3>Creatina quinasa</h3><p>Enzima que puede variar con la actividad y el daño muscular.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6l4 2"/></svg></span><div class="indicator-copy"><h3>Cortisol total</h3><p>Hormona cuya interpretación depende del momento de la medición.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m7 3 10 0 5 9-5 9H7l-5-9 5-9Z"/><path d="m8 12 3 3 5-6"/></svg></span><div class="indicator-copy"><h3>Magnesio</h3><p>Mineral importante para diversas funciones del organismo.</p></div></article>
+<article class="indicator-card"><span class="indicator-icon-wrap"><svg class="indicator-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.55" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2"/><ellipse cx="12" cy="12" rx="10" ry="4.2"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.2" transform="rotate(-60 12 12)"/></svg></span><div class="indicator-copy"><h3>Ácido úrico</h3><p>Resultado relacionado con el metabolismo de las purinas.</p></div></article></div></div>
+     </div>
+     <button class="carousel-arrow next" id="nextCard" type="button" aria-label="Ver siguientes indicadores"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="m9 5 7 7-7 7"/></svg></button>
+    </div>
+    <div class="bottom-note"><span><strong>Esta es una demostración educativa.</strong> Los resultados no sustituyen una evaluación médica.</span><span>Referencia de catálogo: Básico 75+ · Completo 115+</span></div>
+   </div>
+  </section>
+
+<section id="catalogo" aria-labelledby="catalogTitle">
+<div class="section-heading"><p class="eyebrow">CATÁLOGO EDUCATIVO</p><h2 id="catalogTitle">Explora por categoría.</h2><p>Encuentra tus indicadores por nombre, consulta en qué panel aparecen y recorre las once áreas de salud.</p></div>
+<div class="search-wrap" role="search"><svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.5"/><path d="m16 16 5 5"/></svg><input id="catalogSearch" type="search" placeholder="Busca un indicador: glucosa, ferritina, colesterol…" autocomplete="off" aria-label="Buscar indicador en el catálogo"><button id="clearSearch" type="button" hidden>Limpiar</button></div>
+<div class="filter-row"><span class="filter-label">VER POR PLAN</span><div class="filter-buttons" role="group" aria-label="Filtrar por plan"><button type="button" class="filter-button" data-filter="all" aria-pressed="true">Todos</button><button type="button" class="filter-button" data-filter="basic" aria-pressed="false">Básico 75+</button><button type="button" class="filter-button" data-filter="complete" aria-pressed="false">Completo 115+</button></div></div>
+
+<h3 class="quick-title">SALTAR A UNA CATEGORÍA</h3><nav class="quick-links" aria-label="Categorías de salud"><a class="category-chip" href="#cat-01" data-target="cat-01">Sangre</a>
+<a class="category-chip" href="#cat-02" data-target="cat-02">Salud cerebral</a>
+<a class="category-chip" href="#cat-03" data-target="cat-03">Salud digestiva</a>
+<a class="category-chip" href="#cat-04" data-target="cat-04">Corazón y circulación</a>
+<a class="category-chip" href="#cat-05" data-target="cat-05">Hormonas</a>
+<a class="category-chip" href="#cat-06" data-target="cat-06">Inflamación</a>
+<a class="category-chip" href="#cat-07" data-target="cat-07">Riñones y salud urinaria</a>
+<a class="category-chip" href="#cat-08" data-target="cat-08">Metabolismo</a>
+<a class="category-chip" href="#cat-09" data-target="cat-09">Vitaminas y nutrientes</a>
+<a class="category-chip" href="#cat-10" data-target="cat-10">Estrés y energía</a>
+<a class="category-chip" href="#cat-11" data-target="cat-11">Toxinas</a></nav>
+<div class="catalog-layout"><aside class="catalog-aside" aria-label="Menú lateral de categorías"><div class="aside-kicker">CATEGORÍAS</div><a class="category-side-link" href="#cat-01" data-target="cat-01"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s-7 9-7 13a7 7 0 0 0 14 0C19 11 12 2 12 2Z"/></svg><span>Sangre</span><small>14</small></a>
+<a class="category-side-link" href="#cat-02" data-target="cat-02"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a4 4 0 0 0-7 0 4 4 0 0 0-1 6 4 4 0 0 0 1 7 4 4 0 0 0 7 1V5Zm0 0a4 4 0 0 1 7 0 4 4 0 0 1 1 6 4 4 0 0 1-1 7 4 4 0 0 1-7 1V5Z"/><path d="M8 9l-2 2m10-2 2 2M8 15l-2-1m10 1 2-1"/></svg><span>Salud cerebral</span><small>10</small></a>
+<a class="category-side-link" href="#cat-03" data-target="cat-03"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3v4a5 5 0 0 0 4 5h2a3 3 0 0 1 0 6H9a3 3 0 0 0 0 5"/><path d="M15 2v5M6 13h7m-7 4h9"/></svg><span>Salud digestiva</span><small>4</small></a>
+<a class="category-side-link" href="#cat-04" data-target="cat-04"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6a5 5 0 0 0-7-1l-1 1-1-1a5 5 0 0 0-7 7l8 8 8-8a5 5 0 0 0 0-6Z"/><path d="M2 12h5l2-3 3 7 2-4h8"/></svg><span>Corazón y circulación</span><small>24</small></a>
+<a class="category-side-link" href="#cat-05" data-target="cat-05"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="12" cy="19" r="2"/><path d="m8 7 8 1m0 2-3 7M10 17 7 9"/></svg><span>Hormonas</span><small>12</small></a>
+<a class="category-side-link" href="#cat-06" data-target="cat-06"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c-1 5-6 8-6 13a6 6 0 0 0 12 0c0-3-2-5-2-8-1 3-3 4-4 5 1-3 1-6 0-10Z"/></svg><span>Inflamación</span><small>20</small></a>
+<a class="category-side-link" href="#cat-07" data-target="cat-07"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4C4 3 2 8 3 12c1 6 6 7 9 3V9C12 6 10 4 8 4Zm8 0c4-1 6 4 5 8-1 6-6 7-9 3V9c0-3 2-5 4-5Z"/><path d="M10 14v7m4-7v7"/></svg><span>Riñones y salud urinaria</span><small>39</small></a>
+<a class="category-side-link" href="#cat-08" data-target="cat-08"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l4 6-4 12H8L4 9l4-6Z"/><path d="M4 9h16M8 21l4-12 4 12"/></svg><span>Metabolismo</span><small>21</small></a>
+<a class="category-side-link" href="#cat-09" data-target="cat-09"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3C9 4 4 8 4 16a5 5 0 0 0 5 5c8 0 12-9 12-18Z"/><path d="M5 20c2-5 7-10 13-12"/></svg><span>Vitaminas y nutrientes</span><small>7</small></a>
+<a class="category-side-link" href="#cat-10" data-target="cat-10"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></svg><span>Estrés y energía</span><small>7</small></a>
+<a class="category-side-link" href="#cat-11" data-target="cat-11"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6M10 2v8l-7 10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2l-7-10V2M7 16h10"/></svg><span>Toxinas</span><small>5</small></a></aside>
+<div class="catalog-main"><div class="catalog-results-header"><h3>Indicadores por área</h3><span id="resultSummary" role="status" aria-live="polite">163 apariciones en 11 categorías</span></div>
+<div id="noResults" class="no-results" hidden><strong>No encontramos resultados.</strong>Prueba con otro nombre o selecciona «Todos».</div>
+<section class="catalog-group" id="cat-01" data-original="14" aria-label="Sangre">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2s-7 9-7 13a7 7 0 0 0 14 0C19 11 12 2 12 2Z"/></svg></span><div><h3>Sangre <span class="category-count">(14)</span></h3><p>Resultados de las células sanguíneas y del hierro.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="ferritina ferritin"><span class="lab-name">Ferritina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="folato folate"><span class="lab-name">Folato</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="hematocrito hematocrit"><span class="lab-name">Hematocrito</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="hemoglobina hemoglobin"><span class="lab-name">Hemoglobina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="hierro iron"><span class="lab-name">Hierro</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="saturacion de hierro (%) iron % saturation"><span class="lab-name">Saturación de hierro (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="hemoglobina corpuscular media (hcm) mean corpuscular hemoglobin"><span class="lab-name">Hemoglobina corpuscular media (HCM)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="concentracion de hcm (chcm) mean corpuscular hemoglobin concentration"><span class="lab-name">Concentración de HCM (CHCM)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="volumen corpuscular medio (vcm) mean corpuscular volume"><span class="lab-name">Volumen corpuscular medio (VCM)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="volumen plaquetario medio (vpm) mean platelet volume"><span class="lab-name">Volumen plaquetario medio (VPM)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="recuento de plaquetas platelet count"><span class="lab-name">Recuento de plaquetas</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="recuento de globulos rojos red blood cell count"><span class="lab-name">Recuento de glóbulos rojos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="amplitud de distribucion eritrocitaria (ade) red cell distribution width"><span class="lab-name">Amplitud de distribución eritrocitaria (ADE)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="vitamina b12 vitamin b12"><span class="lab-name">Vitamina B12</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-02" data-original="10" aria-label="Salud cerebral">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a4 4 0 0 0-7 0 4 4 0 0 0-1 6 4 4 0 0 0 1 7 4 4 0 0 0 7 1V5Zm0 0a4 4 0 0 1 7 0 4 4 0 0 1 1 6 4 4 0 0 1-1 7 4 4 0 0 1-7 1V5Z"/><path d="M8 9l-2 2m10-2 2 2M8 15l-2-1m10 1 2-1"/></svg></span><div><h3>Salud cerebral <span class="category-count">(10)</span></h3><p>Indicadores que pueden aportar contexto a la salud cerebral.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="folato folate"><span class="lab-name">Folato</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="vitamina b12 vitamin b12"><span class="lab-name">Vitamina B12</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cortisol total cortisol (total)"><span class="lab-name">Cortisol total</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="estradiol (e2) estradiol (e2)"><span class="lab-name">Estradiol (E2)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="t3 libre free t3"><span class="lab-name">T3 libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="t4 libre free t4"><span class="lab-name">T4 libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="testosterona libre free testosterone"><span class="lab-name">Testosterona libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="homocisteina homocysteine"><span class="lab-name">Homocisteína</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="hormona estimulante de la tiroides (tsh) thyroid-stimulating hormone"><span class="lab-name">Hormona estimulante de la tiroides (TSH)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="vitamina d vitamin d"><span class="lab-name">Vitamina D</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-03" data-original="4" aria-label="Salud digestiva">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 3v4a5 5 0 0 0 4 5h2a3 3 0 0 1 0 6H9a3 3 0 0 0 0 5"/><path d="M15 2v5M6 13h7m-7 4h9"/></svg></span><div><h3>Salud digestiva <span class="category-count">(4)</span></h3><p>Resultados vinculados con nutrientes y procesos digestivos.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="folato folate"><span class="lab-name">Folato</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="vitamina b12 vitamin b12"><span class="lab-name">Vitamina B12</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="vitamina d vitamin d"><span class="lab-name">Vitamina D</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="proteina c reactiva ultrasensible (pcr-us) high-sensitivity c-reactive protein"><span class="lab-name">Proteína C reactiva ultrasensible (PCR-us)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-04" data-original="24" aria-label="Corazón y circulación">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6a5 5 0 0 0-7-1l-1 1-1-1a5 5 0 0 0-7 7l8 8 8-8a5 5 0 0 0 0-6Z"/><path d="M2 12h5l2-3 3 7 2-4h8"/></svg></span><div><h3>Corazón y circulación <span class="category-count">(24)</span></h3><p>Información relacionada con el corazón y los vasos sanguíneos.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="apolipoproteina b (apob) apolipoprotein b"><span class="lab-name">Apolipoproteína B (ApoB)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice aterogenico del plasma atherogenic index of plasma"><span class="lab-name">Índice aterogénico del plasma</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="fibrinogeno fibrinogen"><span class="lab-name">Fibrinógeno</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="colesterol hdl hdl cholesterol"><span class="lab-name">Colesterol HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="particulas hdl grandes hdl large"><span class="lab-name">Partículas HDL grandes</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion ldl / apob ldl / apob ratio"><span class="lab-name">Relación LDL / ApoB</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion ldl / hdl ldl / hdl ratio"><span class="lab-name">Relación LDL / HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="colesterol ldl ldl cholesterol"><span class="lab-name">Colesterol LDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="particulas ldl medianas ldl medium"><span class="lab-name">Partículas LDL medianas</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="numero de particulas ldl ldl particle number"><span class="lab-name">Número de partículas LDL</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="patron de particulas ldl ldl pattern"><span class="lab-name">Patrón de partículas LDL</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="tamano maximo de particulas ldl ldl peak size"><span class="lab-name">Tamaño máximo de partículas LDL</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="particulas ldl pequenas ldl small"><span class="lab-name">Partículas LDL pequeñas</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="lipoproteina(a) [lp(a)] lipoprotein(a)"><span class="lab-name">Lipoproteína(a) [Lp(a)]</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="colesterol no hdl non-hdl cholesterol"><span class="lab-name">Colesterol no HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="colesterol remanente remnant cholesterol"><span class="lab-name">Colesterol remanente</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="colesterol total total cholesterol"><span class="lab-name">Colesterol total</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion colesterol total / hdl total cholesterol / hdl ratio"><span class="lab-name">Relación colesterol total / HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion trigliceridos / hdl triglyceride / hdl ratio"><span class="lab-name">Relación triglicéridos / HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="trigliceridos triglycerides"><span class="lab-name">Triglicéridos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="acido urico uric acid"><span class="lab-name">Ácido úrico</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion acido urico / hdl uric acid / hdl ratio"><span class="lab-name">Relación ácido úrico / HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="homocisteina homocysteine"><span class="lab-name">Homocisteína</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="proteina c reactiva ultrasensible (pcr-us) high-sensitivity c-reactive protein"><span class="lab-name">Proteína C reactiva ultrasensible (PCR-us)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-05" data-original="12" aria-label="Hormonas">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="7" r="2"/><circle cx="18" cy="8" r="2"/><circle cx="12" cy="19" r="2"/><path d="m8 7 8 1m0 2-3 7M10 17 7 9"/></svg></span><div><h3>Hormonas <span class="category-count">(12)</span></h3><p>Hormonas y resultados vinculados con su regulación.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="0" data-search="hormona foliculoestimulante (fsh) follicle stimulating hormone"><span class="lab-name">Hormona foliculoestimulante (FSH)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="indice de androgenos libres free androgen index"><span class="lab-name">Índice de andrógenos libres</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="hormona luteinizante (lh) luteinizing hormone"><span class="lab-name">Hormona luteinizante (LH)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="globulina transportadora de hormonas sexuales (shbg) sex hormone binding globulin"><span class="lab-name">Globulina transportadora de hormonas sexuales (SHBG)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="testosterona total total testosterone"><span class="lab-name">Testosterona total</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cortisol total cortisol (total)"><span class="lab-name">Cortisol total</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="estradiol (e2) estradiol (e2)"><span class="lab-name">Estradiol (E2)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="t3 libre free t3"><span class="lab-name">T3 libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="t4 libre free t4"><span class="lab-name">T4 libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="testosterona libre free testosterone"><span class="lab-name">Testosterona libre</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="hormona estimulante de la tiroides (tsh) thyroid-stimulating hormone"><span class="lab-name">Hormona estimulante de la tiroides (TSH)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="sulfato de dehidroepiandrosterona (dhea-s) dehydroepiandrosterone sulfate"><span class="lab-name">Sulfato de dehidroepiandrosterona (DHEA-S)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-06" data-original="20" aria-label="Inflamación">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c-1 5-6 8-6 13a6 6 0 0 0 12 0c0-3-2-5-2-8-1 3-3 4-4 5 1-3 1-6 0-10Z"/></svg></span><div><h3>Inflamación <span class="category-count">(20)</span></h3><p>Indicadores que pueden variar en procesos inflamatorios.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="ferritina ferritin"><span class="lab-name">Ferritina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="basofilos (%) basophils (%)"><span class="lab-name">Basófilos (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="basofilos (recuento absoluto) basophils (absolute)"><span class="lab-name">Basófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion pcr / albumina crp / albumin ratio"><span class="lab-name">Relación PCR / albúmina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="eosinofilos (%) eosinophils (%)"><span class="lab-name">Eosinófilos (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="eosinofilos (recuento absoluto) eosinophils (absolute)"><span class="lab-name">Eosinófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion linfocitos / monocitos lymphocyte-to-monocyte ratio"><span class="lab-name">Relación linfocitos / monocitos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="linfocitos (%) lymphocytes (%)"><span class="lab-name">Linfocitos (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="linfocitos (recuento absoluto) lymphocytes (absolute)"><span class="lab-name">Linfocitos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion monocitos / hdl monocyte-to-hdl ratio"><span class="lab-name">Relación monocitos / HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="monocitos (%) monocytes (%)"><span class="lab-name">Monocitos (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="monocitos (recuento absoluto) monocytes (absolute)"><span class="lab-name">Monocitos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion neutrofilos / linfocitos neutrophil-to-lymphocyte ratio"><span class="lab-name">Relación neutrófilos / linfocitos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="neutrofilos (%) neutrophils (%)"><span class="lab-name">Neutrófilos (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="neutrofilos (recuento absoluto) neutrophils (absolute)"><span class="lab-name">Neutrófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion plaquetas / linfocitos platelet-to-lymphocyte ratio"><span class="lab-name">Relación plaquetas / linfocitos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice de inflamacion inmunitaria sistemica (sii) systemic immune-inflammation index"><span class="lab-name">Índice de inflamación inmunitaria sistémica (SII)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice de respuesta inflamatoria sistemica (siri) systemic inflammation response index"><span class="lab-name">Índice de respuesta inflamatoria sistémica (SIRI)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="recuento de globulos blancos white blood cell count"><span class="lab-name">Recuento de glóbulos blancos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="proteina c reactiva ultrasensible (pcr-us) high-sensitivity c-reactive protein"><span class="lab-name">Proteína C reactiva ultrasensible (PCR-us)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-07" data-original="39" aria-label="Riñones y salud urinaria">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 4C4 3 2 8 3 12c1 6 6 7 9 3V9C12 6 10 4 8 4Zm8 0c4-1 6 4 5 8-1 6-6 7-9 3V9c0-3 2-5 4-5Z"/><path d="M10 14v7m4-7v7"/></svg></span><div><h3>Riñones y salud urinaria <span class="category-count">(39)</span></h3><p>Resultados de función renal y análisis de orina.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="calcio corregido por albumina albumin-corrected calcium"><span class="lab-name">Calcio corregido por albúmina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion nitrogeno ureico / creatinina bun / creatinine ratio"><span class="lab-name">Relación nitrógeno ureico / creatinina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="nitrogeno ureico en sangre (bun) blood urea nitrogen"><span class="lab-name">Nitrógeno ureico en sangre (BUN)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="calcio calcium"><span class="lab-name">Calcio</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="dioxido de carbono (co₂) carbon dioxide (co2)"><span class="lab-name">Dióxido de carbono (CO₂)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="cloruro chloride"><span class="lab-name">Cloruro</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="creatinina creatinine"><span class="lab-name">Creatinina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="fosfato phosphate"><span class="lab-name">Fosfato</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="potasio potassium"><span class="lab-name">Potasio</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="sodio sodium"><span class="lab-name">Sodio</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="proteinas totales total protein"><span class="lab-name">Proteínas totales</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="sedimento amorfo en orina urine amorphous sediment"><span class="lab-name">Sedimento amorfo en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="aspecto de la orina urine appearance"><span class="lab-name">Aspecto de la orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="bacterias en orina urine bacteria"><span class="lab-name">Bacterias en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="bilirrubina en orina urine bilirubin"><span class="lab-name">Bilirrubina en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cristales de oxalato de calcio en orina urine calcium oxalate crystals"><span class="lab-name">Cristales de oxalato de calcio en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cilindros urinarios (otros) urine casts (other)"><span class="lab-name">Cilindros urinarios (otros)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="color de la orina urine color"><span class="lab-name">Color de la orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cristales en orina (otros) urine crystals (other)"><span class="lab-name">Cristales en orina (otros)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="glucosa en orina urine glucose"><span class="lab-name">Glucosa en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cilindros granulosos en orina urine granular casts"><span class="lab-name">Cilindros granulosos en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cilindros hialinos en orina urine hyaline casts"><span class="lab-name">Cilindros hialinos en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cetonas en orina urine ketones"><span class="lab-name">Cetonas en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="esterasa leucocitaria en orina urine leukocyte esterase"><span class="lab-name">Esterasa leucocitaria en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="nitritos en orina urine nitrite"><span class="lab-name">Nitritos en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="sangre oculta en orina urine occult blood"><span class="lab-name">Sangre oculta en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="proteinas en orina (tira reactiva) urine protein (dipstick)"><span class="lab-name">Proteínas en orina (tira reactiva)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="globulos rojos en orina urine rbc"><span class="lab-name">Glóbulos rojos en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="celulas epiteliales renales en orina urine renal epithelial cells"><span class="lab-name">Células epiteliales renales en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="densidad de la orina urine specific gravity"><span class="lab-name">Densidad de la orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="celulas epiteliales escamosas en orina urine squamous epithelial cells"><span class="lab-name">Células epiteliales escamosas en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="celulas epiteliales transicionales en orina urine transitional epithelial cells"><span class="lab-name">Células epiteliales transicionales en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cristales de fosfato triple en orina urine triple phosphate crystals"><span class="lab-name">Cristales de fosfato triple en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cristales de acido urico en orina urine uric acid crystals"><span class="lab-name">Cristales de ácido úrico en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="globulos blancos en orina urine wbc"><span class="lab-name">Glóbulos blancos en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="levaduras en orina urine yeast"><span class="lab-name">Levaduras en orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="ph de la orina urine ph"><span class="lab-name">pH de la orina</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="filtracion glomerular estimada (egfr) egfr"><span class="lab-name">Filtración glomerular estimada (eGFR)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="magnesio magnesium"><span class="lab-name">Magnesio</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-08" data-original="21" aria-label="Metabolismo">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 3h8l4 6-4 12H8L4 9l4-6Z"/><path d="M4 9h16M8 21l4-12 4 12"/></svg></span><div><h3>Metabolismo <span class="category-count">(21)</span></h3><p>Indicadores relacionados con el uso de energía y la glucosa.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="colesterol hdl hdl cholesterol"><span class="lab-name">Colesterol HDL</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="trigliceridos triglycerides"><span class="lab-name">Triglicéridos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="acido urico uric acid"><span class="lab-name">Ácido úrico</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion ast / alt ast / alt ratio"><span class="lab-name">Relación AST / ALT</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="alanina aminotransferasa (alt) alanine aminotransferase"><span class="lab-name">Alanina aminotransferasa (ALT)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="albumina albumin"><span class="lab-name">Albúmina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="relacion albumina / globulina albumin / globulin ratio"><span class="lab-name">Relación albúmina / globulina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="fosfatasa alcalina alkaline phosphatase"><span class="lab-name">Fosfatasa alcalina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="aspartato aminotransferasa (ast) aspartate aminotransferase"><span class="lab-name">Aspartato aminotransferasa (AST)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="edad biologica estimada biological age"><span class="lab-name">Edad biológica estimada</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="glucosa promedio estimada estimated average glucose"><span class="lab-name">Glucosa promedio estimada</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice fib-4 fib-4"><span class="lab-name">Índice FIB-4</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="glucosa en ayunas fasting glucose"><span class="lab-name">Glucosa en ayunas</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="insulina en ayunas fasting insulin"><span class="lab-name">Insulina en ayunas</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="gamma-glutamil transferasa (ggt) gamma-glutamyl transferase"><span class="lab-name">Gamma-glutamil transferasa (GGT)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="globulinas totales globulin (total)"><span class="lab-name">Globulinas totales</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice homa-ir homa-ir"><span class="lab-name">Índice HOMA-IR</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="hemoglobina glucosilada (hba1c) hemoglobin a1c"><span class="lab-name">Hemoglobina glucosilada (HbA1c)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice quicki quicki"><span class="lab-name">Índice QUICKI</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="bilirrubina total total bilirubin"><span class="lab-name">Bilirrubina total</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="indice tyg tyg index"><span class="lab-name">Índice TyG</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-09" data-original="7" aria-label="Vitaminas y nutrientes">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 3C9 4 4 8 4 16a5 5 0 0 0 5 5c8 0 12-9 12-18Z"/><path d="M5 20c2-5 7-10 13-12"/></svg></span><div><h3>Vitaminas y nutrientes <span class="category-count">(7)</span></h3><p>Vitaminas y componentes asociados con la nutrición.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="ferritina ferritin"><span class="lab-name">Ferritina</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="folato folate"><span class="lab-name">Folato</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="saturacion de hierro (%) iron % saturation"><span class="lab-name">Saturación de hierro (%)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="vitamina b12 vitamin b12"><span class="lab-name">Vitamina B12</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="homocisteina homocysteine"><span class="lab-name">Homocisteína</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="vitamina d vitamin d"><span class="lab-name">Vitamina D</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="capacidad total de fijacion del hierro (tibc) total iron binding capacity"><span class="lab-name">Capacidad total de fijación del hierro (TIBC)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-10" data-original="7" aria-label="Estrés y energía">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 2-9 11h7l-1 9 10-12h-7l0-8Z"/></svg></span><div><h3>Estrés y energía <span class="category-count">(7)</span></h3><p>Resultados que pueden aportar contexto a energía y respuesta al estrés.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="relacion neutrofilos / linfocitos neutrophil-to-lymphocyte ratio"><span class="lab-name">Relación neutrófilos / linfocitos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="cortisol total cortisol (total)"><span class="lab-name">Cortisol total</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="hormona estimulante de la tiroides (tsh) thyroid-stimulating hormone"><span class="lab-name">Hormona estimulante de la tiroides (TSH)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="proteina c reactiva ultrasensible (pcr-us) high-sensitivity c-reactive protein"><span class="lab-name">Proteína C reactiva ultrasensible (PCR-us)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="creatina quinasa (ck) creatine kinase"><span class="lab-name">Creatina quinasa (CK)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="0" data-search="sulfato de dehidroepiandrosterona (dhea-s) dehydroepiandrosterone sulfate"><span class="lab-name">Sulfato de dehidroepiandrosterona (DHEA-S)</span><span class="lab-indicators"><span class="lab-dot no" aria-label="No incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="magnesio magnesium"><span class="lab-name">Magnesio</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+<section class="catalog-group" id="cat-11" data-original="5" aria-label="Toxinas">
+<div class="catalog-group-head"><span class="catalog-group-icon"><svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 2h6M10 2v8l-7 10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2l-7-10V2M7 16h10"/></svg></span><div><h3>Toxinas <span class="category-count">(5)</span></h3><p>Categoría de Octo: estos componentes del hemograma no miden toxinas directamente.</p></div></div>
+<div class="lab-table-head"><span>Indicador</span><span>PLAN BÁSICO</span><span>PLAN COMPLETO</span></div>
+<ul class="lab-list"><li class="lab-row" data-basic="1" data-search="basofilos (recuento absoluto) basophils (absolute)"><span class="lab-name">Basófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="eosinofilos (recuento absoluto) eosinophils (absolute)"><span class="lab-name">Eosinófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="linfocitos (recuento absoluto) lymphocytes (absolute)"><span class="lab-name">Linfocitos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="neutrofilos (recuento absoluto) neutrophils (absolute)"><span class="lab-name">Neutrófilos (recuento absoluto)</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li>
+<li class="lab-row" data-basic="1" data-search="recuento de globulos blancos white blood cell count"><span class="lab-name">Recuento de glóbulos blancos</span><span class="lab-indicators"><span class="lab-dot yes" aria-label="Incluido en Básico"></span><span class="lab-dot yes" aria-label="Incluido en Completo"></span></span></li></ul></section>
+</div></div>
+<div class="disclaimer"><strong>Nota de metodología:</strong> un mismo indicador puede aparecer en varias categorías, por lo que los totales por área no se suman para calcular indicadores únicos. El catálogo incluye mediciones directas, componentes de orina e índices derivados. Octo agrupa bajo «Toxinas» resultados del hemograma que no son pruebas directas de exposición a toxinas. Ninguna explicación supone diagnóstico o tratamiento.</div>
+</section>
+
+
+  
+ </main>
+ <footer class="wf-footer" id="footer-wellness">
+<section class="wf-hero" aria-label="Descubre WELLNESS APP">
+  <div class="wf-hero-content">
+    <div class="wf-brand"><span class="wf-brand-star" aria-hidden="true">✳</span><span>WELLNESS APP</span></div>
+    <h2>Haz de tu bienestar<br>una <em>experiencia continua.</em></h2>
+    <p class="wf-hero-desc">Convierte tus datos, hábitos y biomarcadores<br>en una vida más larga, plena y con más energía.</p>
+    <a class="wf-primary" href="../index.html#inicio">Explorar WELLNESS APP <span aria-hidden="true">→</span></a>
+  </div>
+</section>
+<div class="wf-content">
+  <div class="wf-col wf-news">
+    <h3>Suscríbete a nuestro<br>newsletter</h3>
+    <p>Recibe novedades, guías y contenidos<br>sobre biomarcadores, hábitos y bienestar.</p>
+    <form class="wf-form" id="wfNewsletter"><input type="email" aria-label="Tu correo electrónico" placeholder="Tu correo electrónico" required autocomplete="email"><button type="submit" aria-label="Solicitar suscripción">→</button></form>
+    <p id="wfNewsletterMessage" class="wf-smallnote" aria-live="polite"></p>
+    <div class="wf-store-label">Disponible próximamente</div>
+    <div class="wf-storelist">
+     <span class="wf-store" title="Próximamente en App Store"><img class="official-store-badge" src="data:image/png;base64,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" alt="Available on the App Store"></span>
+     <span class="wf-store" title="Próximamente en Google Play"><img class="official-store-badge" src="data:image/png;base64,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" alt="Get it on Google Play"></span>
+    </div>
+    <div class="wf-ai-label">Pregunta a las IA sobre WELLNESS APP</div>
+    <div class="wf-ai-list" aria-label="Consultar servicios de IA externos">
+      <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir ChatGPT" title="ChatGPT" style="color:#0a977e;font-size:17px">◎</a>
+      <a href="https://claude.ai/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Claude" title="Claude" style="color:#db7647;font-size:23px">✳</a>
+      <a href="https://gemini.google.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Gemini" title="Gemini" style="color:#656dd7;font-size:23px">✦</a>
+      <a href="https://www.perplexity.ai/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Perplexity" title="Perplexity" style="color:#36aaa9;font-size:16px">◇</a>
+      <a href="https://grok.com/" target="_blank" rel="noopener noreferrer" aria-label="Abrir Grok" title="Grok" style="color:#111;font-size:15px">𝕏</a>
+    </div>
+  </div>
+  <nav class="wf-col" aria-label="Secciones WELLNESS APP"><h3>WELLNESS APP</h3><ul>
+    <li><a href="../index.html#inicio">Inicio</a></li><li><a href="../index.html#como-funciona">Cómo funciona</a></li><li><a href="#inicio">Qué analizamos</a></li><li><a href="../index.html#areas-bienestar">Qué incluye</a></li><li><a href="../index.html#beneficios">Beneficios</a></li><li><a href="../index.html#experiencia">Experiencia de la app</a></li><li><a href="../index.html#planes">Planes de bienestar</a></li>
+  </ul></nav>
+  <nav class="wf-col" aria-label="Recursos"><h3>RECURSOS</h3><ul>
+    <li><span class="wf-not-ready" title="Página en desarrollo">Preguntas frecuentes</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Historias</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Protocolos</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Portal para profesionales</span></li>
+  </ul></nav>
+  <nav class="wf-col" aria-label="Investigación y Ciencia"><h3>INVESTIGACIÓN Y CIENCIA</h3><ul>
+    <li><span class="wf-not-ready" title="Página en desarrollo">Publicaciones científicas y documentos técnicos</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Consejo Médico-Científico</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Biomarcadores y metodología</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Edad biológica · PhenoAge</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Longevidad y prevención</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Colabora con nuestra investigación</span></li>
+  </ul></nav>
+  <div class="wf-col wf-contact"><h3>CONTACTO</h3><ul>
+    <li><span class="wf-not-ready" title="Sistema de reservas próximamente">Agenda una llamada de descubrimiento</span></li>
+    <li>Escríbenos:<br><a href="mailto:hello@wellnessapp.com">hello@wellnessapp.com</a></li>
+    <li>WhatsApp:<br><a href="https://wa.me/584222122121" target="_blank" rel="noopener noreferrer">+58 422 2122121</a></li>
+  </ul><div class="wf-social" aria-label="Redes sociales (referencias)"><span class="wf-social-brand" title="Instagram" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.3" r="1" fill="currentColor" stroke="none"/></svg></span><span class="wf-social-brand" title="LinkedIn" aria-label="LinkedIn"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M8 10v8M8 7.3v.3M12 18v-8h0v1.3a3 3 0 0 1 5.5 1.7V18"/></svg></span><span class="wf-social-brand" title="YouTube" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="4" fill="currentColor" stroke="none"/><path d="m10 9 6 3-6 3Z" fill="#fff" stroke="none"/></svg></span><span class="wf-social-brand" title="X / Twitter" aria-label="X / Twitter"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 3 20 21M20 3 4 21"/><path d="M4 3h4l12 18h-4Z"/></svg></span><span class="wf-social-brand" title="TikTok" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3v11.5a4.6 4.6 0 1 1-4.6-4.6M14 3c.7 3.4 2.7 5.2 6 5.5"/></svg></span></div></div>
+</div>
+<div class="wf-bottom"><span>© 2026 WELLNESS APP. Todos los derechos reservados.</span><div class="wf-legal-links"><span title="Documento pendiente">Privacidad</span><span>│</span><span title="Documento pendiente">Términos</span><span>│</span><span title="Documento pendiente">Cookies</span></div></div>
+</footer>
+</div>
+
+<!-- Sprint 4.1: Ficha única reutilizada desde las tres apariciones de Ferritina -->
+<div id="waFerritinOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waFerritinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waFerritinTitle" aria-describedby="waFerritinSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waFerritinClose" class="wa-detail-close" aria-label="Cerrar detalle de Ferritina">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waFerritinScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre · Inflamación · Nutrientes</p>
+      <h2 id="waFerritinTitle" class="wa-detail-title">Ferritina</h2>
+      <p class="wa-detail-unit">Unidad habitual: ng/mL</p>
+      <section class="wa-detail-section" aria-labelledby="waFerritinWhat">
+        <h3 id="waFerritinWhat">¿Qué es?</h3>
+        <p id="waFerritinSummary">La ferritina es una proteína que almacena hierro en el organismo. Su medición ayuda a conocer las reservas de hierro disponibles y aporta información complementaria a otros resultados del análisis de sangre.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waFerritinWhy">
+        <h3 id="waFerritinWhy">¿Por qué es importante?</h3>
+        <p>La ferritina permite observar el estado de las reservas de hierro y entender cambios que pueden aparecer antes de que otros valores se alteren.</p>
+        <p><strong>Señal temprana.</strong> Las reservas de hierro pueden disminuir antes de que la hemoglobina muestre cambios importantes.</p>
+        <p><strong>Energía y sangre.</strong> El hierro participa en la formación de hemoglobina y en diferentes procesos relacionados con la producción de energía.</p>
+        <p><strong>Valores bajos y altos.</strong> Un resultado bajo puede relacionarse con reservas insuficientes. Un valor elevado también puede aparecer por inflamación u otras situaciones.</p>
+        <p><strong>Por qué puede disminuir.</strong> Las pérdidas de sangre, una mayor necesidad de hierro o una ingesta insuficiente son algunos factores relevantes.</p>
+        <p><strong>Etapas de la vida.</strong> La menstruación, el embarazo y la menopausia pueden modificar las necesidades y reservas de hierro.</p>
+        <p><strong>Inflamación.</strong> La ferritina puede aumentar durante procesos inflamatorios; por eso no debe interpretarse de manera aislada.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer">
+      <a class="wa-detail-cta" id="waFerritinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</div>
+
+<script>
+(function(){
+ 'use strict';
+ const track=document.getElementById('carouselTrack'),set=document.getElementById('carouselSet'),viewport=document.getElementById('carouselViewport');
+ const pauseBtn=document.getElementById('pauseMotion');
+ const prefersReduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+ let width=0,offset=0,frame=0,last=0,paused=prefersReduced.matches,hovered=false,dragging=false,startX=0,startOffset=0;
+ function refresh(){width=set.getBoundingClientRect().width;offset=((offset%width)+width)%width;paint()}
+ function paint(){track.style.transform='translate3d('+(-offset)+'px,0,0)'}
+ function animate(time){if(last&&width&&!paused&&!hovered&&!dragging){offset=(offset+(time-last)*.031)%width;paint()} last=time;frame=requestAnimationFrame(animate)}
+ function syncPause(){pauseBtn.setAttribute('aria-pressed',String(paused));pauseBtn.innerHTML=(paused?'Reanudar movimiento <span aria-hidden="true">▶</span>':'Pausar movimiento <span aria-hidden="true">Ⅱ</span>')}
+ pauseBtn.addEventListener('click',()=>{paused=!paused;syncPause()});
+ const spacing=()=>{const card=set.querySelector('.indicator-card');return card.getBoundingClientRect().width+parseFloat(getComputedStyle(set).gap||0)};
+ document.getElementById('prevCard').addEventListener('click',()=>{offset=(offset-spacing()+width)%width;paint()});
+ document.getElementById('nextCard').addEventListener('click',()=>{offset=(offset+spacing())%width;paint()});
+ viewport.addEventListener('pointerenter',()=>{hovered=true});viewport.addEventListener('pointerleave',()=>{hovered=false});
+ viewport.addEventListener('focusin',()=>{hovered=true});viewport.addEventListener('focusout',()=>{hovered=false});
+ viewport.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'||e.pointerType==='pen'){dragging=true;startX=e.clientX;startOffset=offset}});
+ viewport.addEventListener('pointermove',e=>{if(!dragging||!width)return;offset=((startOffset-(e.clientX-startX))%width+width)%width;paint()});
+ function stopDrag(){dragging=false};viewport.addEventListener('pointerup',stopDrag);viewport.addEventListener('pointercancel',stopDrag);
+ const ro=new ResizeObserver(refresh);ro.observe(set);refresh();syncPause();frame=requestAnimationFrame(animate);
+ prefersReduced.addEventListener?.('change',e=>{paused=e.matches;syncPause()});
+ document.addEventListener('visibilitychange',()=>{last=0});
+})();
+
+
+/* Etapa 2: búsqueda tolerante a acentos, filtrado por planes y enlaces de categoría */
+(function(){
+  'use strict';
+  const root=document.getElementById('catalogo');
+  if(!root)return;
+  const input=document.getElementById('catalogSearch'), clear=document.getElementById('clearSearch');
+  const buttons=Array.from(root.querySelectorAll('.filter-button'));
+  const groups=Array.from(root.querySelectorAll('.catalog-group'));
+  const resultSummary=document.getElementById('resultSummary'),none=document.getElementById('noResults');
+  const navLinks=Array.from(root.querySelectorAll('[data-target]'));
+  let plan='all';
+  function clean(s){return (s||'').normalize('NFD').replace(/[\u0300-\u036f]/g,'').toLowerCase().trim();}
+  function update(){
+    const q=clean(input.value);let shown=0,active=0;
+    for(const g of groups){
+      let n=0;
+      for(const li of g.querySelectorAll('.lab-row')){
+        const text=li.dataset.search||'';
+        const matchName=!q||text.includes(q);
+        const matchPlan=plan!=='basic'||li.dataset.basic==='1';
+        li.hidden=!(matchName&&matchPlan);
+        if(!li.hidden){n++;shown++;}
+      }
+      g.hidden=n===0;
+      if(n)active++;
+      g.querySelector('.category-count').textContent='('+n+')';
+      root.querySelectorAll('[data-target="'+g.id+'"]').forEach(a=>{
+        a.classList.toggle('is-empty',n===0);
+        a.setAttribute('aria-disabled',String(n===0));
+        if(n===0)a.setAttribute('tabindex','-1');else a.removeAttribute('tabindex');
+      });
+    }
+    none.hidden=shown!==0;
+    resultSummary.textContent=shown+' coincidencia'+(shown===1?'':'s')+' en '+active+' categoría'+(active===1?'':'s');
+    clear.hidden=input.value.length===0;
+    buttons.forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.filter===plan)));
+  }
+  input.addEventListener('input',update);
+  clear.addEventListener('click',()=>{input.value='';input.focus();update();});
+  buttons.forEach(b=>b.addEventListener('click',()=>{plan=b.dataset.filter;update();}));
+  navLinks.forEach(a=>a.addEventListener('click',e=>{
+    const target=document.getElementById(a.dataset.target);
+    if(!target||target.hidden){e.preventDefault();return;}
+  }));
+  update();
+})();
+
+</script>
+
+<script>
+/* Sprint 4.1: activación accesible de una ficha desde varias categorías. */
+(function(){
+ 'use strict';
+ const overlay=document.getElementById('waFerritinOverlay');
+ const dialog=document.getElementById('waFerritinDialog');
+ const closer=document.getElementById('waFerritinClose');
+ const scroller=document.getElementById('waFerritinScroll');
+ const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>
+   row.querySelector('.lab-name')?.textContent.trim()==='Ferritina');
+ let previousFocus=null;
+ function openDetail(source){
+   previousFocus=source||document.activeElement;
+   overlay.hidden=false;
+   document.body.classList.add('wa-detail-is-open');
+   scroller.scrollTop=0;
+   closer.focus({preventScroll:true});
+ }
+ function closeDetail(){
+   if(overlay.hidden)return;
+   overlay.hidden=true;
+   document.body.classList.remove('wa-detail-is-open');
+   if(previousFocus?.isConnected && !previousFocus.hidden){
+     previousFocus.focus({preventScroll:true});
+   }else{
+     document.getElementById('catalogSearch')?.focus({preventScroll:true});
+   }
+ }
+ triggers.forEach(row=>{
+   row.classList.add('wa-detail-trigger');
+   row.setAttribute('role','button');
+   row.setAttribute('tabindex','0');
+   row.setAttribute('aria-haspopup','dialog');
+   row.setAttribute('aria-controls','waFerritinDialog');
+   row.setAttribute('aria-label','Abrir información sobre Ferritina');
+   row.addEventListener('click',()=>openDetail(row));
+   row.addEventListener('keydown',event=>{
+     if(event.key==='Enter'||event.key===' '){event.preventDefault();openDetail(row);}
+   });
+ });
+ closer.addEventListener('click',closeDetail);
+ overlay.querySelector('[data-wa-dismiss]').addEventListener('click',closeDetail);
+ document.addEventListener('keydown',event=>{
+   if(overlay.hidden)return;
+   if(event.key==='Escape'){event.preventDefault();closeDetail();return;}
+   if(event.key!=='Tab')return;
+   const focusable=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href], [tabindex="0"]'));
+   const first=focusable[0],last=focusable[focusable.length-1];
+   if(!first||!last)return;
+   if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
+   else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
+ });
+})();
+</script>
+
+
+<!-- INICIO Sprint 4.2-4.4: tres nuevas fichas, Ferritina sin modificaciones -->
+<!-- Sprint 4.2-4.4: ficha educativa Folato (vitamina B9), reutilizable desde todas sus categorías -->
+<div id="waFolateOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waFolateDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waFolateTitle" aria-describedby="waFolateSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waFolateClose" class="wa-detail-close" aria-label="Cerrar detalle de Folato (vitamina B9)">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waFolateScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre · Salud cerebral · Nutrientes · Salud digestiva</p>
+      <h2 id="waFolateTitle" class="wa-detail-title">Folato (vitamina B9)</h2>
+      <p class="wa-detail-unit">Unidad habitual: ng/mL</p>
+      <section class="wa-detail-section" aria-labelledby="waFolateWhat">
+        <h3 id="waFolateWhat">¿Qué es?</h3>
+        <p id="waFolateSummary">El folato, conocido como vitamina B9, es una vitamina soluble en agua necesaria para formar ADN y producir nuevas células. Participa en procesos de crecimiento y renovación del organismo.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waFolateWhy">
+        <h3 id="waFolateWhy">¿Por qué es importante?</h3>
+        <p>El folato es importante en los tejidos que producen células nuevas continuamente y en distintas funciones del organismo.</p>
+        <p><strong>División celular.</strong> Participa en la formación de nuevas células, especialmente en tejidos que se renuevan con rapidez.</p>
+        <p><strong>Glóbulos rojos.</strong> Una cantidad insuficiente puede afectar la producción normal de glóbulos rojos.</p>
+        <p><strong>Embarazo y desarrollo.</strong> Un aporte adecuado antes y durante las primeras etapas del embarazo es importante para el desarrollo del tubo neural del bebé.</p>
+        <p><strong>Homocisteína.</strong> Junto con otras vitaminas del grupo B, participa en el metabolismo de la homocisteína, una sustancia que puede evaluarse en determinados contextos.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer">
+      <a class="wa-detail-cta" id="waFolateMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</div>
+<!-- Sprint 4.2-4.4: ficha educativa Hematocrito, reutilizable desde todas sus categorías -->
+<div id="waHematocritOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waHematocritDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waHematocritTitle" aria-describedby="waHematocritSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waHematocritClose" class="wa-detail-close" aria-label="Cerrar detalle de Hematocrito">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waHematocritScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waHematocritTitle" class="wa-detail-title">Hematocrito</h2>
+      <p class="wa-detail-unit">Unidad habitual: %</p>
+      <section class="wa-detail-section" aria-labelledby="waHematocritWhat">
+        <h3 id="waHematocritWhat">¿Qué es?</h3>
+        <p id="waHematocritSummary">El hematocrito indica qué porcentaje del volumen total de la sangre está ocupado por glóbulos rojos. Es uno de los componentes habituales del hemograma.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waHematocritWhy">
+        <h3 id="waHematocritWhy">¿Por qué es importante?</h3>
+        <p>Conocer esta proporción ayuda a interpretar la composición de la sangre junto con la hemoglobina y otros resultados.</p>
+        <p><strong>Posibles señales de anemia.</strong> Un hematocrito bajo puede acompañar distintas formas de anemia, pero no permite establecer una causa por sí solo.</p>
+        <p><strong>Transporte de oxígeno.</strong> Los glóbulos rojos contienen la hemoglobina que transporta oxígeno hacia los tejidos.</p>
+        <p><strong>Valores elevados.</strong> Un hematocrito alto puede aparecer por distintas causas, incluida la disminución del volumen de plasma.</p>
+        <p><strong>Menstruación.</strong> Las pérdidas de sangre pueden influir en este indicador y deben valorarse según el contexto personal.</p>
+        <p><strong>Embarazo.</strong> Durante el embarazo aumenta el volumen plasmático, lo que puede reducir el porcentaje de hematocrito de forma fisiológica.</p>
+        <p><strong>Hidratación.</strong> Los cambios en el estado de hidratación pueden modificar el resultado sin que necesariamente cambie la cantidad total de glóbulos rojos.</p>
+        <p><strong>Evolución histórica.</strong> Comparar resultados obtenidos en diferentes fechas puede ayudar a reconocer variaciones que merezcan una evaluación profesional.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer">
+      <a class="wa-detail-cta" id="waHematocritMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</div>
+<!-- Sprint 4.2-4.4: ficha educativa Hemoglobina, reutilizable desde todas sus categorías -->
+<div id="waHemoglobinOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waHemoglobinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waHemoglobinTitle" aria-describedby="waHemoglobinSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waHemoglobinClose" class="wa-detail-close" aria-label="Cerrar detalle de Hemoglobina">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waHemoglobinScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waHemoglobinTitle" class="wa-detail-title">Hemoglobina</h2>
+      <p class="wa-detail-unit">Unidad habitual: g/dL</p>
+      <section class="wa-detail-section" aria-labelledby="waHemoglobinWhat">
+        <h3 id="waHemoglobinWhat">¿Qué es?</h3>
+        <p id="waHemoglobinSummary">La hemoglobina es una proteína presente en los glóbulos rojos que permite transportar oxígeno desde los pulmones hacia los tejidos. Su concentración forma parte del hemograma.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waHemoglobinWhy">
+        <h3 id="waHemoglobinWhy">¿Por qué es importante?</h3>
+        <p>Es uno de los principales valores utilizados para evaluar la capacidad de transporte de oxígeno de la sangre y detectar posibles alteraciones.</p>
+        <p><strong>Evaluación de anemia.</strong> Una concentración baja puede ser una señal de anemia, aunque determinar su origen requiere otros datos.</p>
+        <p><strong>Transporte de oxígeno.</strong> La hemoglobina cumple un papel esencial en el suministro de oxígeno que necesitan los órganos y músculos.</p>
+        <p><strong>Relación con el hierro.</strong> La formación de hemoglobina requiere hierro, pero su resultado debe interpretarse junto con ferritina y otros estudios.</p>
+        <p><strong>Pérdidas menstruales.</strong> Las pérdidas de sangre repetidas pueden influir en la hemoglobina y las reservas de hierro.</p>
+        <p><strong>Cambios en el embarazo.</strong> El aumento del volumen plasmático durante el embarazo puede reducir la concentración de hemoglobina.</p>
+        <p><strong>Cambios que aparecen después.</strong> Las reservas de hierro pueden disminuir antes de que se produzca una reducción importante de hemoglobina.</p>
+        <p><strong>Contexto cardiovascular.</strong> Los valores muy bajos o elevados pueden tener relevancia clínica según el contexto y otras condiciones presentes.</p>
+        <p><strong>Tendencia en el tiempo.</strong> Comparar resultados históricos permite identificar si la concentración permanece estable o está cambiando.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer">
+      <a class="wa-detail-cta" id="waHemoglobinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a>
+    </div>
+  </section>
+</div>
+<script>
+/* Sprint 4.2-4.4: tres fichas nuevas, sin intervenir la lógica aprobada de Ferritina. */
+(function(){
+  'use strict';
+  const fichas = [
+    {nombre:'Folato', id:'waFolate'},
+    {nombre:'Hematocrito', id:'waHematocrit'},
+    {nombre:'Hemoglobina', id:'waHemoglobin'}
+  ];
+  fichas.forEach(({nombre, id})=>{
+    const overlay=document.getElementById(id+'Overlay');
+    const dialog=document.getElementById(id+'Dialog');
+    const closer=document.getElementById(id+'Close');
+    const scroller=document.getElementById(id+'Scroll');
+    if(!overlay || !dialog || !closer || !scroller) return;
+    const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>
+      row.querySelector('.lab-name')?.textContent.trim()===nombre);
+    let previousFocus=null;
+    function open(source){
+      previousFocus=source||document.activeElement;
+      overlay.hidden=false;
+      document.body.classList.add('wa-detail-is-open');
+      scroller.scrollTop=0;
+      closer.focus({preventScroll:true});
+    }
+    function close(){
+      if(overlay.hidden)return;
+      overlay.hidden=true;
+      document.body.classList.remove('wa-detail-is-open');
+      if(previousFocus?.isConnected && !previousFocus.hidden){
+        previousFocus.focus({preventScroll:true});
+      }else{
+        document.getElementById('catalogSearch')?.focus({preventScroll:true});
+      }
+    }
+    triggers.forEach(row=>{
+      row.classList.add('wa-detail-trigger');
+      row.setAttribute('role','button');
+      row.setAttribute('tabindex','0');
+      row.setAttribute('aria-haspopup','dialog');
+      row.setAttribute('aria-controls',id+'Dialog');
+      row.setAttribute('aria-label','Abrir información sobre '+nombre);
+      row.addEventListener('click',()=>open(row));
+      row.addEventListener('keydown',event=>{
+        if(event.key==='Enter'||event.key===' '){event.preventDefault();open(row);}
+      });
+    });
+    closer.addEventListener('click',close);
+    overlay.querySelector('[data-wa-dismiss]').addEventListener('click',close);
+    document.addEventListener('keydown',event=>{
+      if(overlay.hidden)return;
+      if(event.key==='Escape'){event.preventDefault();close();return;}
+      if(event.key!=='Tab')return;
+      const focusable=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href], [tabindex="0"]'));
+      const first=focusable[0], last=focusable[focusable.length-1];
+      if(!first || !last)return;
+      if(event.shiftKey && document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey && document.activeElement===last){event.preventDefault();first.focus();}
+    });
+  });
+})();
+</script>
+<!-- FIN Sprint 4.2-4.4 -->
+
+<!-- INICIO Sprint 4.4 — Nuevas fichas aprobadas -->
+<style>
+/* Sprint 4.4: solo las cinco fichas nuevas deben aparecer delante del encabezado fijo;
+   el control de cierre queda visible también en móvil. No se altera ningún panel anterior. */
+#waIronOverlay, #waIronSaturationOverlay, #waMCHOverlay,
+#waMCHCOverlay, #waMCVOverlay { z-index: 2400; }
+</style>
+
+<!-- Sprint 4.4: Hierro en sangre; contenido aprobado, mismo panel del Sprint 4.3 -->
+<div id="waIronOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waIronDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waIronTitle" aria-describedby="waIronSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waIronClose" class="wa-detail-close" aria-label="Cerrar detalle de Hierro en sangre">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waIronScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waIronTitle" class="wa-detail-title">Hierro en sangre</h2>
+      <p class="wa-detail-unit">Unidad habitual: µg/dL</p>
+      <section class="wa-detail-section" aria-labelledby="waIronWhat">
+        <h3 id="waIronWhat">¿Qué es?</h3>
+        <p id="waIronSummary">El hierro es un mineral esencial para el organismo. Forma parte de la hemoglobina, la proteína que permite transportar oxígeno en la sangre. El análisis de hierro en sangre mide la cantidad de hierro que circula en el momento de la extracción, principalmente unido a una proteína llamada transferrina. Es diferente de la ferritina, que aporta información sobre las reservas de hierro del cuerpo.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waIronWhy">
+        <h3 id="waIronWhy">¿Por qué es importante?</h3>
+        <p>El hierro participa en funciones esenciales del organismo, especialmente en la formación de glóbulos rojos y el transporte de oxígeno.</p>
+        <p><strong>Transporte de oxígeno.</strong> Es necesario para producir hemoglobina, que lleva oxígeno desde los pulmones hacia los tejidos.</p>
+        <p><strong>Energía y funcionamiento del cuerpo.</strong> Interviene en procesos celulares relacionados con la producción y utilización de energía.</p>
+        <p><strong>Valores bajos.</strong> Pueden observarse cuando el hierro disponible es insuficiente, aunque también influyen otras condiciones y cambios temporales.</p>
+        <p><strong>Valores elevados.</strong> En determinadas circunstancias pueden relacionarse con un exceso de hierro o con otros factores que requieren interpretación profesional.</p>
+        <p><strong>Alimentación y necesidades personales.</strong> La ingesta de hierro, las pérdidas de sangre, el embarazo y algunas condiciones digestivas pueden influir en su disponibilidad.</p>
+        <p><strong>Variaciones durante el día.</strong> La concentración de hierro en sangre puede cambiar según la hora de la extracción y otros factores. Una medición aislada no siempre representa la situación habitual.</p>
+        <p><strong>Relación con otros resultados.</strong> Compararlo con ferritina, transferrina, saturación de hierro y hemoglobina permite obtener una visión más completa.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer"><a class="wa-detail-cta" id="waIronMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+
+<!-- Sprint 4.4: Saturación de hierro; contenido aprobado, mismo panel del Sprint 4.3 -->
+<div id="waIronSaturationOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waIronSaturationDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waIronSaturationTitle" aria-describedby="waIronSaturationSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waIronSaturationClose" class="wa-detail-close" aria-label="Cerrar detalle de Saturación de hierro">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waIronSaturationScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre · Nutrientes</p>
+      <h2 id="waIronSaturationTitle" class="wa-detail-title">Saturación de hierro</h2>
+      <p class="wa-detail-unit">Unidad habitual: %</p>
+      <section class="wa-detail-section" aria-labelledby="waIronSaturationWhat">
+        <h3 id="waIronSaturationWhat">¿Qué es?</h3>
+        <p id="waIronSaturationSummary">La saturación de hierro, también llamada saturación de transferrina, indica qué porcentaje de la capacidad de transporte de hierro en la sangre está ocupado. Se calcula utilizando el hierro sérico y la capacidad total de fijación del hierro (TIBC), o mediciones equivalentes según el laboratorio. En términos sencillos, ayuda a conocer qué proporción de los lugares disponibles para transportar hierro se encuentra ocupada.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waIronSaturationWhy">
+        <h3 id="waIronSaturationWhy">¿Por qué es importante?</h3>
+        <p>Permite comprender mejor la disponibilidad de hierro para las funciones del organismo.</p>
+        <p><strong>Transporte de hierro.</strong> La transferrina lleva el hierro por la sangre hacia los tejidos que lo necesitan.</p>
+        <p><strong>Valores bajos.</strong> Pueden indicar una menor disponibilidad de hierro, aunque su interpretación depende de otros análisis y del contexto individual.</p>
+        <p><strong>Valores elevados.</strong> Una saturación persistentemente alta puede ser relevante al investigar posibles situaciones de sobrecarga de hierro.</p>
+        <p><strong>Relación con la ferritina.</strong> La ferritina informa sobre las reservas, mientras que la saturación ayuda a comprender el hierro disponible para su transporte.</p>
+        <p><strong>Relación con la hemoglobina.</strong> Ambos resultados aportan perspectivas diferentes: uno sobre el transporte del hierro y otro sobre la proteína que transporta oxígeno.</p>
+        <p><strong>Interpretación conjunta.</strong> El resultado se comprende mejor al revisar hierro sérico, ferritina, transferrina o TIBC y otros datos relevantes.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer"><a class="wa-detail-cta" id="waIronSaturationMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+
+<!-- Sprint 4.4: Hemoglobina corpuscular media (HCM); contenido aprobado, mismo panel del Sprint 4.3 -->
+<div id="waMCHOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waMCHDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waMCHTitle" aria-describedby="waMCHSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waMCHClose" class="wa-detail-close" aria-label="Cerrar detalle de Hemoglobina corpuscular media (HCM)">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waMCHScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waMCHTitle" class="wa-detail-title">Hemoglobina corpuscular media (HCM)</h2>
+      <p class="wa-detail-unit">Unidad habitual: pg</p>
+      <section class="wa-detail-section" aria-labelledby="waMCHWhat">
+        <h3 id="waMCHWhat">¿Qué es?</h3>
+        <p id="waMCHSummary">La hemoglobina corpuscular media (HCM) indica la cantidad promedio de hemoglobina presente en cada glóbulo rojo. La hemoglobina es la proteína encargada de transportar oxígeno. Este indicador ayuda a comprender cuánta hemoglobina contiene, en promedio, cada una de estas células.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waMCHWhy">
+        <h3 id="waMCHWhy">¿Por qué es importante?</h3>
+        <p>Aporta información sobre las características de los glóbulos rojos y complementa otros resultados del hemograma.</p>
+        <p><strong>Cantidad de hemoglobina por célula.</strong> Permite conocer cuánto contenido de hemoglobina tiene, en promedio, cada glóbulo rojo.</p>
+        <p><strong>Relación con el transporte de oxígeno.</strong> La hemoglobina es esencial para llevar oxígeno a los tejidos, aunque la HCM por sí sola no mide la capacidad total de transporte de oxígeno.</p>
+        <p><strong>Valores bajos.</strong> Pueden aparecer cuando los glóbulos rojos contienen menos hemoglobina, como ocurre en algunas formas de deficiencia de hierro.</p>
+        <p><strong>Valores elevados.</strong> Pueden observarse cuando los glóbulos rojos son más grandes, por ejemplo, en determinadas alteraciones relacionadas con las vitaminas B12 o B9.</p>
+        <p><strong>Relación con el tamaño celular.</strong> La HCM suele variar junto con el volumen corpuscular medio (VCM), porque las células de mayor tamaño pueden contener más hemoglobina.</p>
+        <p><strong>Interpretación conjunta.</strong> Es importante revisar HCM, CHCM, VCM, hemoglobina y otros resultados para comprender mejor el hemograma.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer"><a class="wa-detail-cta" id="waMCHMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+
+<!-- Sprint 4.4: Concentración de hemoglobina corpuscular media (CHCM); contenido aprobado, mismo panel del Sprint 4.3 -->
+<div id="waMCHCOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waMCHCDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waMCHCTitle" aria-describedby="waMCHCSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waMCHCClose" class="wa-detail-close" aria-label="Cerrar detalle de Concentración de hemoglobina corpuscular media (CHCM)">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waMCHCScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waMCHCTitle" class="wa-detail-title">Concentración de hemoglobina corpuscular media (CHCM)</h2>
+      <p class="wa-detail-unit">Unidad habitual: g/dL</p>
+      <section class="wa-detail-section" aria-labelledby="waMCHCWhat">
+        <h3 id="waMCHCWhat">¿Qué es?</h3>
+        <p id="waMCHCSummary">La concentración de hemoglobina corpuscular media (CHCM) indica qué tan concentrada está la hemoglobina dentro de los glóbulos rojos. A diferencia de la HCM, que calcula la cantidad promedio de hemoglobina por célula, la CHCM relaciona esa hemoglobina con el volumen ocupado por los glóbulos rojos.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waMCHCWhy">
+        <h3 id="waMCHCWhy">¿Por qué es importante?</h3>
+        <p>Ayuda a comprender cómo está distribuida la hemoglobina dentro de los glóbulos rojos y aporta información adicional al análisis de sangre.</p>
+        <p><strong>Concentración de hemoglobina.</strong> Permite conocer la proporción de hemoglobina dentro del volumen de los glóbulos rojos.</p>
+        <p><strong>Relación con el hierro.</strong> Una CHCM baja puede observarse cuando los glóbulos rojos tienen menos hemoglobina de lo esperado, como en ciertas alteraciones relacionadas con el hierro.</p>
+        <p><strong>Diferencias entre resultados.</strong> Ayuda a distinguir patrones de glóbulos rojos que pueden presentar tamaños y concentraciones de hemoglobina diferentes.</p>
+        <p><strong>Interpretación junto con otros indicadores.</strong> La CHCM complementa los resultados de hemoglobina, hematocrito, HCM y VCM.</p>
+        <p><strong>Valores elevados.</strong> Son menos frecuentes y pueden aparecer en determinadas alteraciones de los glóbulos rojos o por interferencias de laboratorio; por eso requieren una revisión cuidadosa.</p>
+        <p><strong>Calidad de la medición.</strong> Como se calcula a partir de otros parámetros del hemograma, un resultado inesperado también puede motivar una comprobación técnica de la muestra.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer"><a class="wa-detail-cta" id="waMCHCMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+
+<!-- Sprint 4.4: Volumen corpuscular medio (VCM); contenido aprobado, mismo panel del Sprint 4.3 -->
+<div id="waMCVOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss="true" aria-hidden="true"></div>
+  <section id="waMCVDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waMCVTitle" aria-describedby="waMCVSummary" tabindex="-1">
+    <div class="wa-detail-top">
+      <span class="wa-detail-top-label">Detalle del indicador</span>
+      <button type="button" id="waMCVClose" class="wa-detail-close" aria-label="Cerrar detalle de Volumen corpuscular medio (VCM)">×</button>
+    </div>
+    <div class="wa-detail-scroll" id="waMCVScroll" tabindex="0">
+      <p class="wa-detail-categories">Sangre</p>
+      <h2 id="waMCVTitle" class="wa-detail-title">Volumen corpuscular medio (VCM)</h2>
+      <p class="wa-detail-unit">Unidad habitual: fL</p>
+      <section class="wa-detail-section" aria-labelledby="waMCVWhat">
+        <h3 id="waMCVWhat">¿Qué es?</h3>
+        <p id="waMCVSummary">El volumen corpuscular medio (VCM) indica el tamaño promedio de los glóbulos rojos. Es uno de los resultados habituales del hemograma y permite observar si estas células son, en promedio, más pequeñas, más grandes o de un tamaño esperado según el laboratorio.</p>
+      </section>
+      <section class="wa-detail-section" aria-labelledby="waMCVWhy">
+        <h3 id="waMCVWhy">¿Por qué es importante?</h3>
+        <p>El tamaño de los glóbulos rojos aporta información útil para comprender diferentes patrones sanguíneos.</p>
+        <p><strong>Tamaño de los glóbulos rojos.</strong> Permite conocer el volumen promedio de estas células, que participan en el transporte de oxígeno.</p>
+        <p><strong>Glóbulos rojos pequeños.</strong> Un VCM bajo puede aparecer en determinadas alteraciones relacionadas con el hierro o con condiciones hereditarias como la talasemia.</p>
+        <p><strong>Glóbulos rojos grandes.</strong> Un VCM elevado puede relacionarse, entre otras causas, con alteraciones de vitamina B12, folato, ciertos medicamentos o condiciones hepáticas.</p>
+        <p><strong>Tamaño dentro del rango esperado.</strong> Un VCM normal no descarta todas las formas de anemia ni significa que los demás resultados del hemograma sean necesariamente normales.</p>
+        <p><strong>Relación con la hemoglobina.</strong> Comparar el VCM con hemoglobina, hematocrito, HCM y CHCM permite comprender mejor las características de los glóbulos rojos.</p>
+        <p><strong>Cambios en el tiempo.</strong> Observar su evolución puede aportar contexto sobre variaciones en los resultados sanguíneos.</p>
+        <p><strong>Interpretación personalizada.</strong> La edad, las condiciones de salud, los medicamentos y otros resultados son relevantes para interpretar las variaciones.</p>
+      </section>
+    </div>
+    <div class="wa-detail-footer"><a class="wa-detail-cta" id="waMCVMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<script>
+/* Sprint 4.4: controla exclusivamente las cinco fichas nuevas; no modifica controladores anteriores. */
+(function(){
+  'use strict';
+  const fichas=[
+    {nombre:"Hierro",id:'waIron'},
+    {nombre:"Saturación de hierro (%)",id:'waIronSaturation'},
+    {nombre:"Hemoglobina corpuscular media (HCM)",id:'waMCH'},
+    {nombre:"Concentración de HCM (CHCM)",id:'waMCHC'},
+    {nombre:"Volumen corpuscular medio (VCM)",id:'waMCV'},
+  ];
+  fichas.forEach(({nombre,id})=>{
+    const overlay=document.getElementById(id+'Overlay');
+    const dialog=document.getElementById(id+'Dialog');
+    const closer=document.getElementById(id+'Close');
+    const scroller=document.getElementById(id+'Scroll');
+    if(!overlay||!dialog||!closer||!scroller)return;
+    const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>
+      row.querySelector('.lab-name')?.textContent.trim()===nombre);
+    let previousFocus=null;
+    function open(source){
+      previousFocus=source||document.activeElement;
+      overlay.hidden=false;
+      document.body.classList.add('wa-detail-is-open');
+      scroller.scrollTop=0;
+      closer.focus({preventScroll:true});
+    }
+    function close(){
+      if(overlay.hidden)return;
+      overlay.hidden=true;
+      document.body.classList.remove('wa-detail-is-open');
+      if(previousFocus?.isConnected&&!previousFocus.hidden)previousFocus.focus({preventScroll:true});
+      else document.getElementById('catalogSearch')?.focus({preventScroll:true});
+    }
+    triggers.forEach(row=>{
+      row.classList.add('wa-detail-trigger');
+      row.setAttribute('role','button');
+      row.setAttribute('tabindex','0');
+      row.setAttribute('aria-haspopup','dialog');
+      row.setAttribute('aria-controls',id+'Dialog');
+      row.setAttribute('aria-label','Abrir información sobre '+nombre);
+      row.addEventListener('click',()=>open(row));
+      row.addEventListener('keydown',event=>{
+        if(event.key==='Enter'||event.key===' '){event.preventDefault();open(row);}
+      });
+    });
+    closer.addEventListener('click',close);
+    overlay.querySelector('[data-wa-dismiss]').addEventListener('click',close);
+    document.addEventListener('keydown',event=>{
+      if(overlay.hidden)return;
+      if(event.key==='Escape'){event.preventDefault();close();return;}
+      if(event.key!=='Tab')return;
+      const focusable=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href],[tabindex="0"]'));
+      const first=focusable[0],last=focusable[focusable.length-1];
+      if(!first||!last)return;
+      if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}
+      else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}
+    });
+  });
+})();
+</script>
+<!-- FIN Sprint 4.4 -->
+<script src="../shared/wellness-shell.js"></script>
+</body>
+</html>

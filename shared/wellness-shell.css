@@ -1,0 +1,49 @@
+/* WELLNESS APP — Sprint 4.3. Source shared by both HTML pages. No other components touched. */
+.wa-unified-header{display:flex;align-items:center;justify-content:space-between;gap:16px;box-sizing:border-box}
+.wa-unified-header .logo{flex-shrink:0;white-space:nowrap}
+.wa-unified-header .wa-primary-nav{display:flex;gap:clamp(12px,1.45vw,23px);align-items:center;flex:1;justify-content:center}
+.wa-unified-header .wa-primary-nav a{font:600 12px/1.4 Arial,Helvetica,sans-serif;color:#123F47!important;text-decoration:none;white-space:nowrap;position:relative;padding:9px 0}
+.wa-unified-header .wa-primary-nav a:hover{color:#e76742!important}
+.wa-unified-header .wa-primary-nav a.wa-active::after{content:"";position:absolute;bottom:2px;left:0;right:0;height:2px;background:#FF713D}
+.wa-unified-header .wa-header-actions{display:flex;gap:14px;align-items:center;flex-shrink:0}
+.wa-unified-header .wa-login{background:transparent;border:0;color:#123F47;text-decoration:none;font:600 12px/1.2 Arial,sans-serif;cursor:pointer;white-space:nowrap;padding:9px 0}
+.wa-unified-header .wa-join{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:43px;padding:9px 18px;border:1px solid #123F47;border-radius:100px;background:transparent;color:#123F47;text-decoration:none;font:600 12px/1.2 Arial,sans-serif;white-space:nowrap}
+.wa-unified-header .wa-join:hover{background:#eef3f4}
+.wa-unified-header .wa-menu-toggle{display:grid!important;place-items:center!important;flex-shrink:0;min-width:40px;min-height:40px;padding:0!important;border:0;background:transparent;color:#123F47;font:400 25px/1 Arial,sans-serif;cursor:pointer;border-radius:50%}
+.wa-unified-header .wa-menu-toggle:hover{background:#123F4711}
+.wa-menu-backdrop:not([hidden]){position:fixed;inset:0;display:block;z-index:2998;background:rgba(12,25,29,.40)}
+.wa-unified-menu:not([hidden]){position:fixed;z-index:2999;top:clamp(15px,4vh,36px);right:clamp(12px,3vw,48px);bottom:clamp(15px,4vh,36px);width:min(440px,calc(100vw - 24px));display:flex;flex-direction:column;padding:26px 28px;background:#fff;border:1px solid #e5ecea;border-radius:25px;box-shadow:0 25px 90px #0a26353b;overflow:auto;color:#123F47;font-family:Arial,Helvetica,sans-serif;text-align:left;overscroll-behavior:contain}
+.wa-unified-menu[hidden],.wa-menu-backdrop[hidden]{display:none!important}
+.wa-unified-menu .wa-menu-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+.wa-unified-menu .wa-menu-head h2{font:500 31px/1.1 Georgia,serif;margin:0;color:#123F47}
+.wa-unified-menu .wa-menu-close{width:42px;height:42px;border:1px solid #dfebeb;border-radius:100px;background:transparent;color:#123F47;font-size:25px;cursor:pointer}
+.wa-unified-menu .wa-menu-kicker{font:600 10px/1.4 Arial,sans-serif;letter-spacing:.19em;color:#a45d46;margin:25px 0 17px}
+.wa-unified-menu .wa-menu-links{display:flex;flex-direction:column;align-items:stretch;gap:8px;flex:1}
+.wa-unified-menu .wa-menu-links a{font:400 clamp(19px,2.2vw,27px)/1.12 Arial,sans-serif;color:#163D50!important;text-decoration:none!important;padding:6px 0;letter-spacing:-.035em}
+.wa-unified-menu .wa-menu-links a:hover,.wa-unified-menu .wa-menu-links a[aria-current="page"]{color:#d96540!important}
+.wa-unified-menu .wa-menu-end{border-top:1px solid #e5ecea;margin:20px 0 16px;padding:16px 0 0;display:flex;align-items:center;gap:12px}
+.wa-unified-menu .wa-drawer-login{font:600 12px/1.2 Arial,sans-serif;text-decoration:none;color:#123F47;background:none;border:0;cursor:pointer;padding:9px 8px}
+.wa-unified-menu .wa-menu-join{display:inline-flex;align-items:center;justify-content:center;gap:8px;margin-left:auto;border-radius:40px;padding:12px 18px;background:#FF713D!important;color:#fff!important;font:600 12px Arial,sans-serif;text-decoration:none!important;white-space:nowrap}
+.wa-unified-menu .wa-menu-caption{font:400 12px/1.45 Arial,sans-serif;color:#677b81}
+body.wa-menu-open{overflow:hidden!important}
+/* On landing use the approved scrolling floating white header. */
+.hero>.wa-unified-header .wa-primary-nav{gap:clamp(11px,1.35vw,20px)}
+/* Catalog: same floating header scale and palette, no impact on catalog contents. */
+.page-shell .topbar-wrap{height:98px;padding:0!important;position:relative!important;z-index:1003!important}
+.page-shell .topbar-wrap>.wa-unified-header{position:fixed;z-index:1300;top:13px;left:50%;transform:translateX(-50%);width:min(calc(100% - 36px),1110px);min-height:62px;height:62px;margin:0;padding:9px 22px;border:1px solid #e4e9e9;border-radius:100px;background:rgba(255,255,255,.96);box-shadow:0 12px 38px rgba(18,63,71,.10);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px)}
+.page-shell .topbar-wrap>.wa-unified-header .logotext{font-size:15px}
+/* Catalog CTA and menu should not be hidden by old mobile-only rules. */
+@media(max-width:1150px){.wa-unified-header .wa-primary-nav{gap:12px}.wa-unified-header .wa-header-actions{gap:8px}.wa-unified-header .wa-login{display:none}}
+@media(max-width:1020px){.wa-unified-header .wa-primary-nav{display:none!important}}
+@media(max-width:850px){
+ .wa-unified-header .wa-header-actions{display:none!important}
+ .hero>.wa-unified-header .wa-menu-toggle{display:grid!important}
+ .page-shell .topbar-wrap{height:82px}
+ .page-shell .topbar-wrap>.wa-unified-header{top:10px;width:calc(100% - 24px);min-height:58px;height:58px;padding:8px 15px}
+ .wa-unified-header .logotext{font-size:14px!important;letter-spacing:.105em}
+ .wa-unified-header .logo .symbol{width:31px;height:31px}
+ .wa-unified-menu:not([hidden]){padding:22px;top:8px;right:8px;bottom:8px;width:calc(100vw - 16px);border-radius:22px}
+ .wa-unified-menu .wa-menu-links a{font-size:clamp(19px,5.4vw,25px)}
+}
+@media(max-width:350px){.wa-unified-header .logotext{font-size:12.5px!important}.wa-unified-menu:not([hidden]){padding:17px}}
+@media(prefers-reduced-motion:reduce){.wa-unified-menu,.wa-menu-backdrop{transition:none!important}}

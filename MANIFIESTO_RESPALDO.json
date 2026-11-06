@@ -1,0 +1,128 @@
+{
+  "proyecto": "WELLNESS APP - sitio web completo",
+  "version": "Sprint 4.4 - 9 fichas, X visible",
+  "fecha_creacion_respaldo": "2026-11-06",
+  "nota": "Respaldo local verificado. NO representa una subida a GitHub.",
+  "archivos": [
+    {
+      "ruta": ".gitignore",
+      "bytes": 141,
+      "sha256": "e4915bc751ae8a8a449de52c124a7401259442b074c9cb5141a777c7f20a996b"
+    },
+    {
+      "ruta": "AUDITORIA_CIERRE_X.json",
+      "bytes": 5490,
+      "sha256": "fbd9163a630b0047cd79028950499904395bc345739c16602040b805b674d745"
+    },
+    {
+      "ruta": "AUDITORIA_FINAL.md",
+      "bytes": 1033,
+      "sha256": "acba3fd1365e1c2d28123882b8bf3b7cefcf345e7d0e95c083c63c9d0f47b341"
+    },
+    {
+      "ruta": "AUDITORIA_SPRINT4_4.md",
+      "bytes": 2280,
+      "sha256": "627352738192f209a76e24b9eb2b938a5eda07ac963a851a4cbf98f0d4269361"
+    },
+    {
+      "ruta": "CAMBIO_CIERRE_X.json",
+      "bytes": 522,
+      "sha256": "bc3337535bf29219fba93a09e36fc55255ab9d2586729ca7c93cbe2a19ee4672"
+    },
+    {
+      "ruta": "CAPTURA_FOOTER_1440.png",
+      "bytes": 609745,
+      "sha256": "180cf1f7bc1094823c59d098de706ea2b52ab36d699bdc2b7dfb0fe11f27a639"
+    },
+    {
+      "ruta": "CAPTURA_HIERRO_ESCRITORIO_1440.png",
+      "bytes": 138777,
+      "sha256": "d18ca0fa164e6b7c994243d2a7a806944cf903f1c7bc8d55d5cc5453a9d5a414"
+    },
+    {
+      "ruta": "CAPTURA_REAL_waIron_1440.png",
+      "bytes": 187447,
+      "sha256": "b637615e3798d47b88b46ba7c2c98879d498d41398047c868162e644b4bc560e"
+    },
+    {
+      "ruta": "CAPTURA_REAL_waMCV_390.png",
+      "bytes": 70943,
+      "sha256": "91f305ec4c15f14c350d55f6745d313933bea0ec7aff2b536a4110c2160ca31c"
+    },
+    {
+      "ruta": "CAPTURA_VCM_MOVIL_390.png",
+      "bytes": 73548,
+      "sha256": "c8ea0f2acb3b5e0a66025e71ae02b5c51091a77365761130a6b05eec7a5d05c7"
+    },
+    {
+      "ruta": "CAPTURA_X_FERRITINA_1440.png",
+      "bytes": 341837,
+      "sha256": "432cf92166cbc4bcf77418ba0c95e66d60faf83bb3ed2589a166e7c4568b34de"
+    },
+    {
+      "ruta": "CAPTURA_X_FERRITINA_390.png",
+      "bytes": 73524,
+      "sha256": "d888b29fe20e3939e8fdc6cf7970e68b6dd9f053ba4226e96da946a61906759b"
+    },
+    {
+      "ruta": "CHANGELOG.md",
+      "bytes": 740,
+      "sha256": "54c98c012f7959b3c40cc5f5bc64abd4e56378ca64d65f26c7fc9cf0207782a8"
+    },
+    {
+      "ruta": "CONTROL_DE_CAMBIOS.json",
+      "bytes": 1144,
+      "sha256": "1f4eaa0f101a54c4c3e8b4e049a0ffd63bf541cdd89d29f78940ce5a7adb280d"
+    },
+    {
+      "ruta": "INFORME_PRUEBAS.json",
+      "bytes": 2594,
+      "sha256": "99fc0215d15d22e1f136c7f7b382623b0e9cd8119d1affdfd28065d43172bd08"
+    },
+    {
+      "ruta": "LEEME.txt",
+      "bytes": 414,
+      "sha256": "ac01d6bb9bc86d304771c1610a50bb001f376247351ed4e906761cf82313d71e"
+    },
+    {
+      "ruta": "README.md",
+      "bytes": 1718,
+      "sha256": "9dd2d4592357543ff5e6c99bb6e0369570782778c1d9d41c44e946a587f720d1"
+    },
+    {
+      "ruta": "index.html",
+      "bytes": 996069,
+      "sha256": "2558280793ae2f042f143efe983273a72b9449a5fe368a97c9e6431df92ca05b"
+    },
+    {
+      "ruta": "que-analizamos/index.html",
+      "bytes": 184127,
+      "sha256": "9f21e3c3de8d94741f57943944c705b0ec77edd1db36d4efdedeec4ee28f3b3c"
+    },
+    {
+      "ruta": "shared/build-footer.py",
+      "bytes": 667,
+      "sha256": "597b6607c1ea7c8233abba82a53ca021f6537f2b522bd25bfaf55969c9451b11"
+    },
+    {
+      "ruta": "shared/footer-source.html",
+      "bytes": 38508,
+      "sha256": "d9f3daa144b7dcf676bcc5344b278368054410d99148277743dc7945f0cac383"
+    },
+    {
+      "ruta": "shared/footer.css",
+      "bytes": 107964,
+      "sha256": "1f3b437c837be03524d628511ac81b4b23544b4f51b6e94e32f83234fb79087d"
+    },
+    {
+      "ruta": "shared/wellness-shell.css",
+      "bytes": 5932,
+      "sha256": "d05a00a7d46a36fc34e592b856f065046f143d400c1d8efd8dc50b01e3133608"
+    },
+    {
+      "ruta": "shared/wellness-shell.js",
+      "bytes": 2412,
+      "sha256": "0720ad2b05aa0b7732c1d9bfc281d4701cca9debed47834b5c97799531971a94"
+    }
+  ]
+}

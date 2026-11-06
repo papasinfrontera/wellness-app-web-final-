@@ -1,0 +1,10 @@
+# Secretos, credenciales y dependencias locales
+.env
+.env.*
+!.env.example
+node_modules/
+.vercel/
+.DS_Store
+*.log
+__pycache__/
+.pytest_cache/

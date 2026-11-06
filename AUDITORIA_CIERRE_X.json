@@ -1,0 +1,249 @@
+{
+  "test_cases": 27,
+  "errors": [],
+  "results": [
+    {
+      "width": 1440,
+      "ficha": "waFerritin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waFolate",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waHematocrit",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waHemoglobin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waIron",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waIronSaturation",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waMCH",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waMCHC",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 1440,
+      "ficha": "waMCV",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waFerritin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waFolate",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waHematocrit",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waHemoglobin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waIron",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waIronSaturation",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waMCH",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waMCHC",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 390,
+      "ficha": "waMCV",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waFerritin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waFolate",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waHematocrit",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waHemoglobin",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waIron",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waIronSaturation",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waMCH",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waMCHC",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    },
+    {
+      "width": 320,
+      "ficha": "waMCV",
+      "closeButtonVisible": true,
+      "clickCloses": true,
+      "topStableOnScroll": true,
+      "hitTest": true,
+      "zIndex": "2400"
+    }
+  ]
+}

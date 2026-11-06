@@ -1,0 +1,43 @@
+{
+  "base": "/mnt/data/WELLNESS_APP_SPRINT4_3_FOOTER_UNICO_VERIFICADO",
+  "fichas_nuevas": [
+    {
+      "id": "waIron",
+      "nombre": "Hierro en sangre",
+      "trigger": "Hierro",
+      "secciones": 7
+    },
+    {
+      "id": "waIronSaturation",
+      "nombre": "Saturación de hierro",
+      "trigger": "Saturación de hierro (%)",
+      "secciones": 6
+    },
+    {
+      "id": "waMCH",
+      "nombre": "Hemoglobina corpuscular media (HCM)",
+      "trigger": "Hemoglobina corpuscular media (HCM)",
+      "secciones": 6
+    },
+    {
+      "id": "waMCHC",
+      "nombre": "Concentración de hemoglobina corpuscular media (CHCM)",
+      "trigger": "Concentración de HCM (CHCM)",
+      "secciones": 6
+    },
+    {
+      "id": "waMCV",
+      "nombre": "Volumen corpuscular medio (VCM)",
+      "trigger": "Volumen corpuscular medio (VCM)",
+      "secciones": 7
+    }
+  ],
+  "hash_landing": "2558280793ae2f042f143efe983273a72b9449a5fe368a97c9e6431df92ca05b",
+  "hash_landing_original": "2558280793ae2f042f143efe983273a72b9449a5fe368a97c9e6431df92ca05b",
+  "css_intacto": [
+    true,
+    true
+  ],
+  "js_intacto": true,
+  "solo_insercion": true
+}

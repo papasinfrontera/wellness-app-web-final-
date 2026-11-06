@@ -1,0 +1,96 @@
+{
+  "source_preserved_except_added_block": true,
+  "landing_and_shared_assets_unchanged": true,
+  "screens": {
+    "1440": {
+      "Hierro en sangre": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Saturación de hierro": {
+        "open_close": true,
+        "category_occurrences": 2,
+        "cta_valid": true
+      },
+      "Hemoglobina corpuscular media (HCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Concentración de hemoglobina corpuscular media (CHCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Volumen corpuscular medio (VCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "busqueda_y_filtros": true,
+      "ferritina_anterior": true
+    },
+    "390": {
+      "Hierro en sangre": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Saturación de hierro": {
+        "open_close": true,
+        "category_occurrences": 2,
+        "cta_valid": true
+      },
+      "Hemoglobina corpuscular media (HCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Concentración de hemoglobina corpuscular media (CHCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Volumen corpuscular medio (VCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "busqueda_y_filtros": true,
+      "ferritina_anterior": true
+    },
+    "320": {
+      "Hierro en sangre": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Saturación de hierro": {
+        "open_close": true,
+        "category_occurrences": 2,
+        "cta_valid": true
+      },
+      "Hemoglobina corpuscular media (HCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Concentración de hemoglobina corpuscular media (CHCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "Volumen corpuscular medio (VCM)": {
+        "open_close": true,
+        "category_occurrences": 1,
+        "cta_valid": true
+      },
+      "busqueda_y_filtros": true,
+      "ferritina_anterior": true
+    }
+  },
+  "js_errors": [],
+  "footer_content_identical": true,
+  "membership_destination_exists": true
+}

@@ -1,0 +1,10 @@
+WELLNESS APP · SPRINT 4.4 — NUEVE FICHAS ACTIVAS
+
+1. Extrae el ZIP completo.
+2. Abre index.html en el navegador.
+3. En el menú entra en «Qué analizamos».
+4. Busca: Hierro, Saturación de hierro, HCM, CHCM o VCM.
+5. Selecciona un resultado para abrir su ficha.
+6. El botón «Hazte miembro» lleva a la sección Planes de bienestar.
+
+Se conservó el footer corporativo único y las cuatro fichas anteriores.

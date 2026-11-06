@@ -1,0 +1,19 @@
+{
+  "version": "WELLNESS APP Sprint 4.4 — cierre X unificado",
+  "scope": "Única sustitución de CSS: z-index de los nueve paneles pasa de 900 a 2400.",
+  "source_folder": "WELLNESS_APP_SPRINT4_4_CINCO_FICHAS",
+  "unmodified_components": [
+    "landing/index.html",
+    "shared/*",
+    "texto y contenido de las 9 fichas",
+    "buscador",
+    "filtros",
+    "footer"
+  ],
+  "checks": {
+    "changed_html_files": 1,
+    "modified_selector": ".wa-detail-overlay",
+    "from": "z-index:900",
+    "to": "z-index:2400"
+  }
+}
