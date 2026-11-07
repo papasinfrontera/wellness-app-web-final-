@@ -32,3 +32,10 @@ No subir contraseñas, claves, tokens, datos médicos personales ni archivos `.e
 ## Nota científica
 
 Las fichas son contenido educativo y deben pasar revisión científica antes de considerarse material clínico validado o catálogo comercial confirmado.
+
+## Sprint 4.5 — versión para revisión
+- Landing: `index.html` (sin cambios respecto de Sprint 4.4).
+- Catálogo: `que-analizamos/index.html` (15 fichas educativas en paneles laterales).
+- Búsqueda, filtros por plan, X persistente, Escape, CTA a `#planes` verificados.
+- Véase `QA/INFORME_QA_SPRINT4_5.json` y `CHANGELOG.md`.
+- **Sin validación clínica:** requiere revisión posterior por Consejo Médico-Científico.
