@@ -3605,6 +3605,234 @@ document.addEventListener('keydown',event=>{if(overlay.hidden)return;if(event.ke
 })();
 </script>
 <!-- FIN Sprint 4.12 -->
+<!-- INICIO Sprint 4.13 -->
+<div id="waAGROverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waAGRDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waAGRTitle" aria-describedby="waAGRSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waAGRClose" class="wa-detail-close" aria-label="Cerrar detalle de Relación albúmina / globulina">×</button></div>
+<div class="wa-detail-scroll" id="waAGRScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waAGRTitle" class="wa-detail-title">Relación albúmina / globulina</h2><p class="wa-detail-unit">Resultado habitual: Cociente sin unidad</p>
+<section class="wa-detail-section" aria-labelledby="waAGRWhat"><h3 id="waAGRWhat">¿Qué es?</h3><p id="waAGRSummary">Relación entre albúmina y globulinas del plasma.</p></section>
+<section class="wa-detail-section" aria-labelledby="waAGRWhy"><h3 id="waAGRWhy">¿Por qué es importante?</h3>
+<p>Cálculo: albúmina dividida entre globulinas; deben usarse unidades iguales.</p><p>Complementa proteínas totales y fracciones séricas.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waAGRMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waALPOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waALPDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waALPTitle" aria-describedby="waALPSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waALPClose" class="wa-detail-close" aria-label="Cerrar detalle de Fosfatasa alcalina">×</button></div>
+<div class="wa-detail-scroll" id="waALPScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waALPTitle" class="wa-detail-title">Fosfatasa alcalina</h2><p class="wa-detail-unit">Resultado habitual: U/L</p>
+<section class="wa-detail-section" aria-labelledby="waALPWhat"><h3 id="waALPWhat">¿Qué es?</h3><p id="waALPSummary">Enzima presente principalmente en hígado, vías biliares y huesos.</p></section>
+<section class="wa-detail-section" aria-labelledby="waALPWhy"><h3 id="waALPWhy">¿Por qué es importante?</h3>
+<p>Su actividad puede variar con procesos hepatobiliares u óseos.</p><p>GGT y otras pruebas ayudan a interpretar el origen de cambios.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waALPMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waASTOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waASTDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waASTTitle" aria-describedby="waASTSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waASTClose" class="wa-detail-close" aria-label="Cerrar detalle de Aspartato aminotransferasa (AST)">×</button></div>
+<div class="wa-detail-scroll" id="waASTScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waASTTitle" class="wa-detail-title">Aspartato aminotransferasa (AST)</h2><p class="wa-detail-unit">Resultado habitual: U/L</p>
+<section class="wa-detail-section" aria-labelledby="waASTWhat"><h3 id="waASTWhat">¿Qué es?</h3><p id="waASTSummary">Enzima presente en hígado, músculos y otros tejidos.</p></section>
+<section class="wa-detail-section" aria-labelledby="waASTWhy"><h3 id="waASTWhy">¿Por qué es importante?</h3>
+<p>Puede elevarse por causas hepáticas o musculares.</p><p>Se interpreta junto con ALT y los antecedentes.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waASTMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waBioAgeOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waBioAgeDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waBioAgeTitle" aria-describedby="waBioAgeSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waBioAgeClose" class="wa-detail-close" aria-label="Cerrar detalle de Edad biológica estimada">×</button></div>
+<div class="wa-detail-scroll" id="waBioAgeScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waBioAgeTitle" class="wa-detail-title">Edad biológica estimada</h2><p class="wa-detail-unit">Resultado habitual: Años, según algoritmo</p>
+<section class="wa-detail-section" aria-labelledby="waBioAgeWhat"><h3 id="waBioAgeWhat">¿Qué es?</h3><p id="waBioAgeSummary">Estimación algorítmica que combina biomarcadores y datos de investigación para aproximar un indicador de envejecimiento.</p></section>
+<section class="wa-detail-section" aria-labelledby="waBioAgeWhy"><h3 id="waBioAgeWhy">¿Por qué es importante?</h3>
+<p>No es una sustancia medida directamente en sangre.</p><p>PhenoAge y otros modelos utilizan variables y supuestos distintos.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waBioAgeMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waEAGOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waEAGDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waEAGTitle" aria-describedby="waEAGSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waEAGClose" class="wa-detail-close" aria-label="Cerrar detalle de Glucosa promedio estimada">×</button></div>
+<div class="wa-detail-scroll" id="waEAGScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waEAGTitle" class="wa-detail-title">Glucosa promedio estimada</h2><p class="wa-detail-unit">Resultado habitual: mg/dL o mmol/L (calculada)</p>
+<section class="wa-detail-section" aria-labelledby="waEAGWhat"><h3 id="waEAGWhat">¿Qué es?</h3><p id="waEAGSummary">Conversión estadística de HbA1c a unidades habituales de glucosa.</p></section>
+<section class="wa-detail-section" aria-labelledby="waEAGWhy"><h3 id="waEAGWhy">¿Por qué es importante?</h3>
+<p>Cálculo en mg/dL: 28,7 × HbA1c (%) − 46,7.</p><p>Estima el promedio de meses previos, no la variabilidad diaria.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waEAGMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waFIB4Overlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waFIB4Dialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waFIB4Title" aria-describedby="waFIB4Summary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waFIB4Close" class="wa-detail-close" aria-label="Cerrar detalle de Índice FIB-4">×</button></div>
+<div class="wa-detail-scroll" id="waFIB4Scroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waFIB4Title" class="wa-detail-title">Índice FIB-4</h2><p class="wa-detail-unit">Resultado habitual: Índice calculado sin unidad</p>
+<section class="wa-detail-section" aria-labelledby="waFIB4What"><h3 id="waFIB4What">¿Qué es?</h3><p id="waFIB4Summary">Índice derivado de edad, AST, ALT y plaquetas utilizado para estratificar riesgo de fibrosis avanzada en contextos específicos.</p></section>
+<section class="wa-detail-section" aria-labelledby="waFIB4Why"><h3 id="waFIB4Why">¿Por qué es importante?</h3>
+<p>Fórmula: edad × AST / (plaquetas × raíz cuadrada de ALT).</p><p>Su utilidad depende de edad y contexto clínico; no mide fibrosis directamente.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waFIB4Membership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waFastingGlucoseOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waFastingGlucoseDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waFastingGlucoseTitle" aria-describedby="waFastingGlucoseSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waFastingGlucoseClose" class="wa-detail-close" aria-label="Cerrar detalle de Glucosa en ayunas">×</button></div>
+<div class="wa-detail-scroll" id="waFastingGlucoseScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waFastingGlucoseTitle" class="wa-detail-title">Glucosa en ayunas</h2><p class="wa-detail-unit">Resultado habitual: mg/dL o mmol/L</p>
+<section class="wa-detail-section" aria-labelledby="waFastingGlucoseWhat"><h3 id="waFastingGlucoseWhat">¿Qué es?</h3><p id="waFastingGlucoseSummary">Concentración sanguínea de glucosa después del ayuno requerido para la prueba.</p></section>
+<section class="wa-detail-section" aria-labelledby="waFastingGlucoseWhy"><h3 id="waFastingGlucoseWhy">¿Por qué es importante?</h3>
+<p>Informa sobre el metabolismo de glucosa en ese momento.</p><p>Ayuno, medicamentos y estado de salud pueden influir.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waFastingGlucoseMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waFastingInsulinOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waFastingInsulinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waFastingInsulinTitle" aria-describedby="waFastingInsulinSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waFastingInsulinClose" class="wa-detail-close" aria-label="Cerrar detalle de Insulina en ayunas">×</button></div>
+<div class="wa-detail-scroll" id="waFastingInsulinScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waFastingInsulinTitle" class="wa-detail-title">Insulina en ayunas</h2><p class="wa-detail-unit">Resultado habitual: µUI/mL o mUI/L</p>
+<section class="wa-detail-section" aria-labelledby="waFastingInsulinWhat"><h3 id="waFastingInsulinWhat">¿Qué es?</h3><p id="waFastingInsulinSummary">Concentración sanguínea de la hormona insulina después del ayuno requerido.</p></section>
+<section class="wa-detail-section" aria-labelledby="waFastingInsulinWhy"><h3 id="waFastingInsulinWhy">¿Por qué es importante?</h3>
+<p>Se interpreta habitualmente con glucosa de ayuno.</p><p>Los métodos de insulina no son completamente comparables.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waFastingInsulinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waGGTOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waGGTDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waGGTTitle" aria-describedby="waGGTSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waGGTClose" class="wa-detail-close" aria-label="Cerrar detalle de Gamma-glutamil transferasa (GGT)">×</button></div>
+<div class="wa-detail-scroll" id="waGGTScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waGGTTitle" class="wa-detail-title">Gamma-glutamil transferasa (GGT)</h2><p class="wa-detail-unit">Resultado habitual: U/L</p>
+<section class="wa-detail-section" aria-labelledby="waGGTWhat"><h3 id="waGGTWhat">¿Qué es?</h3><p id="waGGTSummary">Enzima sanguínea asociada con diversos procesos del hígado y las vías biliares.</p></section>
+<section class="wa-detail-section" aria-labelledby="waGGTWhy"><h3 id="waGGTWhy">¿Por qué es importante?</h3>
+<p>Puede ayudar a contextualizar la fosfatasa alcalina.</p><p>Medicamentos y alcohol también pueden influir.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waGGTMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waGlobulinsOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waGlobulinsDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waGlobulinsTitle" aria-describedby="waGlobulinsSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waGlobulinsClose" class="wa-detail-close" aria-label="Cerrar detalle de Globulinas totales">×</button></div>
+<div class="wa-detail-scroll" id="waGlobulinsScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waGlobulinsTitle" class="wa-detail-title">Globulinas totales</h2><p class="wa-detail-unit">Resultado habitual: g/dL o g/L</p>
+<section class="wa-detail-section" aria-labelledby="waGlobulinsWhat"><h3 id="waGlobulinsWhat">¿Qué es?</h3><p id="waGlobulinsSummary">Conjunto de proteínas sanguíneas que a menudo se calcula como proteínas totales menos albúmina.</p></section>
+<section class="wa-detail-section" aria-labelledby="waGlobulinsWhy"><h3 id="waGlobulinsWhy">¿Por qué es importante?</h3>
+<p>Incluye diversas proteínas y fracciones de defensa.</p><p>La inflamación y otras condiciones pueden modificar su concentración.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waGlobulinsMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waHOMAIROverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waHOMAIRDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waHOMAIRTitle" aria-describedby="waHOMAIRSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waHOMAIRClose" class="wa-detail-close" aria-label="Cerrar detalle de Índice HOMA-IR">×</button></div>
+<div class="wa-detail-scroll" id="waHOMAIRScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waHOMAIRTitle" class="wa-detail-title">Índice HOMA-IR</h2><p class="wa-detail-unit">Resultado habitual: Índice calculado sin unidad</p>
+<section class="wa-detail-section" aria-labelledby="waHOMAIRWhat"><h3 id="waHOMAIRWhat">¿Qué es?</h3><p id="waHOMAIRSummary">Modelo de investigación basado en glucosa e insulina en ayunas para aproximar resistencia a la insulina.</p></section>
+<section class="wa-detail-section" aria-labelledby="waHOMAIRWhy"><h3 id="waHOMAIRWhy">¿Por qué es importante?</h3>
+<p>Con mg/dL y µUI/mL: glucosa × insulina / 405.</p><p>Los resultados dependen del método y no hay un umbral universal.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waHOMAIRMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waHbA1cOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waHbA1cDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waHbA1cTitle" aria-describedby="waHbA1cSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waHbA1cClose" class="wa-detail-close" aria-label="Cerrar detalle de Hemoglobina glucosilada (HbA1c)">×</button></div>
+<div class="wa-detail-scroll" id="waHbA1cScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waHbA1cTitle" class="wa-detail-title">Hemoglobina glucosilada (HbA1c)</h2><p class="wa-detail-unit">Resultado habitual: % o mmol/mol</p>
+<section class="wa-detail-section" aria-labelledby="waHbA1cWhat"><h3 id="waHbA1cWhat">¿Qué es?</h3><p id="waHbA1cSummary">Proporción de hemoglobina expuesta a glucosa; aproxima la glucemia media de meses anteriores.</p></section>
+<section class="wa-detail-section" aria-labelledby="waHbA1cWhy"><h3 id="waHbA1cWhy">¿Por qué es importante?</h3>
+<p>Complementa la glucosa de una medición puntual.</p><p>Anemias y otras condiciones que afectan los eritrocitos pueden interferir.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waHbA1cMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waQUICKIOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waQUICKIDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waQUICKITitle" aria-describedby="waQUICKISummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waQUICKIClose" class="wa-detail-close" aria-label="Cerrar detalle de Índice QUICKI">×</button></div>
+<div class="wa-detail-scroll" id="waQUICKIScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waQUICKITitle" class="wa-detail-title">Índice QUICKI</h2><p class="wa-detail-unit">Resultado habitual: Índice calculado sin unidad</p>
+<section class="wa-detail-section" aria-labelledby="waQUICKIWhat"><h3 id="waQUICKIWhat">¿Qué es?</h3><p id="waQUICKISummary">Índice de investigación basado en el logaritmo de glucosa e insulina en ayunas para aproximar sensibilidad a insulina.</p></section>
+<section class="wa-detail-section" aria-labelledby="waQUICKIWhy"><h3 id="waQUICKIWhy">¿Por qué es importante?</h3>
+<p>Fórmula: 1/[log10(insulina µUI/mL) + log10(glucosa mg/dL)].</p><p>Requiere unidades consistentes y no dispone de un umbral universal.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waQUICKIMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waTotalBilirubinOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waTotalBilirubinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waTotalBilirubinTitle" aria-describedby="waTotalBilirubinSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waTotalBilirubinClose" class="wa-detail-close" aria-label="Cerrar detalle de Bilirrubina total">×</button></div>
+<div class="wa-detail-scroll" id="waTotalBilirubinScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waTotalBilirubinTitle" class="wa-detail-title">Bilirrubina total</h2><p class="wa-detail-unit">Resultado habitual: mg/dL o µmol/L</p>
+<section class="wa-detail-section" aria-labelledby="waTotalBilirubinWhat"><h3 id="waTotalBilirubinWhat">¿Qué es?</h3><p id="waTotalBilirubinSummary">Concentración sanguínea de bilirrubina, pigmento producido principalmente por degradación de hemoglobina.</p></section>
+<section class="wa-detail-section" aria-labelledby="waTotalBilirubinWhy"><h3 id="waTotalBilirubinWhy">¿Por qué es importante?</h3>
+<p>El hígado participa en su transformación y eliminación.</p><p>Incluye fracciones conjugada y no conjugada.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waTotalBilirubinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<div id="waTyGOverlay" class="wa-detail-overlay" hidden>
+<div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+<section id="waTyGDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waTyGTitle" aria-describedby="waTyGSummary" tabindex="-1">
+<div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waTyGClose" class="wa-detail-close" aria-label="Cerrar detalle de Índice TyG">×</button></div>
+<div class="wa-detail-scroll" id="waTyGScroll" tabindex="0">
+<p class="wa-detail-categories">Metabolismo · Indicadores educativos</p>
+<h2 id="waTyGTitle" class="wa-detail-title">Índice TyG</h2><p class="wa-detail-unit">Resultado habitual: Índice calculado sin unidad</p>
+<section class="wa-detail-section" aria-labelledby="waTyGWhat"><h3 id="waTyGWhat">¿Qué es?</h3><p id="waTyGSummary">Índice de investigación que combina glucosa y triglicéridos en ayunas.</p></section>
+<section class="wa-detail-section" aria-labelledby="waTyGWhy"><h3 id="waTyGWhy">¿Por qué es importante?</h3>
+<p>Fórmula habitual: ln[(triglicéridos × glucosa)/2], ambos en mg/dL.</p><p>No existe un umbral diagnóstico universal para todas las poblaciones.</p>
+<p>La interpretación depende de las unidades, el método de laboratorio y el contexto individual.</p>
+<p>Los resultados longitudinales pueden aportar contexto cuando se comparan con un método consistente.</p>
+<p>Un valor aislado no constituye un diagnóstico ni sustituye una valoración profesional.</p></section>
+</div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waTyGMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div></section></div>
+<script>
+(function(){'use strict';
+const fichas=[{"nombre":"Relación albúmina / globulina","id":"waAGR"},{"nombre":"Fosfatasa alcalina","id":"waALP"},{"nombre":"Aspartato aminotransferasa (AST)","id":"waAST"},{"nombre":"Edad biológica estimada","id":"waBioAge"},{"nombre":"Glucosa promedio estimada","id":"waEAG"},{"nombre":"Índice FIB-4","id":"waFIB4"},{"nombre":"Glucosa en ayunas","id":"waFastingGlucose"},{"nombre":"Insulina en ayunas","id":"waFastingInsulin"},{"nombre":"Gamma-glutamil transferasa (GGT)","id":"waGGT"},{"nombre":"Globulinas totales","id":"waGlobulins"},{"nombre":"Índice HOMA-IR","id":"waHOMAIR"},{"nombre":"Hemoglobina glucosilada (HbA1c)","id":"waHbA1c"},{"nombre":"Índice QUICKI","id":"waQUICKI"},{"nombre":"Bilirrubina total","id":"waTotalBilirubin"},{"nombre":"Índice TyG","id":"waTyG"}];
+fichas.forEach(({nombre,id})=>{
+const overlay=document.getElementById(id+'Overlay'),dialog=document.getElementById(id+'Dialog'),closer=document.getElementById(id+'Close'),scroller=document.getElementById(id+'Scroll'),scrim=overlay?.querySelector('[data-wa-dismiss]');
+if(!overlay||!dialog||!closer||!scroller||!scrim)return;
+const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>row.querySelector('.lab-name')?.textContent.trim()===nombre);
+let previousFocus=null;
+function open(source){previousFocus=source||document.activeElement;overlay.hidden=false;document.body.classList.add('wa-detail-is-open');scroller.scrollTop=0;closer.focus({preventScroll:true});}
+function close(){if(overlay.hidden)return;overlay.hidden=true;document.body.classList.remove('wa-detail-is-open');if(previousFocus?.isConnected&&!previousFocus.hidden)previousFocus.focus({preventScroll:true});else document.getElementById('catalogSearch')?.focus({preventScroll:true});}
+triggers.forEach(row=>{row.classList.add('wa-detail-trigger');row.setAttribute('role','button');row.setAttribute('tabindex','0');row.setAttribute('aria-haspopup','dialog');row.setAttribute('aria-controls',id+'Dialog');row.setAttribute('aria-label','Abrir información sobre '+nombre);row.addEventListener('click',()=>open(row));row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(row);}})});
+closer.addEventListener('click',close);scrim.addEventListener('click',close);
+document.addEventListener('keydown',e=>{if(overlay.hidden)return;if(e.key==='Escape'){e.preventDefault();close();return;}if(e.key!=='Tab')return;const a=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href],[tabindex="0"]'));const first=a[0],last=a[a.length-1];if(!first||!last)return;if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}});
+});
+})();
+</script>
+<!-- FIN Sprint 4.13 -->
 <script src="../shared/wellness-shell.js"></script>
 </body>
 </html>
