@@ -3833,6 +3833,66 @@ document.addEventListener('keydown',e=>{if(overlay.hidden)return;if(e.key==='Esc
 })();
 </script>
 <!-- FIN Sprint 4.13 -->
+<!-- Corrección Sprint 4.13: Creatina quinasa (CK) -->
+<div id="waCKOverlay" class="wa-detail-overlay" hidden>
+ <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+ <section id="waCKDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waCKTitle" aria-describedby="waCKSummary" tabindex="-1">
+  <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waCKClose" class="wa-detail-close" aria-label="Cerrar detalle de Creatina quinasa (CK)">×</button></div>
+  <div class="wa-detail-scroll" id="waCKScroll" tabindex="0">
+   <p class="wa-detail-categories">Salud muscular · Enzimas</p>
+   <h2 id="waCKTitle" class="wa-detail-title">Creatina quinasa (CK)</h2>
+   <p class="wa-detail-unit">Unidad habitual: U/L</p>
+   <section class="wa-detail-section" aria-labelledby="waCKWhat"><h3 id="waCKWhat">¿Qué es?</h3><p id="waCKSummary">La creatina quinasa (CK), también denominada creatina cinasa o CPK, es una enzima implicada en el suministro rápido de energía a las células musculares. El análisis mide su actividad en sangre.</p></section>
+   <section class="wa-detail-section" aria-labelledby="waCKWhy"><h3 id="waCKWhy">¿Por qué es importante?</h3><p><strong>Actividad muscular.</strong> La actividad física intensa puede elevar temporalmente la CK.</p><p><strong>Lesión muscular.</strong> Un aumento puede acompañar lesiones, inflamación u otras condiciones que afecten al músculo.</p><p><strong>Otras influencias.</strong> Algunos medicamentos y características individuales también pueden modificar el resultado.</p><p><strong>Interpretación conjunta.</strong> La actividad física reciente, los síntomas y la evolución de otras pruebas aportan contexto.</p><p><strong>Precaución.</strong> La CK aislada no permite localizar el origen ni determinar la causa de una elevación.</p></section>
+  </div>
+  <div class="wa-detail-footer"><a class="wa-detail-cta" id="waCKMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+ </section>
+</div>
+<!-- Corrección Sprint 4.13: Capacidad total de fijación del hierro (TIBC) -->
+<div id="waTIBCOverlay" class="wa-detail-overlay" hidden>
+ <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+ <section id="waTIBCDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waTIBCTitle" aria-describedby="waTIBCSummary" tabindex="-1">
+  <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waTIBCClose" class="wa-detail-close" aria-label="Cerrar detalle de Capacidad total de fijación del hierro (TIBC)">×</button></div>
+  <div class="wa-detail-scroll" id="waTIBCScroll" tabindex="0">
+   <p class="wa-detail-categories">Hierro · Sangre</p>
+   <h2 id="waTIBCTitle" class="wa-detail-title">Capacidad total de fijación del hierro (TIBC)</h2>
+   <p class="wa-detail-unit">Unidad habitual: µg/dL o µmol/L</p>
+   <section class="wa-detail-section" aria-labelledby="waTIBCWhat"><h3 id="waTIBCWhat">¿Qué es?</h3><p id="waTIBCSummary">La capacidad total de fijación del hierro (TIBC) estima cuánto hierro puede transportar la transferrina en la sangre. Es una medida de la capacidad total de unión al hierro, no de la cantidad de hierro almacenada.</p></section>
+   <section class="wa-detail-section" aria-labelledby="waTIBCWhy"><h3 id="waTIBCWhy">¿Por qué es importante?</h3><p><strong>Transporte del hierro.</strong> Aporta información sobre la capacidad disponible de las proteínas transportadoras.</p><p><strong>Interpretación con hierro sérico.</strong> Se considera junto con la concentración de hierro circulante.</p><p><strong>Saturación de transferrina.</strong> La saturación puede calcularse como hierro sérico dividido por TIBC y multiplicado por 100, usando unidades compatibles.</p><p><strong>Reservas de hierro.</strong> La ferritina aporta información complementaria sobre las reservas y debe valorarse por separado.</p><p><strong>Precaución.</strong> Las variaciones de TIBC pueden deberse a distintas situaciones; el resultado aislado no establece una deficiencia de hierro.</p></section>
+  </div>
+  <div class="wa-detail-footer"><a class="wa-detail-cta" id="waTIBCMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+ </section>
+</div>
+<script>
+/* Corrección puntual: activar dos filas existentes sin cambiar los otros 126 paneles. */
+(function(){
+ 'use strict';
+ const fichas=[{"nombre":"Creatina quinasa (CK)","id":"waCK"},{"nombre":"Capacidad total de fijación del hierro (TIBC)","id":"waTIBC"}];
+ fichas.forEach(({nombre,id})=>{
+  const overlay=document.getElementById(id+'Overlay');
+  const dialog=document.getElementById(id+'Dialog');
+  const closer=document.getElementById(id+'Close');
+  const scroller=document.getElementById(id+'Scroll');
+  const scrim=overlay?.querySelector('[data-wa-dismiss]');
+  if(!overlay||!dialog||!closer||!scroller||!scrim)return;
+  const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>row.querySelector('.lab-name')?.textContent.trim()===nombre);
+  let previousFocus=null;
+  function open(source){previousFocus=source||document.activeElement;overlay.hidden=false;document.body.classList.add('wa-detail-is-open');scroller.scrollTop=0;closer.focus({preventScroll:true});}
+  function close(){if(overlay.hidden)return;overlay.hidden=true;document.body.classList.remove('wa-detail-is-open');if(previousFocus?.isConnected&&!previousFocus.hidden)previousFocus.focus({preventScroll:true});else document.getElementById('catalogSearch')?.focus({preventScroll:true});}
+  triggers.forEach(row=>{
+   row.classList.add('wa-detail-trigger');row.setAttribute('role','button');row.setAttribute('tabindex','0');row.setAttribute('aria-haspopup','dialog');row.setAttribute('aria-controls',id+'Dialog');row.setAttribute('aria-label','Abrir información sobre '+nombre);
+   row.addEventListener('click',()=>open(row));
+   row.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();open(row);}});
+  });
+  closer.addEventListener('click',close);scrim.addEventListener('click',close);
+  document.addEventListener('keydown',e=>{
+   if(overlay.hidden)return;if(e.key==='Escape'){e.preventDefault();close();return;}if(e.key!=='Tab')return;
+   const focusable=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href],[tabindex="0"]'));const first=focusable[0],last=focusable[focusable.length-1];
+   if(!first||!last)return;if(e.shiftKey&&document.activeElement===first){e.preventDefault();last.focus();}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first.focus();}
+  });
+ });
+})();
+</script>
 <script src="../shared/wellness-shell.js"></script>
 </body>
 </html>
