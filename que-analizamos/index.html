@@ -3153,6 +3153,204 @@ document.addEventListener('keydown',event=>{if(overlay.hidden)return;if(event.ke
 });})();
 </script>
 <!-- FIN Sprint 4.10 -->
+<!-- INICIO Sprint 4.11 -->
+<!-- Sprint 4.11 Aspecto de la orina -->
+<div id="waUrineAppearanceOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineAppearanceDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineAppearanceTitle" aria-describedby="waUrineAppearanceSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineAppearanceClose" class="wa-detail-close" aria-label="Cerrar detalle de Aspecto de la orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineAppearanceScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineAppearanceTitle" class="wa-detail-title">Aspecto de la orina</h2><p class="wa-detail-unit">Resultado habitual: Aspecto cualitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineAppearanceWhat"><h3 id="waUrineAppearanceWhat">¿Qué es?</h3><p id="waUrineAppearanceSummary">Describe si la orina se observa clara, turbia u opalescente. Es una observación física del uroanálisis, no una medición específica.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineAppearanceWhy"><h3 id="waUrineAppearanceWhy">¿Por qué es importante?</h3><p><strong>Claridad.</strong> Puede variar por partículas suspendidas y concentración.</p><p><strong>Factores.</strong> Cristales, células y mucosidad pueden influir.</p><p><strong>Interpretación.</strong> No identifica infecciones por sí sola.</p><p><strong>Muestra.</strong> El tiempo y conservación pueden cambiar su aspecto.</p><p><strong>Contexto.</strong> Se evalúa junto a microscopía y química urinaria.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineAppearanceMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Bacterias en orina -->
+<div id="waUrineBacteriaOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineBacteriaDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineBacteriaTitle" aria-describedby="waUrineBacteriaSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineBacteriaClose" class="wa-detail-close" aria-label="Cerrar detalle de Bacterias en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineBacteriaScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineBacteriaTitle" class="wa-detail-title">Bacterias en orina</h2><p class="wa-detail-unit">Resultado habitual: Hallazgo microscópico cualitativo o semicuantitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineBacteriaWhat"><h3 id="waUrineBacteriaWhat">¿Qué es?</h3><p id="waUrineBacteriaSummary">Indica si en el sedimento urinario se observan bacterias y, ocasionalmente, una estimación de su cantidad.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineBacteriaWhy"><h3 id="waUrineBacteriaWhy">¿Por qué es importante?</h3><p><strong>Observación.</strong> No identifica necesariamente la especie bacteriana.</p><p><strong>Contaminación.</strong> La recogida inadecuada puede introducir bacterias externas.</p><p><strong>Síntomas.</strong> Un resultado aislado no confirma infección.</p><p><strong>Complemento.</strong> En contextos específicos puede requerirse urocultivo.</p><p><strong>Contexto.</strong> Considerar leucocitos, nitritos y condiciones de recogida.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineBacteriaMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Bilirrubina en orina -->
+<div id="waUrineBilirubinOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineBilirubinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineBilirubinTitle" aria-describedby="waUrineBilirubinSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineBilirubinClose" class="wa-detail-close" aria-label="Cerrar detalle de Bilirrubina en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineBilirubinScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineBilirubinTitle" class="wa-detail-title">Bilirrubina en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo o positivo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineBilirubinWhat"><h3 id="waUrineBilirubinWhat">¿Qué es?</h3><p id="waUrineBilirubinSummary">Busca bilirrubina conjugada en la orina mediante una prueba química.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineBilirubinWhy"><h3 id="waUrineBilirubinWhy">¿Por qué es importante?</h3><p><strong>Metabolismo.</strong> La bilirrubina se forma al degradarse componentes sanguíneos.</p><p><strong>Solubilidad.</strong> La fracción conjugada puede pasar a la orina.</p><p><strong>Hígado.</strong> Un resultado positivo puede justificar estudiar pruebas hepáticas.</p><p><strong>Interferencias.</strong> La exposición a luz y la conservación afectan la muestra.</p><p><strong>Límite.</strong> No diagnostica por sí sola enfermedad hepática.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineBilirubinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cristales de oxalato de calcio en orina -->
+<div id="waUrineCalciumOxalateOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineCalciumOxalateDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineCalciumOxalateTitle" aria-describedby="waUrineCalciumOxalateSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineCalciumOxalateClose" class="wa-detail-close" aria-label="Cerrar detalle de Cristales de oxalato de calcio en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineCalciumOxalateScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineCalciumOxalateTitle" class="wa-detail-title">Cristales de oxalato de calcio en orina</h2><p class="wa-detail-unit">Resultado habitual: Hallazgo microscópico por campo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineCalciumOxalateWhat"><h3 id="waUrineCalciumOxalateWhat">¿Qué es?</h3><p id="waUrineCalciumOxalateSummary">Describe partículas cristalinas de calcio y oxalato observadas en el sedimento.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineCalciumOxalateWhy"><h3 id="waUrineCalciumOxalateWhy">¿Por qué es importante?</h3><p><strong>Presencia.</strong> Pueden observarse sin enfermedad.</p><p><strong>Cristalización.</strong> Influyen la concentración, pH y manejo de la muestra.</p><p><strong>Cálculos.</strong> Estos compuestos pueden formar parte de algunos cálculos renales.</p><p><strong>Limitación.</strong> Cristales presentes no equivalen a tener cálculos.</p><p><strong>Evaluación.</strong> Relacionar con síntomas y otros resultados de orina.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineCalciumOxalateMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cilindros urinarios (otros) -->
+<div id="waUrineOtherCastsOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineOtherCastsDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineOtherCastsTitle" aria-describedby="waUrineOtherCastsSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineOtherCastsClose" class="wa-detail-close" aria-label="Cerrar detalle de Cilindros urinarios (otros)">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineOtherCastsScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineOtherCastsTitle" class="wa-detail-title">Cilindros urinarios (otros)</h2><p class="wa-detail-unit">Resultado habitual: Tipo y cantidad por campo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineOtherCastsWhat"><h3 id="waUrineOtherCastsWhat">¿Qué es?</h3><p id="waUrineOtherCastsSummary">Los cilindros se forman dentro de los túbulos renales. Esta categoría agrupa tipos que no tienen una ficha específica.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineOtherCastsWhy"><h3 id="waUrineOtherCastsWhy">¿Por qué es importante?</h3><p><strong>Origen.</strong> Proceden de estructuras tubulares renales.</p><p><strong>Clasificación.</strong> El contenido celular o granular determina su descripción.</p><p><strong>Identificación.</strong> El laboratorio debe precisar el tipo si es posible.</p><p><strong>Muestra.</strong> El tiempo de procesamiento influye en su conservación.</p><p><strong>Limitación.</strong> La etiqueta «otros» no basta para concluir una enfermedad.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineOtherCastsMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Color de la orina -->
+<div id="waUrineColorOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineColorDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineColorTitle" aria-describedby="waUrineColorSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineColorClose" class="wa-detail-close" aria-label="Cerrar detalle de Color de la orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineColorScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineColorTitle" class="wa-detail-title">Color de la orina</h2><p class="wa-detail-unit">Resultado habitual: Observación cualitativa</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineColorWhat"><h3 id="waUrineColorWhat">¿Qué es?</h3><p id="waUrineColorSummary">Registra el color visible de una muestra de orina.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineColorWhy"><h3 id="waUrineColorWhy">¿Por qué es importante?</h3><p><strong>Concentración.</strong> La hidratación influye en la intensidad del amarillo.</p><p><strong>Alimentos.</strong> Algunos productos y colorantes cambian el color.</p><p><strong>Medicamentos.</strong> Ciertos fármacos alteran temporalmente el tono.</p><p><strong>Limitación.</strong> El color no mide hidratación ni confirma sangre.</p><p><strong>Interpretación.</strong> Evaluar junto con densidad, aspecto y otras pruebas.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineColorMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cristales en orina (otros) -->
+<div id="waUrineOtherCrystalsOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineOtherCrystalsDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineOtherCrystalsTitle" aria-describedby="waUrineOtherCrystalsSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineOtherCrystalsClose" class="wa-detail-close" aria-label="Cerrar detalle de Cristales en orina (otros)">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineOtherCrystalsScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineOtherCrystalsTitle" class="wa-detail-title">Cristales en orina (otros)</h2><p class="wa-detail-unit">Resultado habitual: Tipo y cantidad microscópica</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineOtherCrystalsWhat"><h3 id="waUrineOtherCrystalsWhat">¿Qué es?</h3><p id="waUrineOtherCrystalsSummary">Agrupa cristales urinarios no incluidos en categorías específicas del catálogo.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineOtherCrystalsWhy"><h3 id="waUrineOtherCrystalsWhy">¿Por qué es importante?</h3><p><strong>Identificación.</strong> Forma, pH y composición orientan la descripción.</p><p><strong>Variación.</strong> Temperatura y almacenamiento pueden causar precipitación.</p><p><strong>Frecuencia.</strong> Algunos hallazgos aparecen en muestras normales.</p><p><strong>Especificidad.</strong> Siempre que sea posible, registrar el tipo concreto.</p><p><strong>Límite.</strong> La presencia aislada no confirma cálculos o enfermedad.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineOtherCrystalsMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Glucosa en orina -->
+<div id="waUrineGlucoseOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineGlucoseDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineGlucoseTitle" aria-describedby="waUrineGlucoseSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineGlucoseClose" class="wa-detail-close" aria-label="Cerrar detalle de Glucosa en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineGlucoseScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineGlucoseTitle" class="wa-detail-title">Glucosa en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo, positivo o semicuantitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineGlucoseWhat"><h3 id="waUrineGlucoseWhat">¿Qué es?</h3><p id="waUrineGlucoseSummary">Busca glucosa excretada en la orina mediante tira reactiva u otro método.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineGlucoseWhy"><h3 id="waUrineGlucoseWhy">¿Por qué es importante?</h3><p><strong>Riñón.</strong> Habitualmente reabsorbe gran parte de la glucosa filtrada.</p><p><strong>Variación.</strong> Puede aparecer con glucosa sanguínea elevada o cambios tubulares.</p><p><strong>Medicamentos.</strong> Algunos tratamientos aumentan la glucosuria.</p><p><strong>Limitación.</strong> No sustituye glucosa en sangre ni HbA1c.</p><p><strong>Contexto.</strong> Importan el momento de la muestra y el método.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineGlucoseMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cilindros granulosos en orina -->
+<div id="waUrineGranularCastsOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineGranularCastsDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineGranularCastsTitle" aria-describedby="waUrineGranularCastsSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineGranularCastsClose" class="wa-detail-close" aria-label="Cerrar detalle de Cilindros granulosos en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineGranularCastsScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineGranularCastsTitle" class="wa-detail-title">Cilindros granulosos en orina</h2><p class="wa-detail-unit">Resultado habitual: Cantidad por campo de bajo aumento</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineGranularCastsWhat"><h3 id="waUrineGranularCastsWhat">¿Qué es?</h3><p id="waUrineGranularCastsSummary">Son estructuras tubulares que contienen material granular identificable al microscopio.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineGranularCastsWhy"><h3 id="waUrineGranularCastsWhy">¿Por qué es importante?</h3><p><strong>Origen.</strong> Se forman en túbulos renales con material proteico y celular.</p><p><strong>Aspecto.</strong> Pueden presentar granulación fina o gruesa.</p><p><strong>Contexto.</strong> Se valoran ante posibles alteraciones renales.</p><p><strong>Limitación.</strong> No señalan por sí solos una causa específica.</p><p><strong>Complementos.</strong> Revisar creatinina, proteinuria y otros hallazgos.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineGranularCastsMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cilindros hialinos en orina -->
+<div id="waUrineHyalineCastsOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineHyalineCastsDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineHyalineCastsTitle" aria-describedby="waUrineHyalineCastsSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineHyalineCastsClose" class="wa-detail-close" aria-label="Cerrar detalle de Cilindros hialinos en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineHyalineCastsScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineHyalineCastsTitle" class="wa-detail-title">Cilindros hialinos en orina</h2><p class="wa-detail-unit">Resultado habitual: Cantidad por campo de bajo aumento</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineHyalineCastsWhat"><h3 id="waUrineHyalineCastsWhat">¿Qué es?</h3><p id="waUrineHyalineCastsSummary">Son cilindros transparentes formados principalmente por uromodulina dentro de túbulos renales.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineHyalineCastsWhy"><h3 id="waUrineHyalineCastsWhy">¿Por qué es importante?</h3><p><strong>Formación.</strong> Pueden encontrarse cuando la orina está concentrada.</p><p><strong>Situaciones.</strong> A veces aparecen tras ejercicio o deshidratación.</p><p><strong>Microscopía.</strong> Su transparencia dificulta la detección.</p><p><strong>Limitación.</strong> Pocas unidades no prueban enfermedad renal.</p><p><strong>Contexto.</strong> Interpretar con otros tipos de cilindros y pruebas renales.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineHyalineCastsMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Cetonas en orina -->
+<div id="waUrineKetonesOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineKetonesDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineKetonesTitle" aria-describedby="waUrineKetonesSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineKetonesClose" class="wa-detail-close" aria-label="Cerrar detalle de Cetonas en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineKetonesScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineKetonesTitle" class="wa-detail-title">Cetonas en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo, positivo o semicuantitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineKetonesWhat"><h3 id="waUrineKetonesWhat">¿Qué es?</h3><p id="waUrineKetonesSummary">Detecta determinados cuerpos cetónicos producidos cuando aumenta el uso de grasas para obtener energía.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineKetonesWhy"><h3 id="waUrineKetonesWhy">¿Por qué es importante?</h3><p><strong>Metabolismo.</strong> Los cuerpos cetónicos se producen principalmente en el hígado.</p><p><strong>Variación.</strong> Ayuno y dietas bajas en carbohidratos pueden influir.</p><p><strong>Diabetes.</strong> En ciertos contextos, cifras elevadas requieren atención sanitaria.</p><p><strong>Método.</strong> La tira detecta sobre todo acetoacetato.</p><p><strong>Limitación.</strong> No equivale a beta-hidroxibutirato sanguíneo.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineKetonesMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Esterasa leucocitaria en orina -->
+<div id="waUrineLeukocyteEsteraseOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineLeukocyteEsteraseDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineLeukocyteEsteraseTitle" aria-describedby="waUrineLeukocyteEsteraseSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineLeukocyteEsteraseClose" class="wa-detail-close" aria-label="Cerrar detalle de Esterasa leucocitaria en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineLeukocyteEsteraseScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineLeukocyteEsteraseTitle" class="wa-detail-title">Esterasa leucocitaria en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo, positivo o semicuantitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineLeukocyteEsteraseWhat"><h3 id="waUrineLeukocyteEsteraseWhat">¿Qué es?</h3><p id="waUrineLeukocyteEsteraseSummary">Detecta una actividad enzimática que puede indicar glóbulos blancos en una muestra urinaria.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineLeukocyteEsteraseWhy"><h3 id="waUrineLeukocyteEsteraseWhy">¿Por qué es importante?</h3><p><strong>Leucocitos.</strong> Pueden liberar enzimas reconocidas por la tira reactiva.</p><p><strong>Inflamación.</strong> El resultado puede relacionarse con distintas causas.</p><p><strong>Limitación.</strong> No confirma infección bacteriana por sí mismo.</p><p><strong>Interferencias.</strong> Contaminación y condiciones de recogida influyen.</p><p><strong>Contexto.</strong> Evaluar con nitritos, microscopía y síntomas.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineLeukocyteEsteraseMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Nitritos en orina -->
+<div id="waUrineNitritesOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineNitritesDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineNitritesTitle" aria-describedby="waUrineNitritesSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineNitritesClose" class="wa-detail-close" aria-label="Cerrar detalle de Nitritos en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineNitritesScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineNitritesTitle" class="wa-detail-title">Nitritos en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo o positivo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineNitritesWhat"><h3 id="waUrineNitritesWhat">¿Qué es?</h3><p id="waUrineNitritesSummary">La tira reactiva busca nitritos que ciertas bacterias producen al transformar nitratos urinarios.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineNitritesWhy"><h3 id="waUrineNitritesWhy">¿Por qué es importante?</h3><p><strong>Mecanismo.</strong> No todas las bacterias convierten nitratos en nitritos.</p><p><strong>Positivo.</strong> Puede aportar evidencia indirecta de bacterias urinarias.</p><p><strong>Negativo.</strong> No descarta infección.</p><p><strong>Factores.</strong> Influyen tiempo en vejiga, dieta y muestra.</p><p><strong>Limitación.</strong> Debe interpretarse junto con síntomas y otras pruebas.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineNitritesMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Sangre oculta en orina -->
+<div id="waUrineOccultBloodOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineOccultBloodDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineOccultBloodTitle" aria-describedby="waUrineOccultBloodSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineOccultBloodClose" class="wa-detail-close" aria-label="Cerrar detalle de Sangre oculta en orina">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineOccultBloodScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineOccultBloodTitle" class="wa-detail-title">Sangre oculta en orina</h2><p class="wa-detail-unit">Resultado habitual: Negativo, positivo o semicuantitativo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineOccultBloodWhat"><h3 id="waUrineOccultBloodWhat">¿Qué es?</h3><p id="waUrineOccultBloodSummary">La tira reactiva detecta actividad compatible con hemoglobina, mioglobina o eritrocitos en orina.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineOccultBloodWhy"><h3 id="waUrineOccultBloodWhy">¿Por qué es importante?</h3><p><strong>Cribado.</strong> Detecta una señal química que requiere interpretación.</p><p><strong>Microscopía.</strong> Permite buscar glóbulos rojos si corresponde.</p><p><strong>Interferencias.</strong> Ejercicio y contaminación menstrual pueden influir.</p><p><strong>Limitación.</strong> No distingue automáticamente el origen de la reacción.</p><p><strong>Contexto.</strong> Relacionar con sedimento, síntomas y antecedentes.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineOccultBloodMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<!-- Sprint 4.11 Proteínas en orina (tira reactiva) -->
+<div id="waUrineDipProteinOverlay" class="wa-detail-overlay" hidden>
+  <div class="wa-detail-scrim" data-wa-dismiss aria-hidden="true"></div>
+  <section id="waUrineDipProteinDialog" class="wa-detail-panel" role="dialog" aria-modal="true" aria-labelledby="waUrineDipProteinTitle" aria-describedby="waUrineDipProteinSummary" tabindex="-1">
+    <div class="wa-detail-top"><span class="wa-detail-top-label">Detalle del indicador</span><button type="button" id="waUrineDipProteinClose" class="wa-detail-close" aria-label="Cerrar detalle de Proteínas en orina (tira reactiva)">×</button></div>
+    <div class="wa-detail-scroll" id="waUrineDipProteinScroll" tabindex="0"><p class="wa-detail-categories">Salud renal · Análisis de orina</p><h2 id="waUrineDipProteinTitle" class="wa-detail-title">Proteínas en orina (tira reactiva)</h2><p class="wa-detail-unit">Resultado habitual: Negativo, traza o positivo</p>
+      <section class="wa-detail-section" aria-labelledby="waUrineDipProteinWhat"><h3 id="waUrineDipProteinWhat">¿Qué es?</h3><p id="waUrineDipProteinSummary">Prueba semicuantitativa que detecta principalmente albúmina urinaria mediante una tira reactiva.</p></section>
+      <section class="wa-detail-section" aria-labelledby="waUrineDipProteinWhy"><h3 id="waUrineDipProteinWhy">¿Por qué es importante?</h3><p><strong>Riñón.</strong> La excreción aumentada puede relacionarse con variaciones de filtración.</p><p><strong>Sensibilidad.</strong> No identifica con igual eficacia todas las proteínas.</p><p><strong>Concentración.</strong> Dilución y pH afectan el resultado.</p><p><strong>Complemento.</strong> La relación albúmina/creatinina puede ser más informativa.</p><p><strong>Limitación.</strong> Una tira positiva no diagnostica enfermedad renal crónica.</p></section>
+    </div><div class="wa-detail-footer"><a class="wa-detail-cta" id="waUrineDipProteinMembership" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
+  </section>
+</div>
+<script>
+/* Sprint 4.11: 15 fichas educativas nuevas. No alterar lógica previa. */
+(function(){'use strict';
+const fichas=[{nombre:"Aspecto de la orina",id:"waUrineAppearance"},
+{nombre:"Bacterias en orina",id:"waUrineBacteria"},
+{nombre:"Bilirrubina en orina",id:"waUrineBilirubin"},
+{nombre:"Cristales de oxalato de calcio en orina",id:"waUrineCalciumOxalate"},
+{nombre:"Cilindros urinarios (otros)",id:"waUrineOtherCasts"},
+{nombre:"Color de la orina",id:"waUrineColor"},
+{nombre:"Cristales en orina (otros)",id:"waUrineOtherCrystals"},
+{nombre:"Glucosa en orina",id:"waUrineGlucose"},
+{nombre:"Cilindros granulosos en orina",id:"waUrineGranularCasts"},
+{nombre:"Cilindros hialinos en orina",id:"waUrineHyalineCasts"},
+{nombre:"Cetonas en orina",id:"waUrineKetones"},
+{nombre:"Esterasa leucocitaria en orina",id:"waUrineLeukocyteEsterase"},
+{nombre:"Nitritos en orina",id:"waUrineNitrites"},
+{nombre:"Sangre oculta en orina",id:"waUrineOccultBlood"},
+{nombre:"Proteínas en orina (tira reactiva)",id:"waUrineDipProtein"}];
+fichas.forEach(({nombre,id})=>{
+const overlay=document.getElementById(id+'Overlay'),dialog=document.getElementById(id+'Dialog'),closer=document.getElementById(id+'Close'),scroller=document.getElementById(id+'Scroll'),scrim=overlay?.querySelector('[data-wa-dismiss]');
+if(!overlay||!dialog||!closer||!scroller||!scrim)return;
+const triggers=Array.from(document.querySelectorAll('#catalogo .lab-row')).filter(row=>row.querySelector('.lab-name')?.textContent.trim()===nombre);
+let previousFocus=null;
+function open(source){previousFocus=source||document.activeElement;overlay.hidden=false;document.body.classList.add('wa-detail-is-open');scroller.scrollTop=0;closer.focus({preventScroll:true});}
+function close(){if(overlay.hidden)return;overlay.hidden=true;document.body.classList.remove('wa-detail-is-open');if(previousFocus?.isConnected&&!previousFocus.hidden)previousFocus.focus({preventScroll:true});else document.getElementById('catalogSearch')?.focus({preventScroll:true});}
+triggers.forEach(row=>{row.classList.add('wa-detail-trigger');row.setAttribute('role','button');row.setAttribute('tabindex','0');row.setAttribute('aria-haspopup','dialog');row.setAttribute('aria-controls',id+'Dialog');row.setAttribute('aria-label','Abrir información sobre '+nombre);row.addEventListener('click',()=>open(row));row.addEventListener('keydown',event=>{if(event.key==='Enter'||event.key===' '){event.preventDefault();open(row);}});});
+closer.addEventListener('click',close);scrim.addEventListener('click',close);
+document.addEventListener('keydown',event=>{if(overlay.hidden)return;if(event.key==='Escape'){event.preventDefault();close();return;}if(event.key!=='Tab')return;const focusable=Array.from(dialog.querySelectorAll('button:not([disabled]),a[href],[tabindex="0"]'));const first=focusable[0],last=focusable[focusable.length-1];if(!first||!last)return;if(event.shiftKey&&document.activeElement===first){event.preventDefault();last.focus();}else if(!event.shiftKey&&document.activeElement===last){event.preventDefault();first.focus();}});
+});
+})();
+</script>
+<!-- FIN Sprint 4.11 -->
 <script src="../shared/wellness-shell.js"></script>
 </body>
 </html>
