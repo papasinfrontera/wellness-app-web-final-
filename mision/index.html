@@ -84,6 +84,30 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 @media(max-width:420px){.founder-profile{grid-template-columns:118px 1fr;gap:13px}.founder-profile h3{font-size:21px}.founder-portrait{border-radius:15px}.founder-bio{font-size:13px;line-height:1.6}.founder-role{font-size:10px;padding:5px 8px}.founders-heading{gap:12px}.founders-kicker{letter-spacing:.2em}}
 
 .founder-portrait{background:#E8EFF2}.founder-portrait img{position:relative;z-index:2;display:block;width:100%;height:100%;object-fit:cover;object-position:center 34%}.founder-portrait::before{display:none}
+
+/* Sprint 5 - compromisos y Consejo Médico-Científico */
+.wellness-principles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin:74px auto 70px;width:min(1168px,100%)}
+.wellness-principle{display:flex;align-items:start;gap:16px;padding-right:20px;border-right:1px solid #CFDEE3}.wellness-principle:last-child{border:0}
+.wellness-principle-symbol{width:48px;height:48px;flex:none;border-radius:50%;background:#DFEEF2;display:grid;place-items:center;color:#143D50;font-size:23px}
+.wellness-principle h3{font:500 21px/1.2 Georgia,serif;margin:3px 0 8px;color:#123F47}.wellness-principle p{font-size:13px;line-height:1.56;color:#294150;margin:0}
+.council-panel{position:relative;isolation:isolate;overflow:hidden;border-radius:27px;background:radial-gradient(ellipse at 98% 0%,rgba(81,176,221,.28),transparent 48%),linear-gradient(115deg,#14384A,#163D50 48%,#0D3043);color:#fff;padding:clamp(36px,5vw,68px);margin:clamp(60px,8vw,100px) auto 0;width:min(1250px,100%)}
+.council-panel::before{content:"";position:absolute;inset:-80% -25% auto auto;width:70%;height:165%;border:1px solid rgba(161,225,247,.15);border-radius:50%;box-shadow:0 0 0 50px rgba(161,225,247,.02),0 0 0 95px rgba(161,225,247,.015);transform:rotate(-23deg);z-index:-1}
+.council-heading{display:grid;grid-template-columns:155px 1fr;gap:36px;align-items:center}
+.council-icon{color:#B7DFEE;opacity:.9}.council-icon svg{width:140px;height:140px;display:block}
+.council-kicker{color:#BFE6F2;letter-spacing:.2em;font-size:12px;font-weight:800;text-transform:uppercase;margin:0 0 14px}
+.council-panel h2{font:500 clamp(31px,3.3vw,46px)/1.14 Georgia,serif;margin:0 0 17px;letter-spacing:-.03em;text-wrap:balance}
+.council-description{font-size:clamp(14px,1.3vw,17px);line-height:1.6;color:#E5F2F6;max-width:800px;margin:0}
+.council-specialties{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid rgba(215,243,251,.25);gap:0;margin-top:35px;padding-top:26px}
+.council-specialty{text-align:center;border-right:1px solid rgba(215,243,251,.32);padding:0 13px;color:#EDF7FB;font-size:13px;line-height:1.45}
+.council-specialty:last-child{border:0}.council-specialty span{display:block;font-size:29px;margin:0 auto 10px;color:#C8E9F2}
+.council-note{font-size:11px;line-height:1.6;color:#C6DAE3;margin:25px 0 0}
+.collaboration-end{width:min(1168px,100%);margin:60px auto 56px;padding:0 12px;display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+.collaboration-end h2{font:500 clamp(30px,3.1vw,44px)/1.16 Georgia,serif;letter-spacing:-.03em;color:#123F47;margin:0;text-wrap:balance}
+.collaboration-end-copy{border-left:1px solid #B8D1DC;padding-left:37px}.collaboration-end-copy p{margin:0 0 19px;color:#294150;line-height:1.65;font-size:15px}
+.collaboration-end-copy a{display:inline-flex;align-items:center;gap:15px;background:#123F47;color:white;text-decoration:none;padding:13px 21px;border-radius:40px;min-height:44px;font-size:14px;font-weight:700}.collaboration-end-copy a:hover{background:#166077}
+@media(max-width:900px){.council-heading{grid-template-columns:110px 1fr;gap:22px}.council-icon svg{width:100px;height:100px}.council-specialties{grid-template-columns:repeat(3,1fr);gap:20px 0}.council-specialty:nth-child(3){border:0}}
+@media(max-width:720px){.wellness-principles{grid-template-columns:1fr;margin:55px auto;gap:24px;padding:0 10px}.wellness-principle{border-right:0;border-bottom:1px solid #CFDEE3;padding:0 0 20px}.wellness-principle:last-child{border:0}.council-panel{border-radius:22px;padding:32px 25px}.council-heading{display:block}.council-icon{display:none}.council-specialties{grid-template-columns:repeat(2,1fr);gap:18px 0}.council-specialty,.council-specialty:nth-child(3){border-right:0;border-bottom:1px solid rgba(215,243,251,.25);padding-bottom:18px}.council-specialty:last-child{border-bottom:0}.collaboration-end{grid-template-columns:1fr;gap:24px;margin:52px auto;padding:0 10px}.collaboration-end-copy{padding-left:22px}.council-panel h2{font-size:33px}}
+
 </style>
 </head>
 <body>
@@ -157,6 +181,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   </article>
 </section>
 
+
+<section class="wellness-principles" aria-label="Compromisos">
+  <div class="wellness-principle"><span class="wellness-principle-symbol" aria-hidden="true">⚗</span><div><h3>Evidencia científica</h3><p>Fuentes documentadas, fundamentos rigurosos y revisión continua.</p></div></div>
+  <div class="wellness-principle"><span class="wellness-principle-symbol" aria-hidden="true">♢</span><div><h3>Protección de tus datos</h3><p>Privacidad, control y acceso autorizado a la información personal.</p></div></div>
+  <div class="wellness-principle"><span class="wellness-principle-symbol" aria-hidden="true">♡</span><div><h3>Enfoque complementario</h3><p>La tecnología acompaña a las personas y respeta el criterio clínico de los profesionales.</p></div></div>
+</section>
 <section class="founders-section" id="fundadores" aria-labelledby="founders-title">
   <div class="founders-heading"><p class="founders-kicker">Fundadores</p></div>
   <h2 id="founders-title" class="founders-title">La visión y la experiencia que impulsan el proyecto.</h2>
@@ -185,6 +215,32 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   <p class="founders-footnote">Perfiles editoriales en revisión. Los cargos y las biografías definitivas deberán confirmarse antes de la publicación pública.</p>
 </section>
 
+
+<section class="council-panel" id="consejo-medico" aria-labelledby="council-title">
+  <div class="council-heading">
+    <div class="council-icon" aria-hidden="true"><svg viewBox="0 0 160 170" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M90 15 111 35 96 52 75 32zM79 36 55 60l26 24 23-25M55 60l-14 18 25 22 15-16M65 95c38 20 44 44 25 62M27 157h113M60 157v-16M46 141h76"/><circle cx="82" cy="115" r="9"/></svg></div>
+    <div>
+      <p class="council-kicker">Consejo Médico-Científico</p>
+      <h2 id="council-title">Ciencia, experiencia y responsabilidad.</h2>
+      <p class="council-description">El Consejo Médico-Científico define, documenta, revisa y valida los fundamentos científicos, las reglas y los criterios de interpretación de la plataforma, en colaboración con el equipo de tecnología.</p>
+    </div>
+  </div>
+  <div class="council-specialties" id="areas-colaboracion" aria-label="Áreas científicas previstas">
+    <div class="council-specialty"><span aria-hidden="true">♡</span>Medicina y prevención</div>
+    <div class="council-specialty"><span aria-hidden="true">✿</span>Nutrición y metabolismo</div>
+    <div class="council-specialty"><span aria-hidden="true">➤</span>Actividad física y hábitos</div>
+    <div class="council-specialty"><span aria-hidden="true">♡</span>Cardiología y salud cardiovascular</div>
+    <div class="council-specialty"><span aria-hidden="true">♧</span>Longevidad y envejecimiento saludable</div>
+  </div>
+  <p class="council-note">Estas son áreas de participación previstas y no implican que haya especialistas oficialmente incorporados en todas ellas.</p>
+</section>
+<section class="collaboration-end" id="colabora" aria-labelledby="collaboration-title">
+  <h2 id="collaboration-title">Construyamos juntos una salud más accesible y humana.</h2>
+  <div class="collaboration-end-copy">
+    <p>Invitamos a profesionales de la salud, investigadores y especialistas en tecnología a contribuir a esta visión.</p>
+    <a href="#areas-colaboracion">Conoce las áreas de colaboración <span aria-hidden="true">→</span></a>
+  </div>
+</section>
 </main>
 <footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
