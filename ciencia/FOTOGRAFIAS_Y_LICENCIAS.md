@@ -1,30 +1,36 @@
-# WELLNESS APP — Mentes que inspiran · Registro fotográfico V3.2
-Fecha de revisión: 9 de noviembre de 2026.
+# WELLNESS APP — Mentes que inspiran · Registro de fotografías V3.3
 
-**Política editorial:** mostrar retratos solo si existe una licencia reutilizable verificable o autorización explícita. Tener una foto publicada en una web institucional no constituye permiso para reutilizarla. No insinuar colaboración ni respaldo de personas representadas.
+Última actualización: 9 de noviembre de 2026.
 
-| Referente | Estado | Autor / titular | Licencia y fuente | Presentación |
-| --- | --- | --- | --- | --- |
-| Peter Attia | Imagen incorporada | Jop van Velthuis | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [original](https://commons.wikimedia.org/wiki/File:Peter_Attia_in_2025.jpg) | Encuadre automático mediante CSS; atribución y enlace de licencia en la ficha |
-| Andrew Huberman | Imagen incorporada | Steve Jurvetson | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) · [original](https://commons.wikimedia.org/wiki/File:Andrew_Huberman_Reunion.jpg) | Recorte de presentación mediante CSS para destacar a Huberman; atribución y enlace de licencia |
-| Eric Topol | Imagen incorporada | Christopher Michel | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) · [original](https://commons.wikimedia.org/wiki/File:Eric_Topol_in_2026_A.jpg) | Encuadre automático mediante CSS; atribución y enlace de licencia |
-| Morgan Levine | PENDIENTE | — | No se incorporó imagen externa sin licencia confirmada | Monograma editorial provisional |
-| Michael Snyder | PENDIENTE | — | Fotos oficiales de Stanford disponibles para consulta, sin licencia de reutilización comercial identificada | Monograma editorial provisional |
-| Rhonda Patrick | PENDIENTE | — | No se encontró retrato con licencia reutilizable confirmada | Monograma editorial provisional |
-| Valter Longo | PENDIENTE | — | La fotografía de Wikimedia [Valter Longo 2022](https://commons.wikimedia.org/wiki/File:Valter_Longo_2022.png) indica revisión de licencia pendiente | Monograma editorial provisional |
-| Satchin Panda | PENDIENTE | — | Retratos institucionales disponibles para consulta, sin licencia de reutilización comercial identificada | Monograma editorial provisional |
+## Estado de las 8 fotografías
 
-## Reglas de publicación
-- Fotografías CC BY / CC BY-SA: conservar nombre del autor, vínculo a la fuente, vínculo a la licencia y nota de encuadre/recorte. La cláusula de compartir igual de CC BY-SA deberá revisarse para cualquier derivado descargable.
-- Wikimedia Commons puede corregir o retirar imágenes: revisar antes de publicación definitiva.
-- No utilizar fotografías encontradas por Google sin verificar derechos.
-- Para los cinco perfiles pendientes: gestionar permiso escrito de fotografía, licencia de imagen de prensa o licencia CC válida y verificable.
-- Si una imagen no carga, presentar las iniciales del perfil, nunca una persona distinta o una imagen generada que simule ser el científico.
-- No se debe considerar que estas personas aceptan colaborar, avalan ni conocen a Wellness App.
+| Referente | Archivo / fuente | Integración | Situación de derechos |
+| --- | --- | --- | --- |
+| Andrew Huberman | `ciencia/fotos/huberman.jpg` · imagen (55) aportada en el chat | Original JPEG, 554 × 554 | Licencia y autorización comercial pendientes de confirmar |
+| Morgan Levine | `ciencia/fotos/levine.jpg` · imagen (56) aportada en el chat | Original JPEG, 554 × 554 | Licencia y autorización comercial pendientes de confirmar |
+| Michael Snyder | `ciencia/fotos/snyder.jpg` · imagen (57) aportada en el chat | Original JPEG, 638 × 480 | Licencia y autorización comercial pendientes de confirmar |
+| Rhonda Patrick | `ciencia/fotos/patrick.jpg` · imagen (58) aportada en el chat | Original JPEG, 420 × 289 | Licencia y autorización comercial pendientes de confirmar |
+| Valter Longo | `ciencia/fotos/longo.jpg` · imagen (59) aportada en el chat | Original JPEG, 638 × 480 | Licencia y autorización comercial pendientes de confirmar |
+| Satchin Panda | `ciencia/fotos/panda.jpg` · imagen (60) aportada en el chat | Original JPEG, 227 × 222 | Licencia y autorización comercial pendientes de confirmar |
+| Peter Attia | [Jop van Velthuis / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Peter_Attia_in_2025.jpg) | Imagen remota CC BY-SA 4.0 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) con crédito y vínculo |
+| Eric Topol | [Christopher Michel / Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Eric_Topol_in_2026_A.jpg) | Imagen remota CC BY-SA 4.0 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) con crédito y vínculo |
 
-## Verificaciones de cierre
-- Confirmar carga de imágenes y recortes en navegadores reales, escritorio y móvil.
-- Verificar contraste de créditos, enlaces accesibles y navegación por teclado.
-- Verificar ortografía y fuentes primarias de las fichas.
-- Mantener una persona a la vez y sin movimiento automático.
-- El proyecto principal `main` permanece sin cambios hasta aprobación final.
+Los seis archivos JPEG aportados se almacenan sin ampliación ni recompression: el archivo publicado es idéntico, byte a byte, al original suministrado. Los contenedores visuales utilizan proporción 4:5 y `object-fit:contain` para evitar deformación o recortes forzados. Algunas imágenes tienen resolución limitada de origen; no debe prometerse una calidad mayor a la resolución disponible.
+
+## Galería V3.3
+
+- Una ficha principal visible a la vez; inicio con Andrew Huberman.
+- Ocho miniaturas en tira horizontal, desplazable en móvil.
+- Reproducción automática a intervalos de 8 segundos con controles visibles de pausa/reproducir, anterior y siguiente.
+- Pausa temporal al pasar el cursor en dispositivos con ratón, al enfocar, al ocultar la pestaña o cuando la sección sale de pantalla.
+- La interacción manual detiene la reproducción automática; se reanuda con el botón explícito.
+- `prefers-reduced-motion`: reproducción manual sin animaciones automáticas.
+- Cada perfil muestra institución/procedencia, trabajos destacados y un enlace externo.
+
+## Condiciones editoriales y pendientes
+
+1. Que el usuario haya compartido fotografías para una revisión visual **no acredita por sí mismo la titularidad de derechos de autor**. Antes del lanzamiento definitivo obtener permisos/licencias verificables para los seis archivos aportados o sustituirlos por imágenes con licencia apropiada.
+2. No presentar a los referentes como empleados, socios, miembros del Consejo ni personas que respaldan a WELLNESS APP.
+3. Para Creative Commons conservar nombre del autor, fuente, tipo de licencia y aviso de edición/encuadre; confirmar las condiciones ShareAlike aplicables a derivados.
+4. Verificar en móvil y escritorio el encuadre, tiempo de lectura, carga de fotografías, interacción con miniaturas y accesibilidad.
+5. Mantener la rama de revisión separada; **no fusionar con `main` hasta autorización expresa**.
