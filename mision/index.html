@@ -108,6 +108,84 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 @media(max-width:900px){.council-heading{grid-template-columns:110px 1fr;gap:22px}.council-icon svg{width:100px;height:100px}.council-specialties{grid-template-columns:repeat(3,1fr);gap:20px 0}.council-specialty:nth-child(3){border:0}}
 @media(max-width:720px){.wellness-principles{grid-template-columns:1fr;margin:55px auto;gap:24px;padding:0 10px}.wellness-principle{border-right:0;border-bottom:1px solid #CFDEE3;padding:0 0 20px}.wellness-principle:last-child{border:0}.council-panel{border-radius:22px;padding:32px 25px}.council-heading{display:block}.council-icon{display:none}.council-specialties{grid-template-columns:repeat(2,1fr);gap:18px 0}.council-specialty,.council-specialty:nth-child(3){border-right:0;border-bottom:1px solid rgba(215,243,251,.25);padding-bottom:18px}.council-specialty:last-child{border-bottom:0}.collaboration-end{grid-template-columns:1fr;gap:24px;margin:52px auto;padding:0 10px}.collaboration-end-copy{padding-left:22px}.council-panel h2{font-size:33px}}
 
+
+/* AJUSTES DE REVISIÓN VISUAL — CENTRADO Y ESPACIADOS */
+.founders-section{margin-top:clamp(58px,6.8vw,92px)}
+.founders-title{margin-bottom:clamp(27px,3.2vw,42px)}
+.founders-grid{width:min(1100px,100%);margin-inline:auto;gap:clamp(22px,3vw,42px)}
+.founder-profile{grid-template-columns:minmax(122px,35%) minmax(0,1fr);gap:clamp(18px,2.3vw,28px);align-items:center}
+.founder-profile+.founder-profile{padding-left:clamp(18px,2.2vw,29px)}
+.founder-details{min-width:0}
+.founder-role{margin-bottom:13px}
+.founder-bio{max-width:37ch}
+.council-panel{
+  width:min(1200px,100%);
+  margin:clamp(45px,5.5vw,74px) auto 0;
+  padding:clamp(37px,4.5vw,60px) clamp(24px,5vw,65px);
+}
+.council-heading{
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  width:min(920px,100%);margin-inline:auto;gap:0;text-align:center
+}
+.council-icon{
+  display:grid;place-items:center;width:86px;height:86px;margin:0 auto 17px;
+  border:1px solid rgba(185,230,242,.20);border-radius:50%;
+  background:rgba(177,219,236,.065)
+}
+.council-icon svg{width:70px;height:75px}
+.council-kicker{margin:0 0 12px;font-size:11px;letter-spacing:.22em}
+.council-panel h2{max-width:850px;margin:0 auto 15px;font-size:clamp(32px,3.4vw,46px)}
+.council-description{max-width:760px;margin:0 auto;text-align:center;line-height:1.65}
+.council-specialties{
+  width:min(1030px,100%);
+  margin:clamp(25px,3vw,38px) auto 0;
+  padding-top:clamp(22px,2.5vw,30px);
+  grid-template-columns:repeat(5,minmax(0,1fr));align-items:start
+}
+.council-specialty{display:flex;align-items:center;flex-direction:column;gap:0;min-height:92px;padding:0 12px;font-size:12.5px;line-height:1.45}
+.council-specialty span{font-size:27px;margin-bottom:7px;line-height:1}
+.council-note{max-width:780px;margin:19px auto 0;text-align:center;font-size:11px;line-height:1.55}
+.collaboration-end{
+  width:min(1100px,100%);margin:clamp(44px,5.5vw,70px) auto 55px;
+  grid-template-columns:1fr 1fr;gap:clamp(24px,4vw,50px);align-items:center
+}
+.collaboration-end h2{max-width:550px}
+.collaboration-end-copy{padding-left:clamp(22px,3vw,37px)}
+@media(max-width:900px){
+ .founder-profile{grid-template-columns:minmax(110px,35%) minmax(0,1fr)}
+ .council-heading{display:flex;grid-template-columns:none}
+ .council-icon svg{width:70px;height:75px}
+ .council-specialties{grid-template-columns:repeat(5,minmax(0,1fr));gap:0}
+ .council-specialty:nth-child(3){border-right:1px solid rgba(215,243,251,.32)}
+}
+@media(max-width:780px){
+ .founders-section{margin-top:60px}
+ .founders-grid{grid-template-columns:1fr;gap:25px}
+ .founder-profile{grid-template-columns:minmax(108px,30%) minmax(0,1fr);gap:18px}
+ .founder-profile+.founder-profile{padding-left:0}
+ .council-specialties{grid-template-columns:repeat(3,minmax(0,1fr));gap:20px 0}
+ .council-specialty:nth-child(3){border-right:0}
+ .collaboration-end{grid-template-columns:1fr;gap:25px}
+}
+@media(max-width:720px){
+ .council-panel{padding:35px 22px;border-radius:23px}
+ .council-heading{display:flex;align-items:center;text-align:center}
+ .council-icon{display:none}
+ .council-panel h2{font-size:clamp(29px,7.5vw,39px)}
+ .council-description{font-size:14px}
+ .council-specialties{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:27px;padding-top:24px;gap:17px 0}
+ .council-specialty,.council-specialty:nth-child(3){min-height:82px;border-right:0;border-bottom:1px solid rgba(215,243,251,.21);padding:0 10px 14px}
+ .council-specialty:last-child{border-bottom:0}
+ .council-note{margin-top:16px;font-size:10.5px}
+ .collaboration-end{margin:45px auto}
+ .collaboration-end-copy{padding-left:23px}
+}
+@media(max-width:420px){
+ .founder-profile{grid-template-columns:112px minmax(0,1fr);gap:14px}
+ .founder-profile h3{font-size:21px}
+ .founder-bio{font-size:13px}
+}
+
 </style>
 </head>
 <body>
@@ -192,7 +270,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   <h2 id="founders-title" class="founders-title">La visión y la experiencia que impulsan el proyecto.</h2>
   <div class="founders-grid">
     <article class="founder-profile" aria-labelledby="founder-rafael">
-      <div class="founder-portrait" aria-label="Espacio reservado para fotografía de Rafael Fonseca Idler">
+      <div class="founder-portrait">
         <img src="rafael-fonseca.webp" alt="Retrato aportado para el perfil de Rafael Fonseca Idler" width="260" height="325" loading="lazy" decoding="async">
       </div>
       <div class="founder-details">
@@ -202,7 +280,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
       </div>
     </article>
     <article class="founder-profile" aria-labelledby="founder-carlos">
-      <div class="founder-portrait" aria-label="Espacio reservado para fotografía del Dr. Carlos Nunes">
+      <div class="founder-portrait">
         <img src="carlos-nunes.webp" alt="Retrato aportado para el perfil del Dr. Carlos Nunes" width="260" height="325" loading="lazy" decoding="async">
       </div>
       <div class="founder-details">
@@ -212,7 +290,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
       </div>
     </article>
   </div>
-  <p class="founders-footnote">Perfiles editoriales en revisión. Los cargos y las biografías definitivas deberán confirmarse antes de la publicación pública.</p>
+  
 </section>
 
 
