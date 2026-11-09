@@ -390,6 +390,11 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .mi-portrait{aspect-ratio:1/1;max-height:410px}
 }
 
+
+/* V3.5 — Galería sin numeración ni carteles sobre fotografías */
+.mi-stage-head,.mi-counter,.mi-playback-count,.mi-photo-caption{display:none!important}
+.mi-controls{border-top:0}
+.mi-feature{border-top:0}
 </style>
 </head>
 <body>
@@ -436,7 +441,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="mi-rule" aria-hidden="true"></div>
 </section>
 <section class="mi-stage" aria-label="Galería interactiva de ocho referentes científicos">
-<div class="mi-stage-head"><span class="mi-stage-tag">En primer plano</span><span class="mi-counter"><strong id="miIndex">01</strong> / 08</span></div>
+
 <div class="mi-feature" id="miFeature" aria-live="off" aria-atomic="true">
 <div class="mi-visual">
 <figure class="mi-portrait" id="miPortrait">
@@ -463,7 +468,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 </div>
 </div>
 <div class="mi-controls">
-<div class="mi-control-label"><strong>Explora otras perspectivas</strong>Una persona a la vez · Reproducción automática controlable</div>
+<div class="mi-control-label"><strong>Mentes que inspiran</strong>Una persona a la vez · Reproducción automática controlable</div>
 <div class="mi-arrows">
 <button type="button" class="mi-nav-btn" id="miPrev" aria-label="Referente anterior"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
 <button type="button" class="mi-nav-btn next" id="miNext" aria-label="Siguiente referente"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
@@ -476,12 +481,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
     <button type="button" class="mi-play" id="miPlay" aria-label="Pausar reproducción automática" aria-pressed="true"><span id="miPlayIcon" aria-hidden="true">Ⅱ</span><span id="miPlayText">Pausar</span></button>
     <span class="mi-playback-hint" id="miPlayHint">Reproducción automática · 8 segundos</span>
   </div>
-  <span class="mi-playback-count" id="miCount">01 / 08</span>
+  
 </div>
 <div class="mi-timeline" aria-hidden="true"><div class="mi-timeline-fill" id="miTimeline"></div></div>
 <div class="sr-only" id="miAnnounce" aria-live="polite" aria-atomic="true"></div>
 </section>
-<p class="mi-disclaimer">Los referentes presentados son independientes. Su inclusión no implica afiliación, colaboración ni respaldo a WELLNESS APP o a sus algoritmos. Los perfiles enlazan a fuentes públicas y no constituyen recomendaciones de salud personal. Las fotografías aportadas se utilizan únicamente en esta versión de revisión; los derechos de publicación definitiva deben confirmarse.</p>
+<p class="mi-disclaimer">Los referentes presentados son independientes. Su inclusión no implica afiliación, colaboración ni respaldo a WELLNESS APP o a sus algoritmos. Los perfiles enlazan a fuentes públicas y no constituyen recomendaciones de salud personal.</p>
 <section class="mi-bottom" aria-label="Sobre nuestra filosofía científica">
 <h2>La curiosidad impulsa el conocimiento.</h2>
 <p>Exploramos distintas perspectivas científicas con rigor y espíritu crítico. En WELLNESS APP, la tecnología y la evidencia son herramientas para comprender mejor el bienestar.</p>
@@ -541,7 +546,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 const profiles=[{"id":"huberman","name":"Dr. Andrew Huberman","field":"Neurociencia · Estrés · Hábitos","country":"ESTADOS UNIDOS","organisation":"Stanford University · Huberman Lab","origin":"Doctorado en UC Davis y formación posdoctoral en Stanford.","summary":"Investiga circuitos visuales, plasticidad neuronal, regulación del estrés y mecanismos de reparación neural.","works":[{"type":"INVESTIGACIÓN · 2023","name":"Regeneración de axones retinianos y actividad neuronal"},{"type":"ENSAYO · 2023","name":"Respiración estructurada, estado de ánimo y activación fisiológica"}],"link":"https://profiles.stanford.edu/andrew-huberman","linkLabel":"Ver perfil de Stanford","photo":"fotos/huberman.jpg","photoSource":"aportada"},{"id":"levine","name":"Dra. Morgan Levine","field":"Biología del envejecimiento · IA","country":"ESTADOS UNIDOS","organisation":"Investigadora en biología computacional","origin":"Trayectoria previa en Yale School of Medicine y Altos Labs.","summary":"Desarrolló métodos para estudiar la edad biológica y modelar procesos de envejecimiento a partir de datos.","works":[{"type":"PUBLICACIÓN · 2018","name":"An epigenetic biomarker of aging for lifespan and healthspan"},{"type":"INVESTIGACIÓN · 2018","name":"Is 60 the New 50? Changes in Biological Age"}],"link":"https://www.agingpharma.org/speakers/morgan-levine/","linkLabel":"Ver trayectoria científica","photo":"fotos/levine.jpg","photoSource":"aportada"},{"id":"snyder","name":"Dr. Michael Snyder","field":"Salud de precisión · Wearables","country":"ESTADOS UNIDOS","organisation":"Stanford University · Snyder Lab","origin":"Doctorado en Caltech; formación posdoctoral en Stanford.","summary":"Integra datos moleculares y sensores para estudiar longitudinalmente las variaciones de salud individuales.","works":[{"type":"INVESTIGACIÓN","name":"Integrated Personal Omics Profiling (iPOP)"},{"type":"INVESTIGACIÓN","name":"Sensores portátiles y detección de cambios fisiológicos"}],"link":"https://med.stanford.edu/snyderlab.html/","linkLabel":"Visitar Snyder Lab","photo":"fotos/snyder.jpg","photoSource":"aportada"},{"id":"patrick","name":"Dra. Rhonda Patrick","field":"Nutrición · Biología del envejecimiento","country":"ESTADOS UNIDOS","organisation":"FoundMyFitness · Fundadora","origin":"Investigación anterior en St. Jude, Children’s Hospital Oakland y Salk Institute.","summary":"Investiga y divulga estudios sobre micronutrientes, metabolismo y factores relacionados con el envejecimiento.","works":[{"type":"INVESTIGACIÓN · 2012","name":"MCL-1, función mitocondrial y metabolismo celular"},{"type":"INVESTIGACIÓN · 2014","name":"Vitamina D y regulación de la síntesis de serotonina"}],"link":"https://www.foundmyfitness.com/about-dr-rhonda-patrick","linkLabel":"Visitar FoundMyFitness","photo":"fotos/patrick.jpg","photoSource":"aportada"},{"id":"longo","name":"Dr. Valter Longo","field":"Nutrición · Longevidad","country":"ITALIA / ESTADOS UNIDOS","organisation":"University of Southern California · Longevity Institute","origin":"Doctorado en UCLA; profesor de gerontología en USC.","summary":"Estudia los mecanismos celulares del envejecimiento y el efecto de diferentes intervenciones nutricionales.","works":[{"type":"INVESTIGACIÓN","name":"Mecanismos del envejecimiento y resistencia al estrés celular"},{"type":"INVESTIGACIÓN CLÍNICA","name":"Ciclos de dieta que imita el ayuno y salud metabólica"}],"link":"https://gero.usc.edu/faculty/longo/","linkLabel":"Ver perfil de USC","photo":"fotos/longo.jpg","photoSource":"aportada"},{"id":"panda","name":"Dr. Satchin Panda","field":"Ritmos circadianos · Metabolismo","country":"INDIA / ESTADOS UNIDOS","organisation":"Salk Institute · Regulatory Biology Laboratory","origin":"Doctorado en Scripps Research; investigación sobre los relojes biológicos.","summary":"Investiga cómo los ritmos circadianos y los horarios de alimentación se relacionan con la fisiología y la salud.","works":[{"type":"INVESTIGACIÓN · 2012","name":"Time-restricted feeding y regulación metabólica"},{"type":"ENSAYO CLÍNICO · 2024","name":"Time-Restricted Eating in Adults With Metabolic Syndrome"}],"link":"https://www.satchinpanda.com/","linkLabel":"Visitar web oficial","photo":"fotos/panda.jpg","photoSource":"aportada"},{"id":"attia","name":"Dr. Peter Attia","field":"Medicina preventiva · Longevidad","country":"ESTADOS UNIDOS","organisation":"Early Medical · Fundador","origin":"Medicina en Stanford; formación quirúrgica en Johns Hopkins y experiencia investigadora en el NIH.","summary":"Difunde un enfoque de prevención temprana de enfermedades crónicas y de salud a largo plazo.","works":[{"type":"LIBRO · 2023","name":"Outlive: The Science and Art of Longevity"},{"type":"DIVULGACIÓN","name":"The Peter Attia Drive, podcast sobre medicina y bienestar"}],"link":"https://peterattiamd.com/about/","linkLabel":"Visitar sitio oficial","photo":"https://thumb.wikimedia.org/wikipedia/commons/thumb/3/37/Peter_Attia_in_2025.jpg/500px-Peter_Attia_in_2025.jpg","credit":"Jop van Velthuis · CC BY-SA 4.0","creditUrl":"https://commons.wikimedia.org/wiki/File:Peter_Attia_in_2025.jpg","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","photoNote":"Encuadre de presentación"},{"id":"topol","name":"Dr. Eric Topol","field":"Medicina digital · Inteligencia artificial","country":"ESTADOS UNIDOS","organisation":"Scripps Research · Translational Institute","origin":"Médico por University of Rochester; trayectoria previa en Cleveland Clinic.","summary":"Explora la aplicación de la genómica, los datos digitales y la IA a la medicina individualizada.","works":[{"type":"INVESTIGACIÓN · 2019","name":"High-performance medicine: human and artificial intelligence"},{"type":"LIBRO · 2019","name":"Deep Medicine: How Artificial Intelligence Can Make Healthcare Human Again"}],"link":"https://www.scripps.edu/faculty/topol/","linkLabel":"Ver perfil de Scripps","photo":"https://thumb.wikimedia.org/wikipedia/commons/thumb/2/28/Eric_Topol_in_2026_A.jpg/500px-Eric_Topol_in_2026_A.jpg","credit":"Christopher Michel · CC BY-SA 4.0","creditUrl":"https://commons.wikimedia.org/wiki/File:Eric_Topol_in_2026_A.jpg","licenseUrl":"https://creativecommons.org/licenses/by-sa/4.0/","photoNote":"Encuadre de presentación"}];
 const $=id=>document.getElementById(id),feature=$('miFeature'),img=$('miPhoto'),
  portrait=$('miPortrait'),placeholder=$('miPlaceholder'),caption=$('miPhotoCaption'),
- thumbs=$('miThumbs'),counter=$('miIndex'),progress=$('miTimeline'),
+ thumbs=$('miThumbs'),progress=$('miTimeline'),
  play=$('miPlay'),playText=$('miPlayText'),playIcon=$('miPlayIcon'),hint=$('miPlayHint'),
  announcer=$('miAnnounce');
 const DURATION=8000,REDUCED=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
@@ -582,18 +587,13 @@ function paintImage(p){
  img.alt='Fotografía ilustrativa del perfil de '+p.name.replace(/^Dr(a)?\.?\s+/,'');
  img.onload=()=>{if(localId!==requestId)return;img.hidden=false;placeholder.hidden=true;portrait.style.setProperty('--mi-photo-bg',"url('"+p.photo.replace(/'/g,'%27')+"')")};
  img.onerror=()=>{if(localId!==requestId)return;img.hidden=true;placeholder.hidden=false;caption.hidden=true};
- if(p.photoSource==='aportada'){
-   caption.hidden=true;
- }else if(p.credit){
-   const c=document.createElement('a');c.textContent='Foto: '+p.credit;c.href=p.creditUrl;c.target='_blank';c.rel='noopener noreferrer';caption.append(c);
-   if(p.licenseUrl){const l=document.createElement('a');l.href=p.licenseUrl;l.target='_blank';l.rel='noopener noreferrer';l.textContent='· Licencia';caption.append(l)}
-   const t=document.createElement('span');t.textContent=' · Encuadre de presentación';caption.append(t);caption.hidden=false;
- }
+ // Sin leyendas ni notas superpuestas sobre los retratos.
+ caption.hidden=true;
  img.src=p.photo;
 }
 function show(i,manual=false){
  current=(i+profiles.length)%profiles.length;const p=profiles[current];
- setField('miIndex',String(current+1).padStart(2,'0'));setField('miCount',String(current+1).padStart(2,'0')+' / 08');
+ 
  setField('miCountry',p.country);setField('miName',p.name);setField('miField',p.field);
  setField('miSummary',p.summary);setField('miOrg',p.organisation);setField('miOrigin',p.origin);
  const ul=$('miWorks');ul.replaceChildren();p.works.forEach(w=>{
