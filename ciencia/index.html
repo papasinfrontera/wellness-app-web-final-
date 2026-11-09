@@ -525,7 +525,7 @@ function tick(now){
  if(!pauseState())return;
  elapsed=Math.max(0,Math.min(DURATION,now-started));
  progress.style.width=(elapsed/DURATION*100).toFixed(2)+'%';
- if(elapsed>=DURATION){show(current+1,false);return}
+ if(elapsed>=DURATION){show(current+1,false);animate();return}
  ticker=requestAnimationFrame(tick);
 }
 function animate(){
@@ -548,8 +548,10 @@ portrait.addEventListener('touchend',e=>{
  gesture=null;
 },{passive:true});
 const stage=$('miFeature').closest('.mi-stage');
-stage.addEventListener('mouseenter',()=>{hovered=true;suspend()});
-stage.addEventListener('mouseleave',()=>{hovered=false;animate()});
+if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
+ stage.addEventListener('mouseenter',()=>{hovered=true;suspend()});
+ stage.addEventListener('mouseleave',()=>{hovered=false;animate()});
+}
 stage.addEventListener('focusin',()=>{focused=true;suspend()});
 stage.addEventListener('focusout',()=>{requestAnimationFrame(()=>{focused=stage.contains(document.activeElement);if(!focused)animate()})});
 document.addEventListener('visibilitychange',()=>document.hidden?suspend():animate());
