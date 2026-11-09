@@ -416,7 +416,7 @@ function show(i){
    const name=document.createElement('span');name.textContent=w.name;copy.append(type,name);li.append(symbol,copy);ul.append(li);
  });
  $('miLink').href=p.link;setField('miLinkText',p.linkLabel);
- const initials=p.name.replace(/^Dr(a)?\\.?\\s+/,'').split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
+ const initials=p.name.replace(/^Dr(a)?\.?\s+/,'').split(/\s+/).map(w=>w[0]).join('').slice(0,2).toUpperCase();
  setField('miMonogram',initials);
  img.onload=null;img.onerror=null;img.hidden=true;img.removeAttribute('src');
  placeholder.hidden=false;caption.hidden=true;caption.replaceChildren();
