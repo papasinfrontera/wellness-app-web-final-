@@ -44,6 +44,22 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 @media(max-width:370px){.mission-hero{min-height:635px}.hero-copy{padding:235px 22px 35px}.hero-copy h1{font-size:42px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
+
+/* SPRINT 3 — Propósito y Filosofía: continuidad editorial, sin cambios en el hero */
+.mision-values{width:min(1168px,100%);margin:clamp(38px,5.2vw,72px) auto 0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,2.4vw,28px)}
+.mision-value{position:relative;min-width:0;padding:clamp(28px,3.3vw,48px);border-radius:26px;border:1px solid rgba(18,63,71,.07);overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.mision-value--purpose{background:linear-gradient(137deg,#F0F8FA 0%,#E7F0F6 100%)}
+.mision-value--philosophy{background:linear-gradient(137deg,#F5F6FC 0%,#E9ECFA 100%)}
+.mision-value:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(18,63,71,.09)}
+.mision-value-heading{display:flex;align-items:center;gap:16px;margin-bottom:23px}
+.mision-value-icon{flex:none;width:59px;height:59px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.62);color:#123F47;box-shadow:0 5px 18px rgba(18,63,71,.06)}
+.mision-value-icon svg{width:32px;height:32px;display:block}
+.mision-value-kicker{margin:0;font-size:12px;font-weight:800;letter-spacing:.18em;text-transform:uppercase;color:#163D50}
+.mision-value h2{font:500 clamp(27px,2.65vw,38px)/1.13 Georgia,"Times New Roman",serif;letter-spacing:-.032em;color:#123F47;margin:0 0 24px;text-wrap:pretty}
+.mision-value p.mision-value-body{font:400 clamp(15px,1.23vw,17px)/1.68 Inter,"Segoe UI",Arial,sans-serif;color:#294150;margin:0;max-width:56ch}
+@media(max-width:850px){.mision-values{grid-template-columns:1fr;gap:16px;margin-top:24px}.mision-value{border-radius:22px;padding:28px 25px}.mision-value h2{font-size:clamp(27px,6vw,35px)}}
+@media(prefers-reduced-motion:reduce){.mision-value{transition:none}.mision-value:hover{transform:none}}
+
 </style>
 </head>
 <body>
@@ -88,7 +104,35 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="hero-bottom-mark" aria-hidden="true"></div></div></section>
 <section class="mission-statement" id="declaracion-mision" aria-labelledby="mision-declaracion">
 <p class="mission-label">Misión</p><h2 id="mision-declaracion">Hacer que el conocimiento científico sobre la salud esté al alcance de todos.</h2>
-</section></main>
+</section>
+
+<section class="mision-values" aria-label="Propósito y filosofía">
+  <article class="mision-value mision-value--purpose" aria-labelledby="mision-proposito">
+    <div class="mision-value-heading">
+      <span class="mision-value-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="16" cy="16" r="12"/><circle cx="16" cy="16" r="7"/><circle cx="16" cy="16" r="2"/><path d="M16 16 27 5M23.5 4.5l3.5.5.5 3.5"/>
+        </svg>
+      </span>
+      <p class="mision-value-kicker">Propósito</p>
+    </div>
+    <h2 id="mision-proposito">Transformar la relación de las personas con su salud.</h2>
+    <p class="mision-value-body">Integramos ciencia, tecnología y datos personales para convertir información compleja en conocimiento claro, accesible y fundamentado en evidencia científica, que ayude a tomar decisiones informadas para una vida más saludable.</p>
+  </article>
+  <article class="mision-value mision-value--philosophy" aria-labelledby="mision-filosofia">
+    <div class="mision-value-heading">
+      <span class="mision-value-icon" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="11" r="4"/><circle cx="23" cy="12" r="3.3"/><path d="M4 26v-2.6a8 8 0 0 1 16 0V26M20 18.7a6.7 6.7 0 0 1 8 6.6V26"/>
+        </svg>
+      </span>
+      <p class="mision-value-kicker">Filosofía</p>
+    </div>
+    <h2 id="mision-filosofia">Creemos en una salud donde personas, ciencia y profesionales avanzan juntos.</h2>
+    <p class="mision-value-body">La tecnología debe acercar el conocimiento a las personas, fortalecer su participación en el cuidado de su bienestar y facilitar la colaboración con los profesionales de la salud, respetando siempre su criterio clínico.</p>
+  </article>
+</section>
+</main>
 <footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
 <div class="wf-hero-content">
