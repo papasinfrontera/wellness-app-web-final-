@@ -16,15 +16,34 @@
 .symbol::after{content:"";width:14px;height:28px;position:absolute;top:6px;left:13px;border-radius:50%;background:#f7f8f5;transform:rotate(-31deg)}.logotext{line-height:1;letter-spacing:.12em;font-weight:700;font-size:18px;white-space:nowrap}
 .wa-unified-header .wa-primary-nav{gap:clamp(10px,1.25vw,19px)}
 a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
-.mision-shell{width:min(1120px,calc(100% - 48px));margin:24px auto 100px}
-.mision-intro{padding:clamp(55px,8vw,115px) clamp(20px,5vw,75px);border-radius:27px;background:radial-gradient(ellipse at 95% 15%,rgba(68,132,165,.21),transparent 43%),linear-gradient(120deg,#14384A,#163D50 50%,#0D3043);color:#fff;text-align:center;overflow:hidden}
-.mision-kicker{text-transform:uppercase;font-size:11px;letter-spacing:.22em;font-weight:750;color:#d0e5e9;margin:0 0 18px}
-.mision-intro h1{font:500 clamp(43px,6.2vw,77px)/1.08 Georgia,serif;letter-spacing:-.035em;margin:0 auto 24px;max-width:850px}
-.mision-line{width:56px;height:3px;background:var(--orange);border-radius:3px;margin:0 auto 28px}
-.mision-quote{max-width:790px;margin:auto;font:400 clamp(21px,2.8vw,32px)/1.4 Georgia,serif}
-.mision-status{margin:27px auto 0;max-width:660px;font-size:13px;line-height:1.7;color:#d0e5e9}
-.mision-note{text-align:center;max-width:800px;margin:30px auto;color:var(--muted);font-size:14px;line-height:1.7}
-@media(max-width:850px){.mision-shell{width:calc(100% - 24px)}.mision-intro{padding:65px 22px}.logotext{font-size:14px}.header{padding:9px 16px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+.mision-shell{width:min(1320px,calc(100% - 48px));margin:10px auto 94px}
+.mission-hero{position:relative;min-height:clamp(490px,47vw,600px);border-radius:30px;overflow:hidden;background:linear-gradient(110deg,#f7f8f5 6%,#f1f6f7 56%,#d8e6ee 100%);isolation:isolate}
+.hero-photo{position:absolute;top:0;right:0;width:71%;height:100%;object-fit:cover;object-position:55% center;mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 16%,black 45%);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.3) 16%,black 45%)}
+.hero-copy{position:relative;z-index:2;max-width:660px;padding:clamp(66px,8vw,115px) clamp(32px,5vw,76px) 88px}
+.hero-eyebrow{display:flex;align-items:center;gap:17px;text-transform:uppercase;font-size:12px;font-weight:750;letter-spacing:.19em;color:#123F47;margin:0 0 27px}
+.hero-eyebrow:after{content:"";display:block;width:56px;height:3px;background:#FF713D;border-radius:100px}
+.hero-copy h1{font:500 clamp(51px,5.5vw,84px)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.055em;color:#123F47;max-width:650px;margin:0 0 26px;text-wrap:balance}
+.hero-subtitle{font:450 clamp(18px,1.8vw,23px)/1.42 Inter,"Segoe UI",Arial,sans-serif;color:#294150;max-width:390px;margin:0}
+.hero-bottom-mark{height:3px;width:84px;margin-top:40px;border-radius:99px;background:#FF713D}
+.mission-statement{position:relative;z-index:3;background:radial-gradient(ellipse at 97% 14%,rgba(52,115,151,.24),transparent 45%),linear-gradient(120deg,#14384A 0%,#163D50 52%,#0D3043 100%);color:white;border-radius:26px;padding:clamp(45px,5.2vw,75px) clamp(25px,6.4vw,95px);margin:-36px auto 0;width:min(1100px,calc(100% - 64px));box-shadow:0 22px 55px rgba(18,63,71,.12);text-align:center}
+.mission-label{color:#D0E5E9;letter-spacing:.22em;font-weight:800;font-size:12px;text-transform:uppercase;margin:0 0 22px}
+.mission-label:before{content:"";display:block;width:55px;height:3px;margin:0 auto 20px;border-radius:90px;background:#FF713D}
+.mission-statement h2{font:500 clamp(31px,3.8vw,54px)/1.13 Georgia,"Times New Roman",serif;letter-spacing:-.03em;max-width:920px;margin:0 auto;text-wrap:balance}
+@media(max-width:1120px){.hero-copy{max-width:58%;padding-left:38px}.hero-copy h1{font-size:clamp(46px,5.5vw,68px)}}
+@media(max-width:850px){
+.topbar-wrap{min-height:82px}.header{padding:9px 16px}.logotext{font-size:14px}
+.mision-shell{width:calc(100% - 24px);margin:8px auto 65px}
+.mission-hero{min-height:680px;border-radius:24px;display:flex;align-items:flex-end;background:#F7F8F5}
+.hero-photo{width:100%;height:64%;top:0;right:0;object-position:51% 32%;mask-image:linear-gradient(to bottom,black 0%,black 65%,transparent 100%);-webkit-mask-image:linear-gradient(to bottom,black 0%,black 65%,transparent 100%)}
+.hero-copy{max-width:none;width:100%;padding:250px 28px 46px;background:linear-gradient(to top,#F7F8F5 0%,rgba(247,248,245,.98) 39%,rgba(247,248,245,0) 100%)}
+.hero-eyebrow{font-size:10px;margin-bottom:18px}.hero-copy h1{font-size:clamp(45px,10vw,66px);max-width:520px;margin-bottom:19px}
+.hero-subtitle{font-size:17px;max-width:400px}.hero-bottom-mark{margin-top:26px}
+.mission-statement{width:100%;margin:18px auto 0;border-radius:24px;padding:44px 25px}.mission-statement h2{font-size:clamp(30px,7.2vw,43px)}
+}
+@media(max-width:370px){.mission-hero{min-height:635px}.hero-copy{padding:235px 22px 35px}.hero-copy h1{font-size:42px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
 </style>
 </head>
 <body>
@@ -61,15 +80,15 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="wa-menu-caption">Tu experiencia de bienestar comienza aquí.</div>
 </aside></div>
 <main class="mision-shell">
-<section class="mision-intro" aria-labelledby="mision-title">
-<p class="mision-kicker">MISIÓN · PRIMERA ETAPA DE REVISIÓN</p>
+<section class="mission-hero" aria-labelledby="mision-title">
+<img class="hero-photo" src="hero-pareja.webp" alt="Pareja contemplando un amanecer entre montañas" width="500" height="291" fetchpriority="high">
+<div class="hero-copy"><p class="hero-eyebrow">Sobre Wellness App</p>
 <h1 id="mision-title">Bienestar con ciencia.</h1>
-<div class="mision-line" aria-hidden="true"></div>
-<p class="mision-quote">Hacer que el conocimiento científico sobre la salud esté al alcance de todos.</p>
-<p class="mision-status">Sprint 1: navegación y enlace. La fotografía del hero, propósito, filosofía, fundadores y Consejo Médico-Científico se incorporarán en los próximos sprints, previa aprobación.</p>
-</section>
-<p class="mision-note">Esta vista de revisión conserva el eslogan seleccionado y la declaración de misión. Aún no representa el diseño final de la página.</p>
-</main>
+<p class="hero-subtitle">Ciencia, datos y personas para una vida más saludable.</p>
+<div class="hero-bottom-mark" aria-hidden="true"></div></div></section>
+<section class="mission-statement" id="declaracion-mision" aria-labelledby="mision-declaracion">
+<p class="mission-label">Misión</p><h2 id="mision-declaracion">Hacer que el conocimiento científico sobre la salud esté al alcance de todos.</h2>
+</section></main>
 <footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
 <div class="wf-hero-content">
