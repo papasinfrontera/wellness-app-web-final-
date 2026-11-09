@@ -455,7 +455,7 @@ const $=id=>document.getElementById(id),feature=$('miFeature'),img=$('miPhoto'),
  announcer=$('miAnnounce');
 const DURATION=8000,REDUCED=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 let current=0,playing=!REDUCED,userPaused=REDUCED,hovered=false,focused=false,visible=true;
-let started=performance.now(),elapsed=0,ticker=0,gesture=null,requestId=0;
+let started=performance.now(),elapsed=0,ticker=0,gesture=null,requestId=0,forcedResume=false;
 const thumbButtons=[];
 const setField=(id,value)=>{$(id).textContent=value};
 const initials=p=>p.name.replace(/^Dr(a)?\.?\s+/,'').split(/\s+/).map(s=>s[0]).join('').slice(0,2).toUpperCase();
@@ -473,7 +473,7 @@ function makeThumb(p,i){
  b.append(v,label);b.addEventListener('click',()=>{stopUser();show(i,true)});thumbs.append(b);thumbButtons.push(b);
 }
 function pauseState(){
- const running=playing&&!userPaused&&!hovered&&!focused&&visible&&!document.hidden;
+ const running=playing&&!userPaused&&(forcedResume||(!hovered&&!focused))&&visible&&!document.hidden;
  play.setAttribute('aria-pressed',String(playing&&!userPaused));
  playIcon.textContent=playing&&!userPaused?'Ⅱ':'▶';
  playText.textContent=playing&&!userPaused?'Pausar':'Reproducir';
@@ -538,7 +538,7 @@ $('miPrev').addEventListener('click',()=>{stopUser();show(current-1,true)});
 $('miNext').addEventListener('click',()=>{stopUser();show(current+1,true)});
 play.addEventListener('click',()=>{
  if(playing&&!userPaused){stopUser()}
- else{playing=true;userPaused=false;elapsed=0;progress.style.width='0%';animate()}
+ else{playing=true;userPaused=false;forcedResume=true;elapsed=0;progress.style.width='0%';animate()}
 });
 portrait.addEventListener('touchstart',e=>{if(e.touches.length===1)gesture={x:e.touches[0].clientX,y:e.touches[0].clientY}},{passive:true});
 portrait.addEventListener('touchend',e=>{
@@ -549,10 +549,10 @@ portrait.addEventListener('touchend',e=>{
 },{passive:true});
 const stage=$('miFeature').closest('.mi-stage');
 if(window.matchMedia('(hover:hover) and (pointer:fine)').matches){
- stage.addEventListener('mouseenter',()=>{hovered=true;suspend()});
- stage.addEventListener('mouseleave',()=>{hovered=false;animate()});
+ stage.addEventListener('mouseenter',()=>{hovered=true;forcedResume=false;suspend()});
+ stage.addEventListener('mouseleave',()=>{hovered=false;forcedResume=false;animate()});
 }
-stage.addEventListener('focusin',()=>{focused=true;suspend()});
+stage.addEventListener('focusin',()=>{focused=true;forcedResume=false;suspend()});
 stage.addEventListener('focusout',()=>{requestAnimationFrame(()=>{focused=stage.contains(document.activeElement);if(!focused)animate()})});
 document.addEventListener('visibilitychange',()=>document.hidden?suspend():animate());
 window.addEventListener('pagehide',suspend);
