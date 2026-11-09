@@ -60,6 +60,29 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 @media(max-width:850px){.mision-values{grid-template-columns:1fr;gap:16px;margin-top:24px}.mision-value{border-radius:22px;padding:28px 25px}.mision-value h2{font-size:clamp(27px,6vw,35px)}}
 @media(prefers-reduced-motion:reduce){.mision-value{transition:none}.mision-value:hover{transform:none}}
 
+
+/* SPRINT 4 — Perfiles editoriales; los retratos permanecen pendientes de autorización. */
+.founders-section{width:min(1168px,100%);margin:clamp(65px,7.5vw,112px) auto 0}
+.founders-heading{display:flex;align-items:center;justify-content:center;gap:22px;margin:0 0 15px}
+.founders-heading::before,.founders-heading::after{content:"";height:1px;width:clamp(35px,9vw,140px);background:#A7CBD7}
+.founders-kicker{font-size:12px;font-weight:800;letter-spacing:.24em;text-transform:uppercase;color:#163D50;margin:0;white-space:nowrap}
+.founders-title{font:500 clamp(31px,3.5vw,47px)/1.16 Georgia,"Times New Roman",serif;letter-spacing:-.038em;text-align:center;color:#123F47;max-width:850px;margin:0 auto clamp(30px,4vw,48px);text-wrap:balance}
+.founders-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(16px,3vw,44px)}
+.founder-profile{display:grid;grid-template-columns:minmax(135px,34%) 1fr;gap:clamp(17px,2.4vw,30px);align-items:center;min-width:0}
+.founder-profile+.founder-profile{border-left:1px solid #C5D8DD;padding-left:clamp(17px,2.4vw,30px)}
+.founder-portrait{position:relative;aspect-ratio:4/5;border-radius:19px;overflow:hidden;display:flex;flex-direction:column;justify-content:center;align-items:center;gap:9px;background:linear-gradient(145deg,#D6E7ED,#ECF3F5 59%,#D7E8F0);border:1px solid #D0E1E8;color:#163D50}
+.founder-profile:nth-child(2) .founder-portrait{background:linear-gradient(145deg,#D9E4EE,#F0F3F8 58%,#DCE5F2)}
+.founder-portrait::before{content:"";position:absolute;width:125%;height:125%;left:15%;top:-50%;border:1px solid rgba(22,61,80,.16);border-radius:50%;box-shadow:0 0 0 19px rgba(22,61,80,.035),0 0 0 55px rgba(22,61,80,.025);transform:rotate(20deg)}
+.founder-monogram{position:relative;z-index:1;font:400 clamp(32px,4vw,60px)/1 Georgia,"Times New Roman",serif;letter-spacing:-.08em}
+.founder-pending{position:relative;z-index:1;text-transform:uppercase;font-size:9px;font-weight:750;letter-spacing:.13em;text-align:center;max-width:130px;line-height:1.5;opacity:.77;padding:0 5px}
+.founder-profile h3{font:500 clamp(23px,2.25vw,31px)/1.16 Georgia,"Times New Roman",serif;letter-spacing:-.026em;margin:0 0 8px;color:#123F47}
+.founder-role{display:inline-block;border-radius:99px;background:#E5EDF9;color:#14476B;font-size:12px;font-weight:700;line-height:1.35;padding:6px 10px;margin:0 0 17px}
+.founder-bio{font-size:clamp(14px,1.15vw,16px);line-height:1.64;margin:0;color:#294150}
+.founders-footnote{font-size:12px;line-height:1.6;text-align:center;color:#5C696A;margin:30px auto 0;max-width:750px}
+@media(max-width:990px){.founders-grid{gap:25px}.founder-profile{grid-template-columns:minmax(110px,35%) 1fr;gap:15px}.founder-profile+.founder-profile{padding-left:20px}.founder-profile h3{font-size:24px}.founder-role{font-size:11px}}
+@media(max-width:780px){.founders-section{margin-top:70px}.founders-grid{grid-template-columns:1fr;gap:28px}.founder-profile{grid-template-columns:minmax(110px,31%) 1fr;gap:18px}.founder-profile+.founder-profile{border-left:0;border-top:1px solid #D4E1E4;padding-left:0;padding-top:27px}.founders-title{margin-bottom:33px}}
+@media(max-width:420px){.founder-profile{grid-template-columns:118px 1fr;gap:13px}.founder-profile h3{font-size:21px}.founder-portrait{border-radius:15px}.founder-bio{font-size:13px;line-height:1.6}.founder-role{font-size:10px;padding:5px 8px}.founders-heading{gap:12px}.founders-kicker{letter-spacing:.2em}}
+
 </style>
 </head>
 <body>
@@ -132,6 +155,37 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
     <p class="mision-value-body">La tecnología debe acercar el conocimiento a las personas, fortalecer su participación en el cuidado de su bienestar y facilitar la colaboración con los profesionales de la salud, respetando siempre su criterio clínico.</p>
   </article>
 </section>
+
+<section class="founders-section" id="fundadores" aria-labelledby="founders-title">
+  <div class="founders-heading"><p class="founders-kicker">Fundadores</p></div>
+  <h2 id="founders-title" class="founders-title">La visión y la experiencia que impulsan el proyecto.</h2>
+  <div class="founders-grid">
+    <article class="founder-profile" aria-labelledby="founder-rafael">
+      <div class="founder-portrait" aria-label="Espacio reservado para fotografía de Rafael Fonseca Idler">
+        <span class="founder-monogram" aria-hidden="true">RF</span>
+        <span class="founder-pending">Fotografía por incorporar</span>
+      </div>
+      <div class="founder-details">
+        <h3 id="founder-rafael">Rafael Fonseca Idler</h3>
+        <p class="founder-role">Fundador · CEO</p>
+        <p class="founder-bio">Visión estratégica, tecnología y desarrollo de una plataforma que acerque la información científica a las personas.</p>
+      </div>
+    </article>
+    <article class="founder-profile" aria-labelledby="founder-carlos">
+      <div class="founder-portrait" aria-label="Espacio reservado para fotografía del Dr. Carlos Nunes">
+        <span class="founder-monogram" aria-hidden="true">CN</span>
+        <span class="founder-pending">Fotografía por incorporar</span>
+      </div>
+      <div class="founder-details">
+        <h3 id="founder-carlos">Dr. Carlos Nunes</h3>
+        <p class="founder-role">Cofundador · Dirección médico-científica</p>
+        <p class="founder-bio">Orientación científica, gobernanza de evidencia y coordinación del Consejo Médico-Científico.</p>
+      </div>
+    </article>
+  </div>
+  <p class="founders-footnote">Perfiles editoriales para revisión. Los retratos reales y las biografías definitivas se incorporarán únicamente tras su autorización.</p>
+</section>
+
 </main>
 <footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
