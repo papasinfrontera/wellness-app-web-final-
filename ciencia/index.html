@@ -418,6 +418,44 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .mi-thumbnails{padding:3px 18px 12px}
  .mi-playback-hint{font-size:11px}
 }
+
+/* V3.7 · Invitación editorial a colaborar · aprobado */
+.mi-join{
+ position:relative;isolation:isolate;overflow:hidden;
+ width:min(1300px,100%);margin:clamp(45px,6vw,85px) auto 0;
+ padding:clamp(32px,5vw,64px) clamp(22px,7vw,95px) clamp(34px,5vw,66px);
+ background:radial-gradient(circle at 3% 100%,rgba(22,140,139,.10),transparent 28%),radial-gradient(circle at 100% 3%,rgba(22,140,139,.12),transparent 28%),#F7F8F5;
+ border:1px solid #DDE9E7;border-radius:clamp(23px,3.6vw,43px);
+ text-align:center;box-shadow:0 14px 45px rgba(18,63,71,.025);
+ display:flex;align-items:center;flex-direction:column;
+}
+.mi-join::before,.mi-join::after{content:"";position:absolute;width:32%;aspect-ratio:1;border-radius:50%;pointer-events:none;z-index:-1;background:rgba(22,140,139,.038)}
+.mi-join::before{left:-18%;bottom:-38%}
+.mi-join::after{right:-18%;top:-49%}
+.mi-join-art{width:218px;height:132px;max-width:100%;margin:-8px auto 10px;display:grid;place-items:center}
+.mi-join-art svg{width:100%;height:100%}
+.mi-join-kicker{color:#168C8B;letter-spacing:.23em;font-weight:750;font-size:12px;line-height:1.5;margin:0 0 19px;display:flex;align-items:center;justify-content:center;gap:19px}
+.mi-join-kicker::before,.mi-join-kicker::after{content:"";display:block;width:56px;height:1px;background:#95B9BA}
+.mi-join h2{font:500 clamp(31px,4.4vw,61px)/1.15 Georgia,"Times New Roman",serif;letter-spacing:-.042em;color:#123F47;margin:0 auto 22px;max-width:1050px;text-wrap:balance}
+.mi-join-intro{max-width:865px;margin:0 auto 27px;color:#5C696A;font-size:clamp(15px,1.7vw,20px);line-height:1.65;text-wrap:pretty}
+.mi-join-cta{display:inline-flex;align-items:center;justify-content:center;gap:13px;min-height:53px;padding:12px 28px;border-radius:99px;background:#123F47;color:#fff!important;text-decoration:none;font-size:16px;font-weight:750;transition:background .2s ease,transform .2s ease}
+.mi-join-cta svg{width:21px;height:21px}
+.mi-join-cta:hover{background:#166C72;transform:translateY(-2px)}
+.mi-join-secondary{display:inline-flex;align-items:center;gap:9px;margin-top:16px;padding:6px 4px;color:#123F47!important;text-decoration:none;border-bottom:1px solid #A5C9C9;font-size:14px;font-weight:500}
+.mi-join-secondary:hover{color:#168C8B!important;border-bottom-color:#168C8B}
+.mi-join-cta:focus-visible,.mi-join-secondary:focus-visible{outline:3px solid #FF713D;outline-offset:4px}
+@media(max-width:780px){
+ .mi-join{margin-top:45px;padding:27px 18px 34px}
+ .mi-join-art{width:165px;height:102px;margin-bottom:9px}
+ .mi-join h2{font-size:clamp(29px,7.8vw,42px);line-height:1.18;margin-bottom:16px}
+ .mi-join-desktop-break{display:none}
+ .mi-join-intro{font-size:14px;line-height:1.58;margin-bottom:22px}
+ .mi-join-kicker{font-size:10px;letter-spacing:.16em;gap:11px;margin-bottom:13px}
+ .mi-join-kicker::before,.mi-join-kicker::after{width:29px}
+ .mi-join-cta{min-height:48px;font-size:14px}
+ .mi-join-secondary{font-size:12px;margin-top:12px}
+}
+@media(prefers-reduced-motion:reduce){.mi-join-cta{transition:none}.mi-join-cta:hover{transform:none}}
 </style>
 </head>
 <body>
@@ -510,10 +548,23 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="sr-only" id="miAnnounce" aria-live="polite" aria-atomic="true"></div>
 </section>
 <p class="mi-disclaimer">Los referentes presentados son independientes. Su inclusión no implica afiliación, colaboración ni respaldo a WELLNESS APP o a sus algoritmos. Los perfiles enlazan a fuentes públicas y no constituyen recomendaciones de salud personal.</p>
-<section class="mi-bottom" aria-label="Sobre nuestra filosofía científica">
-<h2>La curiosidad impulsa el conocimiento.</h2>
-<p>Exploramos distintas perspectivas científicas con rigor y espíritu crítico. En WELLNESS APP, la tecnología y la evidencia son herramientas para comprender mejor el bienestar.</p>
-<a href="../mision/index.html">Conoce nuestra misión&nbsp; ↗</a>
+<section class="mi-join" id="unete-a-esta-vision" aria-labelledby="miJoinTitle">
+<div class="mi-join-art" aria-hidden="true">
+ <svg viewBox="0 0 218 132" role="presentation" focusable="false">
+  <circle cx="109" cy="39" r="35" fill="#168C8B" fill-opacity=".10"/>
+  <circle cx="77" cy="85" r="35" fill="#168C8B" fill-opacity=".12"/>
+  <circle cx="141" cy="85" r="35" fill="#168C8B" fill-opacity=".12"/>
+  <path d="M109 55 C101 48 92 52 92 61 C92 70 109 81 109 81 C109 81 126 70 126 61 C126 52 117 48 109 55Z M94 65H101L106 59L112 72L117 65H124" transform="translate(0,-29)" fill="none" stroke="#168C8B" stroke-width="1.7" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M67 93h20m-16 0V78l6-8 5 6-8 7m4-19 4 1m-10 13 9 8" fill="none" stroke="#168C8B" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="128" y="72" width="26" height="18" rx="2" fill="none" stroke="#168C8B" stroke-width="1.8"/>
+  <path d="M125 95h32m-19-5-3 5m8-5 3 5" fill="none" stroke="#168C8B" stroke-width="1.8" stroke-linecap="round"/>
+ </svg>
+</div>
+<p class="mi-join-kicker">ÚNETE A ESTA VISIÓN</p>
+<h2 id="miJoinTitle">Impulsamos el bienestar con ciencia,<br class="mi-join-desktop-break"> tecnología y colaboración.</h2>
+<p class="mi-join-intro">Invitamos a profesionales de la salud, investigadores y especialistas en tecnología a conocer esta visión y explorar cómo pueden sumarse a esta solución.</p>
+<a class="mi-join-cta" href="../mision/index.html">Conoce nuestra misión <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="mi-join-secondary" href="../index.html#como-funciona">Explora la visión de WELLNESS APP <span aria-hidden="true">↗</span></a>
 </section>
 </main>
 <footer class="wf-footer" id="footer-wellness">
