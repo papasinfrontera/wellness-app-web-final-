@@ -47,3 +47,30 @@ body.wa-menu-open{overflow:hidden!important}
 }
 @media(max-width:350px){.wa-unified-header .logotext{font-size:12.5px!important}.wa-unified-menu:not([hidden]){padding:17px}}
 @media(prefers-reduced-motion:reduce){.wa-unified-menu,.wa-menu-backdrop{transition:none!important}}
+
+
+/* Navegación unificada N1/N2 · Noviembre 2026 */
+.wa-unified-header .wa-primary-nav .wa-nav-pending{
+ display:inline-flex;align-items:center;gap:5px;position:relative;
+ color:#657B82;font:600 12px/1.4 Arial,Helvetica,sans-serif;white-space:nowrap;
+ padding:9px 0;cursor:default
+}
+.wa-unified-menu .wa-menu-links .wa-nav-pending{
+ display:inline-flex;align-items:center;flex-wrap:wrap;gap:10px;
+ font:400 clamp(19px,2.2vw,27px)/1.12 Arial,Helvetica,sans-serif;
+ color:#657B82;padding:6px 0;letter-spacing:-.035em
+}
+.wa-coming-soon{font:600 9px/1.2 Arial,Helvetica,sans-serif;
+ letter-spacing:.01em;color:#6D8185;background:#E9F0EF;border:1px solid #DCE6E4;
+ padding:3px 6px;border-radius:99px;white-space:nowrap}
+.wf-footer .wa-coming-soon{font-size:9px}
+.wf-footer .wf-brand[href]{text-decoration:none;color:inherit}
+.wf-footer .wf-brand[href]:focus-visible{outline:3px solid #168C8B;outline-offset:4px;border-radius:5px}
+.wf-footer .wf-brand[href]:hover{color:#168C8B}
+@media(max-width:1150px){
+ .wa-unified-header .wa-primary-nav .wa-nav-pending{gap:3px;font-size:11px}
+ .wa-unified-header .wa-primary-nav .wa-coming-soon{font-size:8px;padding:2px 4px}
+}
+@media(max-width:1020px){
+ .wa-unified-menu .wa-menu-links .wa-nav-pending{font-size:clamp(19px,5.4vw,25px)}
+}
