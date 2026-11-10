@@ -196,14 +196,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
 <a class="logo" href="../index.html#inicio" aria-label="WELLNESS APP, ir al inicio"><span class="symbol" aria-hidden="true"></span><span class="logotext">WELLNESS APP</span></a>
-<nav class="nav wa-primary-nav" aria-label="Menú principal">
-<a href="../index.html#como-funciona">Cómo funciona</a>
+<nav class="nav wa-primary-nav" aria-label="Menú principal"><a href="../index.html#como-funciona">Cómo funciona</a>
 <a href="../que-analizamos/index.html">Qué analizamos</a>
-<a href="#inicio" class="wa-active" aria-current="page">Misión</a><a href="../ciencia/index.html">Ciencia</a>
-<a href="../index.html#areas-bienestar">Qué incluye</a>
-<a href="../index.html#beneficios">Beneficios</a>
-<a href="../index.html#planes">Planes</a>
-</nav>
+<a href="#inicio" class="wa-active" aria-current="page">Misión</a>
+<a href="../ciencia/index.html">Ciencia</a>
+<span class="wa-nav-pending" aria-label="Preguntas frecuentes: próximamente" title="Página en desarrollo">Preguntas frecuentes <small class="wa-coming-soon">Próximamente</small></span>
+<a href="../index.html#planes">Planes</a></nav>
 <div class="wa-header-actions"><a class="wa-login" href="../index.html?acceso=1#inicio">Iniciar sesión</a><a class="wa-join" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
 <button class="wa-menu-toggle" type="button" aria-label="Abrir menú" aria-controls="waUnifiedMenu" aria-expanded="false"><span aria-hidden="true">☰</span></button>
 </header>
@@ -211,16 +209,12 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <aside id="waUnifiedMenu" class="wa-unified-menu" role="dialog" aria-label="Menú de WELLNESS APP" aria-modal="true" hidden>
 <div class="wa-menu-head"><h2>Menú</h2><button type="button" class="wa-menu-close" aria-label="Cerrar menú">×</button></div>
 <p class="wa-menu-kicker">EXPLORA</p>
-<nav class="wa-menu-links" aria-label="Navegación completa">
-<a href="../index.html#inicio">Inicio</a>
-<a href="../index.html#como-funciona">Cómo funciona</a>
+<nav class="wa-menu-links" aria-label="Navegación completa"><a href="../index.html#como-funciona">Cómo funciona</a>
 <a href="../que-analizamos/index.html">Qué analizamos</a>
-<a href="#inicio" aria-current="page">Misión</a><a href="../ciencia/index.html">Ciencia</a>
-<a href="../index.html#areas-bienestar">Qué incluye</a>
-<a href="../index.html#beneficios">Beneficios</a>
-<a href="../index.html#experiencia">Experiencia de la app</a>
-<a href="../index.html#planes">Planes de bienestar</a>
-</nav>
+<a href="#inicio" aria-current="page">Misión</a>
+<a href="../ciencia/index.html">Ciencia</a>
+<span class="wa-nav-pending" aria-label="Preguntas frecuentes: próximamente" title="Página en desarrollo">Preguntas frecuentes <small class="wa-coming-soon">Próximamente</small></span>
+<a href="../index.html#planes">Planes</a></nav>
 <div class="wa-menu-end"><a class="wa-drawer-login" href="../index.html?acceso=1#inicio">Iniciar sesión</a><a class="wa-menu-join" href="../index.html#planes">Hazte miembro <span aria-hidden="true">→</span></a></div>
 <div class="wa-menu-caption">Tu experiencia de bienestar comienza aquí.</div>
 </aside></div>
@@ -327,7 +321,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
 <div class="wf-hero-content">
-<div class="wf-brand"><span aria-hidden="true" class="wf-brand-star">✳</span><span>WELLNESS APP</span></div>
+<a class="wf-brand" href="../index.html#inicio" aria-label="WELLNESS APP, ir al inicio"><span aria-hidden="true" class="wf-brand-star">✳</span><span>WELLNESS APP</span></a>
 <h2>Haz de tu bienestar<br/>una <em>experiencia continua.</em></h2>
 <p class="wf-hero-desc">Convierte tus datos, hábitos y biomarcadores<br/>en una vida más larga, plena y con más energía.</p>
 <a class="wf-primary" href="../index.html#inicio">Explorar WELLNESS APP <span aria-hidden="true">→</span></a>
@@ -353,11 +347,14 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <a aria-label="Abrir Grok" href="https://grok.com/" rel="noopener noreferrer" style="color:#111;font-size:15px" target="_blank" title="Grok">𝕏</a>
 </div>
 </div>
-<nav aria-label="Secciones WELLNESS APP" class="wf-col"><h3>WELLNESS APP</h3><ul>
-<li><a href="../index.html#inicio">Inicio</a></li><li><a href="../index.html#como-funciona">Cómo funciona</a></li><li><a href="../que-analizamos/index.html">Qué analizamos</a></li><li><a href="#inicio">Misión</a></li><li><a href="../ciencia/index.html">Ciencia</a></li><li><a href="../index.html#areas-bienestar">Qué incluye</a></li><li><a href="../index.html#beneficios">Beneficios</a></li><li><a href="../index.html#experiencia">Experiencia de la app</a></li><li><a href="../index.html#planes">Planes de bienestar</a></li>
-</ul></nav>
+<nav class="wf-col" aria-label="Secciones WELLNESS APP"><h3>WELLNESS APP</h3><ul><li><a href="../index.html#como-funciona">Cómo funciona</a></li>
+<li><a href="../que-analizamos/index.html">Qué analizamos</a></li>
+<li><a href="#inicio" aria-current="page">Misión</a></li>
+<li><a href="../ciencia/index.html">Ciencia</a></li>
+<li><span class="wf-not-ready" aria-label="Preguntas frecuentes: próximamente" title="Página en desarrollo">Preguntas frecuentes <small class="wa-coming-soon">Próximamente</small></span></li>
+<li><a href="../index.html#planes">Planes</a></li></ul></nav>
 <nav aria-label="Recursos" class="wf-col"><h3>RECURSOS</h3><ul>
-<li><span class="wf-not-ready" title="Página en desarrollo">Preguntas frecuentes</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Historias</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Protocolos</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Portal para profesionales</span></li>
+<li><span class="wf-not-ready" title="Página en desarrollo">Historias</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Protocolos</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Portal para profesionales</span></li>
 </ul></nav>
 <nav aria-label="Investigación y Ciencia" class="wf-col"><h3>INVESTIGACIÓN Y CIENCIA</h3><ul>
 <li><span class="wf-not-ready" title="Página en desarrollo">Publicaciones científicas y documentos técnicos</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Consejo Médico-Científico</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Biomarcadores y metodología</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Edad biológica · PhenoAge</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Longevidad y prevención</span></li><li><span class="wf-not-ready" title="Página en desarrollo">Colabora con nuestra investigación</span></li>
