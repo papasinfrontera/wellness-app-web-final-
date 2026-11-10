@@ -35,145 +35,106 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 .how-stat strong{font-size:clamp(17px,1.75vw,26px);font-weight:700;color:var(--petrol)}
 .how-stat span{display:block}
 @media(max-width:1100px){.how-hero-content,.how-stats{width:calc(100% - 62px)}.how-hero-photo{width:75%}.how-hero-copy{max-width:530px}.how-hero h1{font-size:clamp(62px,8vw,95px)}}
+/* V1.6 — ÚNICA definición móvil; reemplaza V1.4 y V1.5 completas */
 @media(max-width:780px){
- .topbar-wrap{top:16px;width:calc(100% - 20px)}
- .header{padding:10px 14px;gap:8px;min-height:64px}
- .logo{gap:8px}.symbol{height:34px;width:34px}.symbol:after{top:5px;left:10px;width:12px;height:22px}
- .logotext{font-size:12px;letter-spacing:.065em}
- .how-hero{min-height:0;display:flex;background:#F7F8F5;color:var(--petrol);padding-bottom:12px}
- .how-hero-photo{position:relative;z-index:0;top:auto;right:auto;display:block;flex-shrink:0;width:100%;height:clamp(300px,43svh,410px);margin-top:85px;object-fit:cover;object-position:50% 43%;filter:saturate(1);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 78%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 78%,transparent 100%)}
- .how-hero:after{background:none}
- .how-hero-content{position:relative;z-index:1;width:calc(100% - 42px);padding:0 0 24px;flex:0 0 auto;margin:-28px auto 0}
- .how-kicker{font-size:11px;letter-spacing:.2em;margin-bottom:15px;color:#fff}
- .how-hero h1{font-size:clamp(54px,12vw,78px);line-height:1.0;margin-bottom:18px;color:var(--petrol)}
- .how-lede{font-size:clamp(15px,3.9vw,19px);line-height:1.47;color:#294150;margin-bottom:23px}
- .how-hero-ctas{gap:10px}
- .how-hero-ctas a{min-height:46px;min-width:0;flex:1 1 140px;padding:12px 15px;font-size:14px}
- .how-primary{background:var(--petrol);color:white;border-color:var(--petrol)!important}
- .how-secondary{background:#fff;color:var(--petrol);border-color:var(--petrol)!important}
- .how-stats{width:calc(100% - 42px);padding:21px 0 22px;border-top-color:rgba(18,63,71,.23);display:grid;grid-template-columns:1fr;gap:11px}
- .how-stat,.how-stat:first-child{border:0;padding:5px 0;gap:12px;color:var(--petrol);font-size:14px}
- .how-stat strong{font-size:19px;color:var(--petrol)}
- .how-stat svg{width:28px;height:28px;color:var(--teal)}
-}
-@media(max-width:380px){.how-hero-content{padding-top:0}.how-hero h1{font-size:52px}.how-stat{font-size:13px}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.how-hero-ctas a{transition:none}.how-hero-ctas a:hover{transform:none}}
+  html,body{height:auto;min-height:100%;overflow-x:hidden}
+  .page-shell{overflow:visible}
 
-/* Hero #1 móvil V1.4 — contenido compacto sin espacio vertical flexible */
-@media (max-width:780px){
- html,body{min-height:100%;height:auto;overflow-y:auto}
- .page-shell{overflow:visible}
- .topbar-wrap{
-   position:absolute;top:clamp(8px,1.5svh,15px);z-index:1200;
-   width:calc(100% - 24px)
- }
- .header{min-height:54px;padding:8px 12px}
- .how-hero{
-   height:auto;min-height:0;max-height:none;overflow:visible;
-   padding:0 0 clamp(12px,2svh,22px);
-   display:flex;flex-direction:column;justify-content:flex-start;
-   background:#F7F8F5
- }
- .how-hero-photo{
-   position:relative;inset:auto;z-index:0;display:block;flex:0 0 auto;
-   width:100%;height:clamp(195px,32svh,330px);margin:0;
-   object-fit:cover;object-position:50% 40%;
-   -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 78%,transparent 100%);
-   mask-image:linear-gradient(to bottom,#000 0%,#000 78%,transparent 100%)
- }
- .how-hero:after{background:none}
- .how-hero-content{
-   position:relative;z-index:1;width:calc(100% - 38px);
-   display:block;flex:none;min-height:0;
-   margin:-20px auto 0;padding:0
- }
- .how-hero-copy{max-width:100%}
- .how-hero h1{
-   font-size:clamp(40px,10.8vw,60px);line-height:1.03;
-   letter-spacing:-.055em;margin:0 0 clamp(9px,1.3svh,13px);
-   color:var(--petrol)
- }
- .how-lede{
-   font-size:clamp(13px,3.4vw,17px);line-height:1.39;
-   color:#294150;max-width:100%;
-   margin:0 0 clamp(12px,1.7svh,17px)
- }
- .how-hero-ctas{display:flex;flex-wrap:nowrap;gap:10px}
- .how-hero-ctas a{
-   flex:1 1 0;min-width:0;
-   min-height:clamp(38px,5.2svh,46px);
-   padding:8px 7px;font-size:clamp(11px,3.2vw,14px);
-   white-space:nowrap
- }
- .how-primary{background:var(--petrol);color:white;border-color:var(--petrol)!important}
- .how-secondary{background:white;color:var(--petrol);border-color:var(--petrol)!important}
- .how-stats{
-   flex:none;width:calc(100% - 38px);
-   margin:clamp(13px,2svh,20px) auto 0;
-   padding:clamp(10px,1.5svh,14px) 0 0;
-   display:grid;grid-template-columns:1fr;
-   gap:clamp(6px,1svh,10px);
-   border-top:1px solid rgba(18,63,71,.24)
- }
- .how-stat,.how-stat:first-child{
-   padding:2px 0;border:0;display:flex;align-items:center;
-   gap:11px;font-size:clamp(11px,2.85vw,13px);
-   line-height:1.22;color:var(--petrol)
- }
- .how-stat svg{width:23px;height:23px;color:var(--teal)}
- .how-stat strong{font-size:clamp(14px,3.6vw,17px);color:var(--petrol)}
-}
-@media (max-width:780px) and (max-height:730px){
- .how-hero-photo{height:clamp(175px,29svh,250px)}
- .how-hero-content{margin-top:-16px}
- .how-hero h1{font-size:clamp(36px,9.8vw,51px);margin-bottom:8px}
- .how-lede{font-size:clamp(12px,3.2vw,15px);line-height:1.33;margin-bottom:10px}
- .how-stats{margin-top:12px;gap:4px;padding-top:9px}
-}
-@media (max-width:780px) and (max-height:610px){
- .how-hero-photo{height:clamp(155px,25svh,215px)}
- .how-hero h1{font-size:clamp(32px,8.8vw,45px)}
- .how-hero-ctas a{min-height:36px}
- .how-lede{font-size:12px;line-height:1.29}
- .how-stat svg{width:20px;height:20px}
- .how-stat strong{font-size:13px}
-}
+  /* No reservar espacio para el encabezado: el header es flotante */
+  .page-shell .topbar-wrap{
+    position:absolute!important;
+    inset:0 0 auto 0!important;
+    width:100%!important;height:0!important;min-height:0!important;
+    margin:0!important;padding:0!important;z-index:1200!important;
+  }
+  .page-shell .topbar-wrap>.wa-unified-header{
+    position:fixed;top:10px;
+    width:calc(100% - 24px);
+    min-height:58px;height:58px;
+    padding:8px 15px
+  }
+  .logo{gap:8px}
+  .symbol{width:34px;height:34px}
+  .symbol:after{top:5px;left:10px;width:12px;height:22px}
+  .logotext{font-size:12px;letter-spacing:.065em}
 
-/* Hero #1 móvil V1.5 · header sobre foto, retrato ampliado en altura sin zoom */
-@media (max-width:780px){
- /* La hoja compartida fuerza 82px y position:relative!important:
-    quitar SOLO en esta página la reserva que produce la franja blanca */
- .page-shell .topbar-wrap{
-   position:absolute!important;
-   top:0;left:0;right:0;
-   height:0!important;min-height:0!important;
-   width:100%;margin:0 auto;padding:0!important;
-   z-index:1200!important;
- }
- .page-shell .topbar-wrap>.wa-unified-header{
-   top:clamp(8px,1.4svh,14px);
- }
- .how-hero{
-   padding-bottom:clamp(19px,2.5svh,29px);
- }
- .how-hero-photo{
-   height:calc(clamp(195px,32svh,330px) + 44px);
-   object-position:50% 45%;
- }
- .how-hero h1{margin-bottom:clamp(8px,1.1svh,12px)}
- .how-lede{margin-bottom:clamp(10px,1.4svh,15px)}
- .how-stats{
-   margin-top:clamp(12px,1.7svh,17px);
-   padding-top:clamp(9px,1.3svh,12px)
- }
+  /* El contenido fluye normalmente: nada puede empujar beneficios hacia abajo */
+  .how-hero{
+    display:block;
+    height:auto!important;min-height:0!important;max-height:none!important;
+    padding:0 0 22px;
+    overflow:visible;background:#F7F8F5;color:var(--petrol)
+  }
+  .how-hero-photo{
+    position:relative;inset:auto;z-index:0;
+    display:block;width:100%;
+    height:clamp(245px,36svh,350px);
+    margin:0;
+    object-fit:cover;object-position:50% 0%;
+    filter:saturate(1);
+    -webkit-mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);
+    mask-image:linear-gradient(to bottom,#000 0%,#000 76%,transparent 100%);
+  }
+  .how-hero::after{background:none}
+  .how-hero-content{
+    position:relative;z-index:1;
+    display:block;flex:none;
+    min-height:0;width:calc(100% - 38px);
+    margin:-17px auto 0;padding:0
+  }
+  .how-hero-copy{max-width:100%}
+  .how-hero h1{
+    margin:0 0 12px;color:var(--petrol);
+    font-size:clamp(40px,10.7vw,60px);
+    line-height:1.03;letter-spacing:-.055em
+  }
+  .how-lede{
+    max-width:100%;margin:0 0 14px;
+    color:#294150;font-size:clamp(13px,3.4vw,17px);
+    line-height:1.39
+  }
+  .how-hero-ctas{display:flex;flex-wrap:nowrap;gap:10px}
+  .how-hero-ctas a{
+    flex:1 1 0;min-width:0;min-height:44px;
+    padding:9px 8px;
+    font-size:clamp(11px,3.2vw,14px);white-space:nowrap
+  }
+  .how-primary{background:var(--petrol);color:#fff;border-color:var(--petrol)!important}
+  .how-secondary{background:#fff;color:var(--petrol);border-color:var(--petrol)!important}
+
+  .how-stats{
+    display:grid;grid-template-columns:1fr;
+    width:calc(100% - 38px);
+    margin:15px auto 0;padding:12px 0 0;
+    gap:7px;border-top:1px solid rgba(18,63,71,.24);
+    flex:none
+  }
+  .how-stat,.how-stat:first-child{
+    display:flex;align-items:center;gap:11px;
+    padding:2px 0;border:0;
+    color:var(--petrol);
+    font-size:clamp(11px,2.85vw,13px);
+    line-height:1.22
+  }
+  .how-stat strong{font-size:clamp(14px,3.6vw,17px);color:var(--petrol)}
+  .how-stat svg{width:23px;height:23px;color:var(--teal)}
 }
-@media (max-width:780px) and (max-height:730px){
- .how-hero-photo{height:calc(clamp(175px,29svh,250px) + 38px)}
- .how-stats{margin-top:11px}
+@media(max-width:780px) and (max-height:720px){
+  .how-hero-photo{height:clamp(210px,32svh,275px)}
+  .how-hero h1{font-size:clamp(37px,9.8vw,51px);margin-bottom:9px}
+  .how-lede{font-size:clamp(12px,3.15vw,15px);line-height:1.34;margin-bottom:11px}
+  .how-stats{margin-top:12px;gap:4px}
 }
-@media (max-width:780px) and (max-height:610px){
- .how-hero-photo{height:calc(clamp(155px,25svh,215px) + 28px)}
- .how-stats{margin-top:9px}
+@media(max-width:780px) and (max-height:590px){
+  .how-hero-photo{height:clamp(180px,29svh,230px)}
+  .how-hero h1{font-size:clamp(34px,8.7vw,45px)}
+  .how-hero-ctas a{min-height:38px}
+  .how-lede{font-size:12px;line-height:1.3}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .how-hero-ctas a{transition:none}
+  .how-hero-ctas a:hover{transform:none}
 }
 </style></head><body><div class="page-shell">
 <div class="topbar-wrap">
