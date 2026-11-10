@@ -138,6 +138,43 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .how-stat svg{width:20px;height:20px}
  .how-stat strong{font-size:13px}
 }
+
+/* Hero #1 móvil V1.5 · header sobre foto, retrato ampliado en altura sin zoom */
+@media (max-width:780px){
+ /* La hoja compartida fuerza 82px y position:relative!important:
+    quitar SOLO en esta página la reserva que produce la franja blanca */
+ .page-shell .topbar-wrap{
+   position:absolute!important;
+   top:0;left:0;right:0;
+   height:0!important;min-height:0!important;
+   width:100%;margin:0 auto;padding:0!important;
+   z-index:1200!important;
+ }
+ .page-shell .topbar-wrap>.wa-unified-header{
+   top:clamp(8px,1.4svh,14px);
+ }
+ .how-hero{
+   padding-bottom:clamp(19px,2.5svh,29px);
+ }
+ .how-hero-photo{
+   height:calc(clamp(195px,32svh,330px) + 44px);
+   object-position:50% 45%;
+ }
+ .how-hero h1{margin-bottom:clamp(8px,1.1svh,12px)}
+ .how-lede{margin-bottom:clamp(10px,1.4svh,15px)}
+ .how-stats{
+   margin-top:clamp(12px,1.7svh,17px);
+   padding-top:clamp(9px,1.3svh,12px)
+ }
+}
+@media (max-width:780px) and (max-height:730px){
+ .how-hero-photo{height:calc(clamp(175px,29svh,250px) + 38px)}
+ .how-stats{margin-top:11px}
+}
+@media (max-width:780px) and (max-height:610px){
+ .how-hero-photo{height:calc(clamp(155px,25svh,215px) + 28px)}
+ .how-stats{margin-top:9px}
+}
 </style></head><body><div class="page-shell">
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
