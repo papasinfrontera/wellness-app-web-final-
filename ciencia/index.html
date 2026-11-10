@@ -456,6 +456,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .mi-join-secondary{font-size:12px;margin-top:12px}
 }
 @media(prefers-reduced-motion:reduce){.mi-join-cta{transition:none}.mi-join-cta:hover{transform:none}}
+
+/* V3.8 — Eliminar copy auxiliar; conservar flechas y CTA principal */
+.mi-controls{justify-content:flex-end}
+.mi-join-cta{margin-top:1px}
 </style>
 </head>
 <body>
@@ -529,7 +533,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 </div>
 </div>
 <div class="mi-controls">
-<div class="mi-control-label"><strong>Mentes que inspiran</strong>Una persona a la vez · Reproducción automática controlable</div>
+
 <div class="mi-arrows">
 <button type="button" class="mi-nav-btn" id="miPrev" aria-label="Referente anterior"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M19 12H5m7-7-7 7 7 7"/></svg></button>
 <button type="button" class="mi-nav-btn next" id="miNext" aria-label="Siguiente referente"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M5 12h14m-7-7 7 7-7 7"/></svg></button>
@@ -564,7 +568,7 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <h2 id="miJoinTitle">Impulsamos el bienestar con ciencia,<br class="mi-join-desktop-break"> tecnología y colaboración.</h2>
 <p class="mi-join-intro">Invitamos a profesionales de la salud, investigadores y especialistas en tecnología a conocer esta visión y explorar cómo pueden sumarse a esta solución.</p>
 <a class="mi-join-cta" href="../mision/index.html">Conoce nuestra misión <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h16m-7-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-<a class="mi-join-secondary" href="../index.html#como-funciona">Explora la visión de WELLNESS APP <span aria-hidden="true">↗</span></a>
+
 </section>
 </main>
 <footer class="wf-footer" id="footer-wellness">
