@@ -16,7 +16,7 @@
 .logotext{font-size:18px;line-height:1;letter-spacing:.12em;font-weight:700;white-space:nowrap}
 a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-offset:4px}
 .how-hero{position:relative;display:flex;flex-direction:column;justify-content:space-between;min-height:min(950px,100svh);min-height:max(730px,100svh);overflow:hidden;isolation:isolate;background:linear-gradient(100deg,#f7f8f5 0%,#f9f6f1 43%,#e7e1d8 100%)}
-.how-hero-photo{position:absolute;z-index:-2;right:0;top:0;width:66%;height:100%;object-fit:cover;object-position:57% 42%;filter:saturate(.95);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 21%,#000 44%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.35) 21%,#000 44%)}
+.how-hero-photo{position:absolute;z-index:-2;right:0;top:0;width:64%;height:100%;object-fit:cover;object-position:50% 22%;filter:saturate(.96);-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 14%,#000 42%),linear-gradient(0deg,transparent 0%,#000 29%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.27) 14%,#000 42%),linear-gradient(0deg,transparent 0%,#000 29%);-webkit-mask-composite:source-in;mask-composite:intersect}
 .how-hero:after{content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;background:linear-gradient(0deg,rgba(247,248,245,.88),transparent 23%,transparent 73%)}
 .how-hero-content{width:min(1300px,calc(100% - 80px));margin:0 auto;padding:clamp(205px,24vh,280px) 0 70px;flex:1}
 .how-hero-copy{max-width:620px}
@@ -41,8 +41,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .logo{gap:8px}.symbol{height:34px;width:34px}.symbol:after{top:5px;left:10px;width:12px;height:22px}
  .logotext{font-size:12px;letter-spacing:.065em}
  .how-hero{min-height:940px;min-height:100svh;background:#5e554a;color:white}
- .how-hero-photo{width:100%;height:100%;object-fit:cover;object-position:54% 5%;-webkit-mask-image:none;mask-image:none}
- .how-hero:after{background:linear-gradient(180deg,rgba(14,25,25,.12) 0%,rgba(17,32,35,.15) 27%,rgba(10,26,32,.58) 48%,rgba(8,31,35,.82) 100%)}
+ .how-hero-photo{width:100%;height:clamp(460px,63svh,690px);object-fit:cover;object-position:50% 18%;filter:saturate(1.01);-webkit-mask-image:linear-gradient(180deg,#000 0%,#000 66%,transparent 100%);mask-image:linear-gradient(180deg,#000 0%,#000 66%,transparent 100%)}
+ .how-hero:after{background:linear-gradient(180deg,rgba(12,24,24,.08) 0%,rgba(17,30,30,.12) 27%,rgba(27,33,27,.49) 45%,rgba(35,43,39,.83) 69%,rgba(32,44,44,.96) 100%)}
  .how-hero-content{width:calc(100% - 42px);padding:clamp(330px,43svh,480px) 0 34px}
  .how-kicker{font-size:11px;letter-spacing:.2em;margin-bottom:15px;color:#fff}
  .how-hero h1{font-size:clamp(56px,13vw,85px);line-height:.98;margin-bottom:20px;color:#fff}
@@ -86,10 +86,10 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 </aside></div>
 <main id="inicio">
 <section class="how-hero" aria-labelledby="how-title">
-<img class="how-hero-photo" src="hero-mujer-aprobada.webp" alt="Mujer con expresión serena, en un entorno cálido y luminoso" width="705" height="435" fetchpriority="high">
+<img class="how-hero-photo" src="hero-mujer-aprobada.webp" alt="Retrato de una mujer sonriente, con luz cálida y natural" width="705" height="435" fetchpriority="high">
 <div class="how-hero-content">
 <div class="how-hero-copy">
-<p class="how-kicker">CÓMO FUNCIONA</p>
+
 <h1 id="how-title">Cómo <em>funciona</em></h1>
 <p class="how-lede">Hazte tus análisis en un laboratorio aliado, recibe tus resultados y comprende qué significan para tu bienestar, todo desde WELLNESS APP.</p>
 <div class="how-hero-ctas"><a class="how-primary" href="../index.html#planes">Ver planes</a><a class="how-secondary" href="../que-analizamos/index.html">Qué analizamos</a></div>
