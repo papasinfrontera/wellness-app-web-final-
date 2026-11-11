@@ -406,7 +406,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .how-step-number{width:44px;height:44px;font-size:28px}
  .how-journey-row,.how-journey-row:nth-child(2){grid-template-columns:minmax(0,1fr) 100px}
 }
-</style></head><body><div class="page-shell">
+</style><link rel="stylesheet" href="../shared/planes.css">
+</head><body><div class="page-shell">
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
 <a class="logo" href="../index.html#inicio" aria-label="WELLNESS APP, ir al inicio"><span class="symbol" aria-hidden="true"></span><span class="logotext">WELLNESS APP</span></a>
@@ -511,6 +512,8 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   <aside class="how-steps-finale" aria-label="Comienza a conocer mejor tu bienestar"><h3>Tu bienestar comienza con <em>conocerlo mejor.</em></h3><p>Descubre nuestros planes y elige cómo comenzar.</p><a href="../index.html#planes">Ver planes <span aria-hidden="true">→</span></a></aside>
  </div>
 </section>
+<section id="planes" class="wp-plans" data-wp-plans aria-labelledby="wp-planes-titulo"></section>
+
 </main><footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
 <div class="wf-hero-content">
@@ -585,4 +588,5 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(progress)}},{passive:true});
   window.addEventListener('resize',progress,{passive:true});progress();
 })();
-</script></body></html>
+</script><script src="../shared/planes.js"></script>
+</body></html>
