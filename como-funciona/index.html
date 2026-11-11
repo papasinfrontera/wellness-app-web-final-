@@ -320,6 +320,92 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .how-phone-bottom{font-size:6px;margin-top:6px;padding-top:5px}
  .how-mockup-note{bottom:6px;right:5px;font-size:7px;padding:4px}
 }
+
+/* V2.1 · Versión editorial aprobada: números destacados y títulos sin minietiquetas */
+.how-steps-heading{margin-bottom:clamp(34px,4.5vw,62px)}
+.how-journey{gap:clamp(28px,4vw,55px)}
+.how-journey-row{min-height:305px}
+.how-journey-copy{max-width:520px}
+.how-step-heading{display:flex;align-items:center;gap:16px;margin:0 0 11px}
+.how-step-heading h3{font:500 clamp(28px,2.7vw,39px)/1.12 Georgia,serif;letter-spacing:-.045em;margin:0}
+.how-step-number{
+ display:inline-flex;align-items:center;justify-content:center;flex:0 0 auto;
+ width:clamp(66px,5.8vw,84px);height:clamp(66px,5.8vw,84px);
+ border-radius:50%;background:#DBF2E6;color:#123F47;
+ font:700 clamp(41px,4vw,57px)/1 Georgia,serif;
+ letter-spacing:-.045em; font-variant-numeric:tabular-nums;
+}
+.how-journey-copy>p{margin:0 0 12px;font-size:clamp(14px,1.2vw,17px);line-height:1.45}
+.how-step-points{padding-top:11px}
+.how-step-points li{margin-bottom:5px}
+.how-journey-art{height:clamp(272px,25vw,335px)}
+.how-art-plan .how-plan-photo{object-position:50% 33%}
+.how-plan-preview{top:10%;bottom:auto;right:3%;width:35%;min-width:160px;padding:13px 12px;border-radius:18px}
+.how-plan-preview>strong{font-size:18px}
+.how-plan-option{font-size:10px;padding:7px 5px}
+.how-art-plan::after{background:linear-gradient(90deg,transparent 38%,rgba(246,247,242,.35) 70%,rgba(246,247,242,.45) 100%)}
+.how-art-results{background:radial-gradient(ellipse at 75% 28%,#FDFCF8 0%,#EAEFEA 67%,#E0E9E3 100%)}
+.how-mobile-device{height:139%;width:55%;max-width:275px;top:1%;left:54%;border-radius:35px}
+.how-phone-content{padding:30px 12px 15px}
+.how-phone-greet{font:600 18px/1.15 Arial,sans-serif;margin:10px 0 9px}
+.how-phone-tabs{padding-bottom:7px}
+.how-phone-tabs span{font-size:8px}
+.how-phone-summary{display:flex;align-items:center;justify-content:space-between;gap:6px}
+.how-phone-summary>div:first-child{display:flex;flex-direction:column;gap:4px}
+.how-phone-summary b{font-size:12px;font-weight:700}
+.how-phone-summary small{font-size:9px;color:#687d7a}
+.how-phone-circle{width:83px;height:83px;border-width:8px;margin:0;flex-shrink:0}
+.how-phone-circle strong{font-size:25px}
+.how-phone-trend{border-top:1px solid #E5ECE9;border-bottom:1px solid #E5ECE9;margin-top:10px;padding:6px 0}
+.how-phone-trend span{display:block;font-size:9px;color:#658079;margin-bottom:3px}
+.how-phone-trend svg{display:block;width:100%;height:35px}
+.how-phone-subtitle{font-size:11px;font-weight:750;margin:9px 0 2px}
+.how-phone-metric{padding:6px 0}
+.how-phone-metric>div{display:flex;flex-direction:row;gap:5px;justify-content:space-between;align-items:center;flex:1}
+.how-phone-metric b{font-size:10px}
+.how-phone-metric span{font-size:9px}
+.how-phone-status{background:#DDF3E9;border-radius:12px;padding:4px 5px;color:#157467!important;font-weight:700;white-space:nowrap}
+.how-phone-bottom{margin-top:8px}
+@media(max-width:780px){
+ .how-steps-heading{margin-bottom:26px}
+ .how-journey{gap:14px}
+ .how-journey-row,.how-journey-row:nth-child(2){
+   display:grid;grid-template-columns:minmax(0,1fr) minmax(104px,39%);
+   gap:10px;align-items:start;padding:15px 11px 16px 14px;min-height:0
+ }
+ .how-journey-copy{max-width:none}
+ .how-step-heading{display:block;margin-bottom:9px}
+ .how-step-number{width:48px;height:48px;font-size:30px;margin-bottom:8px}
+ .how-step-heading h3{font-size:clamp(20px,5.15vw,28px);line-height:1.1}
+ .how-journey-copy>p{font-size:clamp(11px,2.9vw,13px);line-height:1.37;margin-bottom:0}
+ .how-journey-art,.how-journey-row:nth-child(2) .how-journey-art{height:clamp(180px,50vw,240px)}
+ .how-step-points{display:none}
+ .how-plan-preview{min-width:0;width:94%;left:3%;right:3%;top:auto;bottom:5%;padding:6px 7px;border-radius:10px}
+ .how-plan-preview>strong{font-size:11px;margin-bottom:4px}
+ .how-plan-option{font-size:7px;padding:4px 3px}
+ .how-mobile-device{width:96%;max-width:none;height:146%;top:3%;left:52%;border-width:4px;border-radius:22px}
+ .how-phone-content{padding:17px 6px 8px}
+ .how-phone-greet{font-size:11px;margin:6px 0}
+ .how-phone-tabs span{font-size:5px;padding:2px}
+ .how-phone-summary b{font-size:8px}
+ .how-phone-summary small{font-size:6px}
+ .how-phone-circle{width:43px;height:43px;border-width:4px}
+ .how-phone-circle strong{font-size:13px}
+ .how-phone-circle small{font-size:5px}
+ .how-phone-trend{margin-top:5px;padding:3px 0}
+ .how-phone-trend span{font-size:6px}
+ .how-phone-trend svg{height:19px}
+ .how-phone-subtitle{font-size:7px;margin:5px 0}
+ .how-phone-metric{padding:3px 0}
+ .how-phone-metric b{font-size:7px}
+ .how-phone-metric span{font-size:6px}
+ .how-phone-status{font-size:5px!important;padding:2px 3px}
+ .how-mockup-note{font-size:6px}
+}
+@media(max-width:375px){
+ .how-step-number{width:44px;height:44px;font-size:28px}
+ .how-journey-row,.how-journey-row:nth-child(2){grid-template-columns:minmax(0,1fr) 100px}
+}
 </style></head><body><div class="page-shell">
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
@@ -367,12 +453,13 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   <header class="how-steps-heading">
    <p class="how-steps-eyebrow">ASÍ DE SENCILLO</p>
    <h2 id="how-steps-title">Tres pasos, una nueva forma de entender tu <em>bienestar.</em></h2>
-   <p>De tus análisis a una visión más clara de tu bienestar, en tres pasos.</p>
+   <p>Hazte tus análisis, conoce tus resultados y descubre cómo cuidar mejor de tu bienestar. Todo en un solo lugar.</p>
   </header>
   <div class="how-journey" id="howJourney" aria-label="Proceso en tres pasos">
    <article class="how-journey-row">
-    <div class="how-journey-copy"><div class="how-step-label"><span>01</span> ELIGE</div><h3>Elige tu plan de bienestar.</h3>
-     <p>Selecciona el plan que mejor se adapte a ti y conoce los análisis que incluye.</p>
+    <div class="how-journey-copy"><div class="how-step-heading"><span class="how-step-number" aria-hidden="true">01</span><h3>Elige tu plan de bienestar.</h3></div>
+     <p>Selecciona el plan que mejor se adapte a ti y conoce los análisis disponibles. Te orientamos para realizar tus pruebas en un laboratorio aliado.</p>
+     <ul class="how-step-points"><li>Explora los planes y sus opciones de seguimiento.</li><li>Conoce qué indicadores incluye cada opción.</li><li>Empieza con claridad y sin complicaciones.</li></ul>
      
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
@@ -382,8 +469,9 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  </figure>
    </article>
    <article class="how-journey-row">
-    <div class="how-journey-copy"><div class="how-step-label"><span>02</span> ANALIZA</div><h3>Realiza tus análisis.</h3>
-     <p>Acude a un laboratorio aliado para realizar tus pruebas y obtener tus resultados.</p>
+    <div class="how-journey-copy"><div class="how-step-heading"><span class="how-step-number" aria-hidden="true">02</span><h3>Realiza tus análisis.</h3></div>
+     <p>Acude a un laboratorio aliado para obtener tus resultados. Podrás reunirlos en WELLNESS APP y consultar tu información de salud de forma organizada.</p>
+     <ul class="how-step-points"><li>Pruebas realizadas en laboratorios aliados.</li><li>Tu información reunida en un mismo lugar.</li><li>Resultados organizados para facilitar el seguimiento.</li></ul>
      
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
@@ -392,27 +480,31 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  </figure>
    </article>
    <article class="how-journey-row">
-    <div class="how-journey-copy"><div class="how-step-label"><span>03</span> COMPRENDE</div><h3>Comprende tus resultados.</h3>
-     <p>Explora tus indicadores, observa su evolución y comparte la información con profesionales autorizados.</p>
+    <div class="how-journey-copy"><div class="how-step-heading"><span class="how-step-number" aria-hidden="true">03</span><h3>Comprende tus resultados.</h3></div>
+     <p>Explora tus indicadores con explicaciones sencillas, conoce su evolución y comparte la información con profesionales de la salud que autorices.</p>
+     <ul class="how-step-points"><li>Indicadores explicados en lenguaje claro.</li><li>Evolución de tu información en el tiempo.</li><li>Comparte con profesionales autorizados.</li></ul>
      
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
-    <figure class="how-journey-art how-art-results" role="img" aria-label="Demostración visual de WELLNESS APP: pantalla de indicadores, valores ilustrativos y evolución en el tiempo">
+    <figure class="how-journey-art how-art-results" role="img" aria-label="Vista conceptual de WELLNESS APP con indicadores de glucosa, vitamina D y ferritina, y gráfico de evolución">
   <div class="how-result-haze" aria-hidden="true"></div>
   <div class="how-mobile-device" aria-hidden="true">
    <div class="how-phone-content">
-    <div class="how-phone-top"><span class="how-brand-mini"><i></i> WELLNESS APP</span><span>☰</span></div>
+    <div class="how-phone-top"><span class="how-brand-mini"><i></i> WELLNESS APP</span><span class="how-bell">♧</span></div>
     <div class="how-phone-greet">Hola, Ana</div>
-    <div class="how-phone-tabs"><span>Resumen</span><span>Indicadores</span><span>Evolución</span></div>
-    <div class="how-phone-title">Tu salud, en <em>perspectiva.</em></div>
-    <div class="how-score-layout"><div class="how-phone-circle"><div><strong>92</strong><small>Ejemplo</small></div></div>
-      <div class="how-score-right"><span>Indicadores</span><b>28</b><span>Con seguimiento</span></div></div>
-    <div class="how-phone-metric"><div><b>Glucosa</b><span>92 mg/dL</span></div><svg viewBox="0 0 116 26" preserveAspectRatio="none"><path d="M0 16L18 12L37 17L58 8L78 11L96 5L116 7" fill="none" stroke="#168C8B" stroke-width="2.5"/></svg></div>
-    <div class="how-phone-metric"><div><b>Colesterol HDL</b><span>55 mg/dL</span></div><svg viewBox="0 0 116 26" preserveAspectRatio="none"><path d="M0 19L20 20L39 14L58 16L77 11L98 10L116 6" fill="none" stroke="#168C8B" stroke-width="2.5"/></svg></div>
-    <div class="how-phone-bottom"><span>Inicio</span><span>Resultados</span><span>Perfil</span></div>
+    <div class="how-phone-tabs"><span>Mi salud</span><span>Evolución</span><span>Planes</span></div>
+    <div class="how-phone-summary"><div><b>Índice de bienestar</b><small>Tu estado general de salud</small></div>
+      <div class="how-phone-circle"><div><strong>92</strong><small>de 100</small></div></div>
+    </div>
+    <div class="how-phone-trend"><span>Evolución (3 meses)</span><svg viewBox="0 0 200 44" preserveAspectRatio="none"><path d="M1 38L30 28L56 32L82 20L108 23L136 10L167 15L199 5" fill="none" stroke="#159989" stroke-width="3.2"/><path d="M1 38L30 28L56 32L82 20L108 23L136 10L167 15L199 5L199 44L1 44Z" fill="#B5E1D7" opacity=".3"/></svg></div>
+    <div class="how-phone-subtitle">Indicadores principales</div>
+    <div class="how-phone-metric"><div><b>Glucosa</b><span>92 mg/dL</span></div><span class="how-phone-status">En rango</span></div>
+    <div class="how-phone-metric"><div><b>Vitamina D</b><span>34 ng/mL</span></div><span class="how-phone-status">En rango</span></div>
+    <div class="how-phone-metric"><div><b>Ferritina</b><span>76 ng/mL</span></div><span class="how-phone-status">En rango</span></div>
+    <div class="how-phone-bottom"><span>Inicio</span><span>Resultados</span><span>Evolución</span></div>
    </div>
   </div>
-  <small class="how-mockup-note">Interfaz conceptual · Datos ilustrativos</small>
+  <small class="how-mockup-note">Datos de demostración</small>
  </figure>
    </article>
   </div>
