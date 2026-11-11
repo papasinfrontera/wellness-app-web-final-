@@ -245,6 +245,81 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
  .how-journey::after{transition:none}
  .how-journey-row .how-journey-art,.how-journey-row .how-journey-copy{opacity:1;transform:none;transition:none}
 }
+
+/* Bloque #2 V2.0 — Fotografía real, rostro libre, mockup con indicadores */
+.how-art-plan{background:#F6EFE6}
+.how-plan-photo{object-position:50% 28%;filter:saturate(1.05) contrast(1.02)}
+.how-art-plan::after{background:linear-gradient(0deg,rgba(241,240,234,.42),transparent 32%);pointer-events:none}
+.how-plan-preview{
+ top:auto;bottom:12px;right:16px;left:auto;
+ width:min(38%,195px);padding:11px 12px;border-radius:16px;
+ background:rgba(255,255,255,.97);box-shadow:0 7px 27px rgba(18,63,71,.10)
+}
+.how-plan-preview>small{margin-bottom:4px;font-size:8px}
+.how-plan-preview>strong{font-size:15px;margin-bottom:6px}
+.how-plan-option{font-size:10px;padding:5px;border-top:1px solid #E3EAE6}
+.how-lab-photo{width:100%;height:100%;object-fit:cover;object-position:46% 44%;filter:brightness(1.05) saturate(.9)}
+.how-art-lab{background:#EEEDEA}
+.how-art-results{background:radial-gradient(ellipse at 62% 33%,#FFF 0%,#E9F1EE 70%,#DBE8E4 100%)}
+.how-result-haze{position:absolute;inset:0;background:radial-gradient(circle at 15% 65%,rgba(133,197,181,.25),transparent 45%)}
+.how-mobile-device{
+ width:52%;max-width:250px;height:116%;top:5%;
+ border:7px solid #1C292D;border-radius:34px;
+ transform:translateX(-50%) rotate(3deg);
+ box-shadow:0 19px 42px rgba(18,63,71,.22)
+}
+.how-mobile-device::before{z-index:4;top:5px;height:11px}
+.how-phone-content{padding:31px 12px 16px;font-family:Arial,sans-serif;color:#123F47}
+.how-phone-top{display:flex;align-items:center;justify-content:space-between;font-size:11px}
+.how-brand-mini{font-size:8px;font-weight:800;letter-spacing:.04em}
+.how-brand-mini i{display:inline-block;width:10px;height:10px;border-radius:50%;vertical-align:-1px;background:conic-gradient(#FF713D 0 30%,#168C8B 30% 80%,#123F47 80%)}
+.how-phone-greet{font:500 19px Georgia,serif;margin:15px 0 9px}
+.how-phone-tabs{display:flex;gap:4px;font-size:8px;padding-bottom:6px}
+.how-phone-tabs span{border-radius:30px;background:#E7EFED;padding:5px 7px}
+.how-phone-tabs span:first-child{color:#fff;background:#123F47}
+.how-phone-title{font:500 21px/1.1 Georgia,serif;margin:12px 0 12px}
+.how-score-layout{display:flex;align-items:center;gap:12px;padding:6px 0 11px}
+.how-phone-circle{flex:0 0 auto;width:95px;height:95px;border-width:9px;margin:0}
+.how-phone-circle div{text-align:center}
+.how-phone-circle strong{font-size:29px}
+.how-phone-circle small{display:block;font-size:8px;color:#60807c}
+.how-score-right{display:flex;flex-direction:column;gap:2px;font-size:9px;color:#68817e}
+.how-score-right b{font-size:22px;color:#123F47}
+.how-phone-metric{padding:9px 0;border-top:1px solid #DDEAE6;display:flex;justify-content:space-between;gap:8px;align-items:center}
+.how-phone-metric>div{display:flex;flex-direction:column;gap:3px}
+.how-phone-metric b{font-size:10px}
+.how-phone-metric span{font-size:9px;color:#6A8581}
+.how-phone-metric svg{width:42%;height:22px}
+.how-phone-bottom{display:flex;justify-content:space-around;margin-top:13px;border-top:1px solid #E1ECE8;padding-top:9px;color:#8AA29B;font-size:8px}
+.how-mockup-note{position:absolute;bottom:13px;right:15px;background:rgba(255,255,255,.85);border-radius:30px;padding:6px 10px;font-size:10px;color:#557672}
+@media(max-width:780px){
+ .how-plan-photo{object-position:50% 30%}
+ .how-plan-preview{left:6%;right:6%;bottom:6px;top:auto;width:88%;padding:5px;border-radius:8px}
+ .how-plan-preview>small{font-size:6px;margin-bottom:2px}
+ .how-plan-preview>strong{font-size:10px;margin-bottom:3px}
+ .how-plan-option{font-size:7px;padding:3px}
+ .how-mobile-device{width:94%;height:135%;max-width:none;top:4%;border-width:4px;border-radius:21px}
+ .how-mobile-device::before{top:3px;height:8px}
+ .how-phone-content{padding:17px 7px 9px}
+ .how-phone-top{font-size:7px}
+ .how-brand-mini{font-size:6px}
+ .how-phone-greet{font-size:12px;margin:8px 0 6px}
+ .how-phone-tabs{gap:2px;font-size:5px}
+ .how-phone-tabs span{padding:3px}
+ .how-phone-title{font-size:12px;margin:6px 0 7px}
+ .how-score-layout{gap:5px;padding:2px 0 6px}
+ .how-phone-circle{width:55px;height:55px;border-width:5px}
+ .how-phone-circle strong{font-size:16px}
+ .how-phone-circle small{font-size:6px}
+ .how-score-right{font-size:6px}
+ .how-score-right b{font-size:13px}
+ .how-phone-metric{padding:5px 0}
+ .how-phone-metric b{font-size:7px}
+ .how-phone-metric span{font-size:6px}
+ .how-phone-metric svg{height:15px}
+ .how-phone-bottom{font-size:6px;margin-top:6px;padding-top:5px}
+ .how-mockup-note{bottom:6px;right:5px;font-size:7px;padding:4px}
+}
 </style></head><body><div class="page-shell">
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
@@ -292,42 +367,53 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   <header class="how-steps-heading">
    <p class="how-steps-eyebrow">ASÍ DE SENCILLO</p>
    <h2 id="how-steps-title">Tres pasos, una nueva forma de entender tu <em>bienestar.</em></h2>
-   <p>Hazte tus análisis, conoce tus resultados y descubre cómo cuidar mejor de tu bienestar. Todo en un solo lugar.</p>
+   <p>De tus análisis a una visión más clara de tu bienestar, en tres pasos.</p>
   </header>
   <div class="how-journey" id="howJourney" aria-label="Proceso en tres pasos">
    <article class="how-journey-row">
     <div class="how-journey-copy"><div class="how-step-label"><span>01</span> ELIGE</div><h3>Elige tu plan de bienestar.</h3>
-     <p>Selecciona el plan que mejor se adapte a ti y conoce los análisis disponibles. Te orientamos para realizar tus pruebas en un laboratorio aliado.</p>
-     <ul class="how-step-points"><li>Explora los planes y sus opciones de seguimiento.</li><li>Conoce qué indicadores incluye cada opción.</li><li>Empieza con claridad y sin complicaciones.</li></ul>
+     <p>Selecciona el plan que mejor se adapte a ti y conoce los análisis que incluye.</p>
+     
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
-    <figure class="how-journey-art how-art-plan" role="img" aria-label="Persona utilizando su móvil para explorar planes de bienestar">
-     <img class="how-plan-photo" src="hero-retrato-natural.webp" alt="" loading="lazy">
-     <div class="how-plan-preview" aria-hidden="true"><small>WELLNESS APP</small><strong>Elige tu plan</strong><div class="how-plan-option selected"><b>Plan Básico</b><span>✓</span></div><div class="how-plan-option"><b>Plan Advanced</b><span>○</span></div><div class="how-plan-option"><b>Plan Premium</b><span>○</span></div></div>
-    </figure>
+    <figure class="how-journey-art how-art-plan" role="img" aria-label="Mujer sonriente explorando sus opciones de bienestar; selección de plan en una tarjeta discreta inferior">
+  <img class="how-plan-photo" src="hero-retrato-natural.webp" alt="" loading="lazy" width="394" height="400">
+  <div class="how-plan-preview" aria-hidden="true"><small>WELLNESS APP</small><strong>Elige tu plan</strong><div class="how-plan-option selected"><b>Plan Básico</b><span>✓</span></div><div class="how-plan-option"><b>Plan Advanced</b><span>○</span></div><div class="how-plan-option"><b>Plan Premium</b><span>○</span></div></div>
+ </figure>
    </article>
    <article class="how-journey-row">
     <div class="how-journey-copy"><div class="how-step-label"><span>02</span> ANALIZA</div><h3>Realiza tus análisis.</h3>
-     <p>Acude a un laboratorio aliado para obtener tus resultados. Podrás reunirlos en WELLNESS APP y consultar tu información de salud de forma organizada.</p>
-     <ul class="how-step-points"><li>Pruebas realizadas en laboratorios aliados.</li><li>Tu información reunida en un mismo lugar.</li><li>Resultados organizados para facilitar el seguimiento.</li></ul>
+     <p>Acude a un laboratorio aliado para realizar tus pruebas y obtener tus resultados.</p>
+     
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
-    <figure class="how-journey-art how-art-lab"><svg viewBox="0 0 520 380" aria-label="Ilustración de una muestra de laboratorio" role="img" xmlns="http://www.w3.org/2000/svg">
- <defs><linearGradient id="labTube" x1="0" x2="1"><stop stop-color="#C9E3E9"/><stop offset=".4" stop-color="#FFF"/><stop offset="1" stop-color="#8EB7C0"/></linearGradient><linearGradient id="labWater" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#A9E0DE" stop-opacity=".4"/><stop offset="1" stop-color="#9ED8E7" stop-opacity=".9"/></linearGradient></defs>
- <path d="M-30 90 Q150 25 240 115T560 58" stroke="#fff" stroke-width="20" fill="none" opacity=".7"/><path d="M-15 290 Q200 350 320 259T555 270" stroke="#B1DEE0" stroke-width="20" fill="none" opacity=".55"/>
- <g fill="none" stroke="#8EC8D0" stroke-width="2" opacity=".65"><circle cx="75" cy="78" r="17"/><circle cx="133" cy="280" r="9"/><circle cx="416" cy="115" r="22"/><circle cx="457" cy="295" r="12"/><circle cx="89" cy="182" r="5"/><circle cx="395" cy="246" r="7"/></g>
- <g transform="translate(222 37) rotate(5 60 160)"><rect x="29" y="49" width="108" height="265" rx="48" fill="url(#labTube)" stroke="#89B6C0" stroke-width="3"/><path d="M42 189h82v72a41 41 0 0 1-82 0z" fill="url(#labWater)"/><rect x="16" y="18" width="135" height="62" rx="12" fill="#457687"/><rect x="28" y="20" width="108" height="13" rx="5" fill="#759CA6"/><g stroke="#7397A0" stroke-width="2"><path d="M31 40v30M43 40v30M55 40v30M67 40v30M79 40v30M91 40v30M103 40v30M115 40v30M127 40v30"/></g><rect x="33" y="129" width="100" height="92" rx="8" fill="white" opacity=".93"/><text x="83" y="166" text-anchor="middle" fill="#123F47" font-family="Arial" font-size="12" font-weight="bold">WELLNESS</text><text x="83" y="185" text-anchor="middle" fill="#123F47" font-family="Arial" font-size="15" font-weight="bold">APP</text><path d="M50 199h68" stroke="#168C8B" stroke-width="2"/></g>
-</svg></figure>
+    <figure class="how-journey-art how-art-lab">
+  <img class="how-lab-photo" src="https://upload.wikimedia.org/wikipedia/commons/3/38/Laboratory-313861.jpg" loading="lazy" alt="Fotografía auténtica: mano con guante de laboratorio sosteniendo un tubo de extracción de sangre" width="3872" height="2592">
+ </figure>
    </article>
    <article class="how-journey-row">
     <div class="how-journey-copy"><div class="how-step-label"><span>03</span> COMPRENDE</div><h3>Comprende tus resultados.</h3>
-     <p>Explora tus indicadores con explicaciones sencillas, conoce su evolución y comparte la información con profesionales de la salud que autorices.</p>
-     <ul class="how-step-points"><li>Indicadores explicados en lenguaje claro.</li><li>Evolución de tu información en el tiempo.</li><li>Comparte con profesionales autorizados.</li></ul>
+     <p>Explora tus indicadores, observa su evolución y comparte la información con profesionales autorizados.</p>
+     
     </div>
     <div class="how-journey-marker" aria-hidden="true"></div>
-    <figure class="how-journey-art how-art-results" role="img" aria-label="Vista conceptual de un panel personal con indicadores y evolución"><div class="how-result-sparkle" aria-hidden="true"></div>
-      <div class="how-mobile-device" aria-hidden="true"><div class="how-phone-content"><div class="how-phone-kicker">WELLNESS APP</div><div class="how-phone-title">Tu salud, en perspectiva.</div><div class="how-phone-circle"><strong>92</strong></div><div class="how-phone-line"></div><div class="how-phone-line"></div></div></div>
-    </figure>
+    <figure class="how-journey-art how-art-results" role="img" aria-label="Demostración visual de WELLNESS APP: pantalla de indicadores, valores ilustrativos y evolución en el tiempo">
+  <div class="how-result-haze" aria-hidden="true"></div>
+  <div class="how-mobile-device" aria-hidden="true">
+   <div class="how-phone-content">
+    <div class="how-phone-top"><span class="how-brand-mini"><i></i> WELLNESS APP</span><span>☰</span></div>
+    <div class="how-phone-greet">Hola, Ana</div>
+    <div class="how-phone-tabs"><span>Resumen</span><span>Indicadores</span><span>Evolución</span></div>
+    <div class="how-phone-title">Tu salud, en <em>perspectiva.</em></div>
+    <div class="how-score-layout"><div class="how-phone-circle"><div><strong>92</strong><small>Ejemplo</small></div></div>
+      <div class="how-score-right"><span>Indicadores</span><b>28</b><span>Con seguimiento</span></div></div>
+    <div class="how-phone-metric"><div><b>Glucosa</b><span>92 mg/dL</span></div><svg viewBox="0 0 116 26" preserveAspectRatio="none"><path d="M0 16L18 12L37 17L58 8L78 11L96 5L116 7" fill="none" stroke="#168C8B" stroke-width="2.5"/></svg></div>
+    <div class="how-phone-metric"><div><b>Colesterol HDL</b><span>55 mg/dL</span></div><svg viewBox="0 0 116 26" preserveAspectRatio="none"><path d="M0 19L20 20L39 14L58 16L77 11L98 10L116 6" fill="none" stroke="#168C8B" stroke-width="2.5"/></svg></div>
+    <div class="how-phone-bottom"><span>Inicio</span><span>Resultados</span><span>Perfil</span></div>
+   </div>
+  </div>
+  <small class="how-mockup-note">Interfaz conceptual · Datos ilustrativos</small>
+ </figure>
    </article>
   </div>
   <aside class="how-steps-finale" aria-label="Comienza a conocer mejor tu bienestar"><h3>Tu bienestar comienza con <em>conocerlo mejor.</em></h3><p>Descubre nuestros planes y elige cómo comenzar.</p><a href="../index.html#planes">Ver planes <span aria-hidden="true">→</span></a></aside>
