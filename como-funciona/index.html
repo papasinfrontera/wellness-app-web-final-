@@ -136,6 +136,115 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
   .how-hero-ctas a{transition:none}
   .how-hero-ctas a:hover{transform:none}
 }
+
+/* WELLNESS APP — Bloque #2 | Tres pasos hacia tu bienestar */
+.how-steps{--accent:#168C8B;background:#F7F8F5;color:#123F47;padding:clamp(68px,9vw,122px) 28px clamp(68px,8vw,110px)}
+.how-steps-inner{max-width:1190px;margin:0 auto}
+.how-steps-heading{max-width:810px;margin-bottom:clamp(42px,6.5vw,78px)}
+.how-steps-eyebrow{margin:0 0 18px;color:var(--accent);font:700 12px/1.3 Arial,sans-serif;letter-spacing:.19em}
+.how-steps-heading h2{margin:0 0 18px;font:500 clamp(39px,4.65vw,68px)/1.09 Georgia,"Times New Roman",serif;letter-spacing:-.047em;text-wrap:balance}
+.how-steps-heading h2 em,.how-steps-finale h3 em{font-weight:400}
+.how-steps-heading>p:last-child{margin:0;max-width:710px;color:#53666a;font:400 clamp(16px,1.55vw,21px)/1.58 Arial,sans-serif}
+.how-journey{position:relative;display:grid;gap:clamp(52px,7vw,105px)}
+.how-journey::before,.how-journey::after{content:"";position:absolute;top:45px;bottom:60px;left:50%;width:2px;transform:translateX(-50%);border-radius:9px;pointer-events:none}
+.how-journey::before{background:#D8E5DF}
+.how-journey::after{background:linear-gradient(#168C8B,#32A58B);transform:translateX(-50%) scaleY(var(--journey-progress,0));transform-origin:top;transition:transform .12s linear}
+.how-journey-row{display:grid;grid-template-columns:minmax(0,1fr) 66px minmax(0,1fr);gap:clamp(12px,2.3vw,35px);align-items:center;position:relative;min-height:355px}
+.how-journey-copy{grid-column:1;grid-row:1;max-width:500px;padding:16px 4px}
+.how-journey-art{grid-column:3;grid-row:1}
+.how-journey-row:nth-child(2) .how-journey-copy{grid-column:3}
+.how-journey-row:nth-child(2) .how-journey-art{grid-column:1}
+.how-journey-marker{grid-column:2;grid-row:1;position:relative;z-index:2;align-self:center;justify-self:center;display:grid;place-items:center;width:17px;height:17px;border-radius:50%;border:2px solid var(--accent);background:#F7F8F5;box-shadow:0 0 0 6px #F7F8F5}
+.how-journey-row.is-in-view .how-journey-marker{background:var(--accent)}
+.how-step-label{display:flex;align-items:center;gap:12px;margin-bottom:13px;color:#516467;font:650 12px/1.1 Arial,sans-serif;letter-spacing:.12em}
+.how-step-label span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:#DDEEE7;color:#123F47;font:700 15px/1 Arial,sans-serif;letter-spacing:0}
+.how-journey-copy h3{margin:0 0 17px;font:500 clamp(30px,3.2vw,45px)/1.13 Georgia,"Times New Roman",serif;letter-spacing:-.045em}
+.how-journey-copy>p{margin:0 0 21px;font:400 clamp(15px,1.28vw,18px)/1.55 Arial,sans-serif;color:#43575B}
+.how-step-points{margin:0;padding:17px 0 0 0;border-top:1px solid #D6E1DF;list-style:none}
+.how-step-points li{position:relative;margin:0 0 8px;padding:0 0 0 18px;font:400 clamp(13px,1vw,15px)/1.42 Arial,sans-serif;color:#4C6265}
+.how-step-points li:before{content:"";position:absolute;left:1px;top:.52em;width:6px;height:6px;border-radius:50%;background:#48B794}
+.how-journey-art{position:relative;overflow:hidden;height:clamp(295px,28vw,380px);border-radius:27px;background:#E8F1ED;box-shadow:0 8px 27px rgba(18,63,71,.035)}
+.how-journey-art svg{width:100%;height:100%;display:block}
+.how-plan-photo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:saturate(.84) brightness(1.05)}
+.how-art-plan::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent 5%,rgba(246,247,242,.12) 44%,rgba(246,247,242,.5) 100%);pointer-events:none}
+.how-plan-preview{position:absolute;z-index:2;right:5%;top:13%;width:46%;padding:18px 16px;background:rgba(255,255,255,.94);border:1px solid rgba(255,255,255,.9);border-radius:20px;box-shadow:0 12px 32px rgba(18,63,71,.1);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.how-plan-preview>small{display:block;text-align:center;font-size:10px;letter-spacing:.1em;font-weight:750;margin-bottom:11px}
+.how-plan-preview>strong{display:block;text-align:center;font:500 21px/1.18 Georgia,serif;margin-bottom:14px}
+.how-plan-option{display:flex;align-items:center;justify-content:space-between;gap:6px;padding:9px 7px;border-top:1px solid #E1E8E5;font-size:12px}
+.how-plan-option.selected{border:1px solid #7FC2AE;border-radius:10px;background:#EAF7F1}
+.how-plan-option b{font-weight:650}
+.how-plan-option span{color:#168C8B}
+.how-art-lab{background:radial-gradient(ellipse at 47% 44%,rgba(255,255,255,.98),rgba(214,237,237,.7) 54%,#D8EBEE 100%)}
+.how-art-lab svg{filter:drop-shadow(0 10px 10px rgba(17,72,91,.06))}
+.how-art-results{background:linear-gradient(140deg,#F1F2ED,#E4EFEB)}
+.how-mobile-device{position:absolute;width:47%;max-width:230px;height:96%;left:50%;top:14%;transform:translateX(-50%) rotate(5deg);border:8px solid #1B292C;border-radius:39px;background:#fff;box-shadow:0 13px 30px rgba(18,63,71,.16);overflow:hidden}
+.how-mobile-device::before{content:"";position:absolute;left:50%;top:7px;transform:translateX(-50%);width:36%;height:15px;background:#19282C;border-radius:0 0 12px 12px}
+.how-phone-content{padding:43px 15px 20px;font-family:Arial,sans-serif;font-size:12px}
+.how-phone-kicker{font-size:10px;font-weight:750;letter-spacing:.13em;color:#168C8B}
+.how-phone-title{font:500 23px/1.08 Georgia,serif;margin:13px 0 17px}
+.how-phone-circle{margin:0 auto;width:116px;height:116px;display:grid;place-items:center;border-radius:50%;border:12px solid #A8D7CB;border-right-color:#168C8B;border-top-color:#168C8B}
+.how-phone-circle strong{font-size:36px;font-weight:500}
+.how-phone-line{height:9px;margin:15px 0;border-radius:20px;background:linear-gradient(90deg,#66B6A2 64%,#DCE8E4 64%)}
+.how-phone-line:last-child{width:80%;margin-top:9px}
+.how-art-results .how-result-sparkle{position:absolute;left:12%;top:20%;width:95px;height:95px;opacity:.45;background:radial-gradient(circle,#AFD4C8 2px,transparent 3px);background-size:18px 18px;transform:rotate(-16deg)}
+.how-steps-finale{position:relative;overflow:hidden;margin-top:clamp(64px,8vw,115px);border:1px solid #DCE9E5;border-radius:28px;background:radial-gradient(ellipse at 95% 75%,rgba(125,202,193,.25),transparent 43%),linear-gradient(125deg,#F2F4EF,#E8F2F0);padding:clamp(26px,4vw,50px) clamp(24px,5vw,65px)}
+.how-steps-finale h3{max-width:780px;margin:0 0 18px;font:500 clamp(30px,3.8vw,54px)/1.1 Georgia,serif;letter-spacing:-.042em}
+.how-steps-finale p{max-width:650px;margin:0 0 21px;color:#4F6468;font-size:17px}
+.how-steps-finale a{display:inline-flex;align-items:center;justify-content:center;text-decoration:none;color:#fff;background:#123F47;border-radius:40px;min-height:46px;padding:11px 26px;font-weight:700;font-size:14px}
+.how-steps-finale a:hover{background:#166F75}
+@media(prefers-reduced-motion:no-preference){
+ .how-journey-row .how-journey-art,.how-journey-row .how-journey-copy{opacity:0;transform:translateY(22px);transition:opacity .65s ease,transform .65s ease}
+ .how-journey-row.is-in-view .how-journey-art,.how-journey-row.is-in-view .how-journey-copy{opacity:1;transform:translateY(0)}
+ .how-journey-row.is-in-view .how-journey-art{transition-delay:.09s}
+}
+@media(max-width:780px){
+ .how-steps{padding:60px 18px 65px}
+ .how-steps-heading{margin:0 0 32px}
+ .how-steps-eyebrow{font-size:10px;margin-bottom:12px}
+ .how-steps-heading h2{font-size:clamp(34px,8.4vw,49px);line-height:1.1;margin-bottom:13px}
+ .how-steps-heading>p:last-child{font-size:15px;line-height:1.47}
+ .how-journey{gap:12px;padding-left:21px}
+ .how-journey::before,.how-journey::after{left:9px;top:29px;bottom:40px;transform:translateX(-50%)}
+ .how-journey::after{transform:translateX(-50%) scaleY(var(--journey-progress,0))}
+ .how-journey-row,.how-journey-row:nth-child(2){display:grid;grid-template-columns:minmax(0,1fr) minmax(94px,37%);gap:10px;align-items:center;min-height:0;padding:17px 10px 17px 14px;border:1px solid #E1E9E5;border-radius:20px;background:rgba(255,255,255,.58)}
+ .how-journey-marker{position:absolute;left:-21px;top:30px;width:13px;height:13px;box-shadow:0 0 0 5px #F7F8F5}
+ .how-journey-copy,.how-journey-row:nth-child(2) .how-journey-copy{grid-column:1;grid-row:1;padding:0;min-width:0}
+ .how-journey-art,.how-journey-row:nth-child(2) .how-journey-art{grid-column:2;grid-row:1;height:clamp(143px,38vw,220px);border-radius:15px;min-width:0}
+ .how-step-label{gap:8px;margin-bottom:9px;font-size:10px;letter-spacing:.06em}
+ .how-step-label span{width:30px;height:30px;font-size:12px}
+ .how-journey-copy h3{font-size:clamp(21px,5.35vw,30px);line-height:1.12;margin-bottom:9px}
+ .how-journey-copy>p{font-size:clamp(11px,2.95vw,13px);line-height:1.38;margin:0}
+ .how-step-points{display:none}
+ .how-plan-photo{object-position:41% center}
+ .how-plan-preview{right:5%;left:5%;top:auto;bottom:6%;width:90%;padding:7px 7px;border-radius:9px}
+ .how-plan-preview>small{font-size:7px;margin:0 0 4px}
+ .how-plan-preview>strong{font-size:12px;margin:0 0 5px}
+ .how-plan-option{font-size:8px;padding:4px 3px}
+ .how-mobile-device{width:88%;height:100%;border-width:5px;border-radius:24px;left:50%;top:8%}
+ .how-mobile-device::before{height:9px;top:5px}
+ .how-phone-content{padding:25px 7px 10px}
+ .how-phone-kicker{font-size:7px}
+ .how-phone-title{font-size:14px;margin:8px 0}
+ .how-phone-circle{width:67px;height:67px;border-width:7px}
+ .how-phone-circle strong{font-size:20px}
+ .how-phone-line{height:5px;margin:9px 0}
+ .how-art-results .how-result-sparkle{display:none}
+ .how-steps-finale{margin-top:45px;border-radius:19px;padding:27px 21px}
+ .how-steps-finale h3{font-size:clamp(30px,7.2vw,42px)}
+ .how-steps-finale p{font-size:14px}
+}
+@media(max-width:370px){
+ .how-journey{padding-left:17px}
+ .how-journey-row,.how-journey-row:nth-child(2){grid-template-columns:minmax(0,1fr) 92px;padding:14px 8px 14px 10px;gap:7px}
+ .how-journey-marker{left:-18px}
+ .how-journey-copy h3{font-size:20px}
+ .how-journey-copy>p{font-size:11px}
+ .how-step-label span{width:26px;height:26px}
+}
+@media(prefers-reduced-motion:reduce){
+ .how-journey::after{transition:none}
+ .how-journey-row .how-journey-art,.how-journey-row .how-journey-copy{opacity:1;transform:none;transition:none}
+}
 </style></head><body><div class="page-shell">
 <div class="topbar-wrap">
 <header class="header wa-unified-header" aria-label="Encabezado principal">
@@ -177,6 +286,52 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 <div class="how-stat"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="13" width="4" height="8" rx="1"/><rect x="10" y="8" width="4" height="13" rx="1"/><rect x="17" y="3" width="4" height="18" rx="1"/></svg><span><strong>Resultados claros</strong><br>y fáciles de entender</span></div>
 <div class="how-stat"><svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg><span><strong>Comparte con</strong><br>profesionales de la salud</span></div>
 </div>
+</section>
+<section class="how-steps" id="pasos-bienestar" aria-labelledby="how-steps-title">
+ <div class="how-steps-inner">
+  <header class="how-steps-heading">
+   <p class="how-steps-eyebrow">ASÍ DE SENCILLO</p>
+   <h2 id="how-steps-title">Tres pasos, una nueva forma de entender tu <em>bienestar.</em></h2>
+   <p>Hazte tus análisis, conoce tus resultados y descubre cómo cuidar mejor de tu bienestar. Todo en un solo lugar.</p>
+  </header>
+  <div class="how-journey" id="howJourney" aria-label="Proceso en tres pasos">
+   <article class="how-journey-row">
+    <div class="how-journey-copy"><div class="how-step-label"><span>01</span> ELIGE</div><h3>Elige tu plan de bienestar.</h3>
+     <p>Selecciona el plan que mejor se adapte a ti y conoce los análisis disponibles. Te orientamos para realizar tus pruebas en un laboratorio aliado.</p>
+     <ul class="how-step-points"><li>Explora los planes y sus opciones de seguimiento.</li><li>Conoce qué indicadores incluye cada opción.</li><li>Empieza con claridad y sin complicaciones.</li></ul>
+    </div>
+    <div class="how-journey-marker" aria-hidden="true"></div>
+    <figure class="how-journey-art how-art-plan" role="img" aria-label="Persona utilizando su móvil para explorar planes de bienestar">
+     <img class="how-plan-photo" src="hero-retrato-natural.webp" alt="" loading="lazy">
+     <div class="how-plan-preview" aria-hidden="true"><small>WELLNESS APP</small><strong>Elige tu plan</strong><div class="how-plan-option selected"><b>Plan Básico</b><span>✓</span></div><div class="how-plan-option"><b>Plan Advanced</b><span>○</span></div><div class="how-plan-option"><b>Plan Premium</b><span>○</span></div></div>
+    </figure>
+   </article>
+   <article class="how-journey-row">
+    <div class="how-journey-copy"><div class="how-step-label"><span>02</span> ANALIZA</div><h3>Realiza tus análisis.</h3>
+     <p>Acude a un laboratorio aliado para obtener tus resultados. Podrás reunirlos en WELLNESS APP y consultar tu información de salud de forma organizada.</p>
+     <ul class="how-step-points"><li>Pruebas realizadas en laboratorios aliados.</li><li>Tu información reunida en un mismo lugar.</li><li>Resultados organizados para facilitar el seguimiento.</li></ul>
+    </div>
+    <div class="how-journey-marker" aria-hidden="true"></div>
+    <figure class="how-journey-art how-art-lab"><svg viewBox="0 0 520 380" aria-label="Ilustración de una muestra de laboratorio" role="img" xmlns="http://www.w3.org/2000/svg">
+ <defs><linearGradient id="labTube" x1="0" x2="1"><stop stop-color="#C9E3E9"/><stop offset=".4" stop-color="#FFF"/><stop offset="1" stop-color="#8EB7C0"/></linearGradient><linearGradient id="labWater" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#A9E0DE" stop-opacity=".4"/><stop offset="1" stop-color="#9ED8E7" stop-opacity=".9"/></linearGradient></defs>
+ <path d="M-30 90 Q150 25 240 115T560 58" stroke="#fff" stroke-width="20" fill="none" opacity=".7"/><path d="M-15 290 Q200 350 320 259T555 270" stroke="#B1DEE0" stroke-width="20" fill="none" opacity=".55"/>
+ <g fill="none" stroke="#8EC8D0" stroke-width="2" opacity=".65"><circle cx="75" cy="78" r="17"/><circle cx="133" cy="280" r="9"/><circle cx="416" cy="115" r="22"/><circle cx="457" cy="295" r="12"/><circle cx="89" cy="182" r="5"/><circle cx="395" cy="246" r="7"/></g>
+ <g transform="translate(222 37) rotate(5 60 160)"><rect x="29" y="49" width="108" height="265" rx="48" fill="url(#labTube)" stroke="#89B6C0" stroke-width="3"/><path d="M42 189h82v72a41 41 0 0 1-82 0z" fill="url(#labWater)"/><rect x="16" y="18" width="135" height="62" rx="12" fill="#457687"/><rect x="28" y="20" width="108" height="13" rx="5" fill="#759CA6"/><g stroke="#7397A0" stroke-width="2"><path d="M31 40v30M43 40v30M55 40v30M67 40v30M79 40v30M91 40v30M103 40v30M115 40v30M127 40v30"/></g><rect x="33" y="129" width="100" height="92" rx="8" fill="white" opacity=".93"/><text x="83" y="166" text-anchor="middle" fill="#123F47" font-family="Arial" font-size="12" font-weight="bold">WELLNESS</text><text x="83" y="185" text-anchor="middle" fill="#123F47" font-family="Arial" font-size="15" font-weight="bold">APP</text><path d="M50 199h68" stroke="#168C8B" stroke-width="2"/></g>
+</svg></figure>
+   </article>
+   <article class="how-journey-row">
+    <div class="how-journey-copy"><div class="how-step-label"><span>03</span> COMPRENDE</div><h3>Comprende tus resultados.</h3>
+     <p>Explora tus indicadores con explicaciones sencillas, conoce su evolución y comparte la información con profesionales de la salud que autorices.</p>
+     <ul class="how-step-points"><li>Indicadores explicados en lenguaje claro.</li><li>Evolución de tu información en el tiempo.</li><li>Comparte con profesionales autorizados.</li></ul>
+    </div>
+    <div class="how-journey-marker" aria-hidden="true"></div>
+    <figure class="how-journey-art how-art-results" role="img" aria-label="Vista conceptual de un panel personal con indicadores y evolución"><div class="how-result-sparkle" aria-hidden="true"></div>
+      <div class="how-mobile-device" aria-hidden="true"><div class="how-phone-content"><div class="how-phone-kicker">WELLNESS APP</div><div class="how-phone-title">Tu salud, en perspectiva.</div><div class="how-phone-circle"><strong>92</strong></div><div class="how-phone-line"></div><div class="how-phone-line"></div></div></div>
+    </figure>
+   </article>
+  </div>
+  <aside class="how-steps-finale" aria-label="Comienza a conocer mejor tu bienestar"><h3>Tu bienestar comienza con <em>conocerlo mejor.</em></h3><p>Descubre nuestros planes y elige cómo comenzar.</p><a href="../index.html#planes">Ver planes <span aria-hidden="true">→</span></a></aside>
+ </div>
 </section>
 </main><footer class="wf-footer" id="footer-wellness">
 <section aria-label="Descubre WELLNESS APP" class="wf-hero">
@@ -227,4 +382,29 @@ a:focus-visible,button:focus-visible{outline:3px solid var(--orange);outline-off
 </div>
 <div class="wf-bottom"><span>© 2026 WELLNESS APP. Todos los derechos reservados.</span><div class="wf-legal-links"><span title="Documento pendiente">Privacidad</span><span>│</span><span title="Documento pendiente">Términos</span><span>│</span><span title="Documento pendiente">Cookies</span></div></div>
 </footer>
-</div><script src="../shared/wellness-shell.js"></script></body></html>
+</div><script src="../shared/wellness-shell.js"></script><script>
+/* Animación progresiva sin dependencia de librerías. */
+(function(){
+  const journey=document.getElementById('howJourney');
+  if(!journey)return;
+  const rows=Array.from(journey.querySelectorAll('.how-journey-row'));
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(reduce){rows.forEach(row=>row.classList.add('is-in-view'));journey.style.setProperty('--journey-progress','1');return;}
+  if('IntersectionObserver' in window){
+    const observer=new IntersectionObserver(entries=>{
+      entries.forEach(entry=>{if(entry.isIntersecting){entry.target.classList.add('is-in-view');observer.unobserve(entry.target);}});
+    },{threshold:0.12,rootMargin:'0px 0px -20px 0px'});
+    rows.forEach(row=>observer.observe(row));
+  }else{rows.forEach(row=>row.classList.add('is-in-view'));}
+  let scheduled=false;
+  function progress(){
+    const r=journey.getBoundingClientRect(),viewport=window.innerHeight||document.documentElement.clientHeight;
+    const total=Math.max(1,r.height);
+    const fraction=Math.max(0,Math.min(1,(viewport*0.68-r.top)/total));
+    journey.style.setProperty('--journey-progress',String(fraction));
+    scheduled=false;
+  }
+  window.addEventListener('scroll',()=>{if(!scheduled){scheduled=true;requestAnimationFrame(progress)}},{passive:true});
+  window.addEventListener('resize',progress,{passive:true});progress();
+})();
+</script></body></html>
